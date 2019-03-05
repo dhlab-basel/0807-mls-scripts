@@ -1,4 +1,3 @@
-import csv
 import argparse
 from pprint import pprint
 from knora import KnoraError, knora, BulkImport
