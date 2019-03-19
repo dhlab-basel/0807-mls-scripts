@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
+  <ERRORCODE>0</ERRORCODE>
+  <PRODUCT BUILD="12-18-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.4"/>
+  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2018_12_13 neu.fmp12" RECORDS="10" TIMEFORMAT="k:mm:ss "/>
+  <METADATA>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Änderungsdatum" TYPE="TIMESTAMP"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="bestellt" TYPE="TEXT"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Bibl_Formel" TYPE="TEXT"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Erstellungsdatum" TYPE="TIMESTAMP"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Exemplarnr" TYPE="NUMBER"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Fehler" TYPE="NUMBER"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="PK_Exe" TYPE="NUMBER"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="PKF_Bibl" TYPE="NUMBER"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="PKF_Titel" TYPE="NUMBER"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Signatur" TYPE="TEXT"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="SingleCodeExemplare" TYPE="TEXT"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Titel_Formel" TYPE="TEXT"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Exemplar|Bibliotheken_PKBibl::Beschreibung" TYPE="TEXT"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Exemplar|Bibliotheken_PKBibl::Stadt" TYPE="TEXT"/>
+  </METADATA>
+  <RESULTSET FOUND="10">
+    <ROW MODID="1" RECORDID="6423">
+      <COL>
+        <DATA>03.04.2017 16:18:53</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
+      </COL>
+      <COL>
+        <DATA>03.04.2017 16:18:48</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>1</DATA>
+      </COL>
+      <COL>
+        <DATA>6297</DATA>
+      </COL>
+      <COL>
+        <DATA>21</DATA>
+      </COL>
+      <COL>
+        <DATA>http://www.ricercamusica.ch/dizionario/index.html</DATA>
+      </COL>
+      <COL>
+        <DATA>6297|21|</DATA>
+      </COL>
+      <COL>
+        <DATA>DT 2015</DATA>
+      </COL>
+      <COL>
+        <DATA>Google Books, oder andere</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="6424">
+      <COL>
+        <DATA>04.04.2017 22:11:06</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
+      </COL>
+      <COL>
+        <DATA>04.04.2017 22:10:56</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>2</DATA>
+      </COL>
+      <COL>
+        <DATA>6297</DATA>
+      </COL>
+      <COL>
+        <DATA>17</DATA>
+      </COL>
+      <COL>
+        <DATA>www.musinfo.ch</DATA>
+      </COL>
+      <COL>
+        <DATA>6297|17|</DATA>
+      </COL>
+      <COL>
+        <DATA>SUISA 1999</DATA>
+      </COL>
+      <COL>
+        <DATA>Google Books, oder andere</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="3" RECORDID="6425">
+      <COL>
+        <DATA>05.04.2017 18:36:21</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
+      </COL>
+      <COL>
+        <DATA>05.04.2017 18:32:30</DATA>
+      </COL>
+      <COL>
+        <DATA>D-Mbs: Mus,th. 314 8275148 Mus.th. 314 </DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>3</DATA>
+      </COL>
+      <COL>
+        <DATA>6297</DATA>
+      </COL>
+      <COL>
+        <DATA>1</DATA>
+      </COL>
+      <COL>
+        <DATA>http://reader.digitale-sammlungen.de/resolve/display/bsb11187874.html</DATA>
+      </COL>
+      <COL>
+        <DATA>6297|1|D-Mbs: Mus,th. 314 8275148 Mus.th. 314 </DATA>
+      </COL>
+      <COL>
+        <DATA>Becker 1874</DATA>
+      </COL>
+      <COL>
+        <DATA>Google Books, oder andere</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="3" RECORDID="6426">
+      <COL>
+        <DATA>05.04.2017 18:35:38</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>D_M_bs</DATA>
+      </COL>
+      <COL>
+        <DATA>05.04.2017 18:35:21</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>4</DATA>
+      </COL>
+      <COL>
+        <DATA>1537</DATA>
+      </COL>
+      <COL>
+        <DATA>1</DATA>
+      </COL>
+      <COL>
+        <DATA>8275148 Mus.th. 314 8275148 Mus.th. 314 </DATA>
+      </COL>
+      <COL>
+        <DATA>1537|1|</DATA>
+      </COL>
+      <COL>
+        <DATA>Becker 1874</DATA>
+      </COL>
+      <COL>
+        <DATA>Bayerische Staatsbibliothek, Musikabteilung</DATA>
+      </COL>
+      <COL>
+        <DATA>München</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="6428">
+      <COL>
+        <DATA>21.05.2017 17:58:42</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
+      </COL>
+      <COL>
+        <DATA>21.05.2017 17:55:57</DATA>
+      </COL>
+      <COL>
+        <DATA>www,musinfo.ch</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>6</DATA>
+      </COL>
+      <COL>
+        <DATA>6297</DATA>
+      </COL>
+      <COL>
+        <DATA>7</DATA>
+      </COL>
+      <COL>
+        <DATA>www.musinfo.ch</DATA>
+      </COL>
+      <COL>
+        <DATA>6297|7|www,musinfo.ch</DATA>
+      </COL>
+      <COL>
+        <DATA>Musinfo 2015</DATA>
+      </COL>
+      <COL>
+        <DATA>Google Books, oder andere</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="6429">
+      <COL>
+        <DATA>21.05.2017 17:59:06</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
+      </COL>
+      <COL>
+        <DATA>21.05.2017 17:59:03</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>7</DATA>
+      </COL>
+      <COL>
+        <DATA>6297</DATA>
+      </COL>
+      <COL>
+        <DATA>4</DATA>
+      </COL>
+      <COL>
+        <DATA>http://www.hls-dhs-dss.ch/</DATA>
+      </COL>
+      <COL>
+        <DATA>6297|4|</DATA>
+      </COL>
+      <COL>
+        <DATA>HLS</DATA>
+      </COL>
+      <COL>
+        <DATA>Google Books, oder andere</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="6430">
+      <COL>
+        <DATA>21.05.2017 18:00:01</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
+      </COL>
+      <COL>
+        <DATA>21.05.2017 17:59:58</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>8</DATA>
+      </COL>
+      <COL>
+        <DATA>6297</DATA>
+      </COL>
+      <COL>
+        <DATA>19</DATA>
+      </COL>
+      <COL>
+        <DATA>https://www.deutsche-biographie.de/home</DATA>
+      </COL>
+      <COL>
+        <DATA>6297|19|</DATA>
+      </COL>
+      <COL>
+        <DATA>GND</DATA>
+      </COL>
+      <COL>
+        <DATA>Google Books, oder andere</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="6431">
+      <COL>
+        <DATA>23.05.2017 15:12:06</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
+      </COL>
+      <COL>
+        <DATA>23.05.2017 15:12</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>9</DATA>
+      </COL>
+      <COL>
+        <DATA>6297</DATA>
+      </COL>
+      <COL>
+        <DATA>13</DATA>
+      </COL>
+      <COL>
+        <DATA>http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
+      </COL>
+      <COL>
+        <DATA>6297|13|</DATA>
+      </COL>
+      <COL>
+        <DATA>Spoerri 2006</DATA>
+      </COL>
+      <COL>
+        <DATA>Google Books, oder andere</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="6432">
+      <COL>
+        <DATA>23.05.2017 15:12:47</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
+      </COL>
+      <COL>
+        <DATA>23.05.2017 15:12:43</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>10</DATA>
+      </COL>
+      <COL>
+        <DATA>6297</DATA>
+      </COL>
+      <COL>
+        <DATA>25</DATA>
+      </COL>
+      <COL>
+        <DATA>http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
+      </COL>
+      <COL>
+        <DATA>6297|25|</DATA>
+      </COL>
+      <COL>
+        <DATA>Spoerri 2017 Fonoteca</DATA>
+      </COL>
+      <COL>
+        <DATA>Google Books, oder andere</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="6433">
+      <COL>
+        <DATA>23.11.2017 11:51:05</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
+      </COL>
+      <COL>
+        <DATA>23.11.2017 11:51</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>11</DATA>
+      </COL>
+      <COL>
+        <DATA>6297</DATA>
+      </COL>
+      <COL>
+        <DATA>27</DATA>
+      </COL>
+      <COL>
+        <DATA>http://www.musiklexikon.ac.at</DATA>
+      </COL>
+      <COL>
+        <DATA>6297|27|</DATA>
+      </COL>
+      <COL>
+        <DATA>OEML</DATA>
+      </COL>
+      <COL>
+        <DATA>Google Books, oder andere</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+  </RESULTSET>
+</FMPXMLRESULT>
