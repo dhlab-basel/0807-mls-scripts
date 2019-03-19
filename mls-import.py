@@ -5,7 +5,6 @@ from xml.dom.minidom import parse
 import xml.dom.minidom
 
 parser = argparse.ArgumentParser()
-parser.add_argument("xmlfile", help="path to FileMaker XML Export file")
 parser.add_argument("-s", "--server", type=str, default="http://0.0.0.0:3333", help="URL of the Knora server")
 parser.add_argument("-u", "--user", default="root@example.com", help="Username for Knora")
 parser.add_argument("-p", "--password", default="test", help="The password for login")
