@@ -4,8 +4,8 @@
     "dcterms": "http://purl.org/dc/terms/"
   },
   "project": {
-    "shortcode": "0809",
-    "shortname": "MLS",
+    "shortcode": "0807",
+    "shortname": "mls",
     "longname": "Musikalisches Lexikon der Schweiz",
     "descriptions": {
       "de": "Musikalisches Lexikon der Schweiz"
