@@ -3,6 +3,7 @@ from pprint import pprint
 from knora import KnoraError, knora, BulkImport
 from xml.dom.minidom import parse
 import xml.dom.minidom
+import json
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-s", "--server", type=str, default="http://0.0.0.0:3333", help="URL of the Knora server")
@@ -20,6 +21,45 @@ con = knora(args.server, args.user, args.password)
 schema = con.create_schema(args.projectcode, args.ontoname)
 
 bulk_object = BulkImport(schema)
+
+
+sex_lut = {
+    'männlich': 'male',
+    'weiblich': 'female',
+    'weiblich & männliche Gruppe': 'male+female'
+}
+
+article_type_lut = {
+    'Person': 'person',
+    'Sache': 'thing',
+    'Ort': 'location',
+    'Institution': 'institution',
+    'Liste': 'List'
+}
+
+
+# load the lists.json file
+with open("lists.json", "r") as lists_file:
+    lists = json.load(lists_file)
+
+
+def get_list_iri(listname):
+    return lists[listname]["id"]
+
+
+def get_list_node_iri(listname, nodename):
+    nodes = lists[listname]["nodes"]
+    res = ""
+    for node in nodes:
+        try:
+            res = node[nodename]["id"]
+        except KeyError:
+            pass
+
+    if res == "":
+        return None
+    else:
+        return res
 
 
 def get_valpos(xmlfile):
@@ -82,6 +122,51 @@ def create_library_resources(xmlfile, bulk):
         bulk.add_resource(
             'Library',
             'LIB_' + str(id), record["hasSigle"], record)
+
+
+def create_lemma_resources(xmlfile, bulk):
+    """Creates mls:Lemma resources"""
+
+    print("=========================")
+    print("=========================")
+    print("create_lemma_resources")
+    print("=========================")
+
+    valpos = get_valpos(xmlfile)
+    rows = get_rows(xmlfile)
+
+    for row in rows:
+        cols = row.getElementsByTagName("COL")
+        i = 0
+        record = {}
+        for col in cols:
+            datas = col.getElementsByTagName("DATA")  # some columns can have multiple data tags
+            data = datas.item(0)  # we are only interested in the first one
+            if data is not None:
+                if data.firstChild is not None:  # and only look inside if there is some data inside the data tag
+                    pprint(data.firstChild.nodeValue)
+                    if valpos[i] == "PK_Lemma":
+                        id = data.firstChild.nodeValue
+                    if valpos[i] == "Lemma":
+                        record["hasLemmaText"] = data.firstChild.nodeValue
+                    if valpos[i] == "Geschlecht":
+                        record["hasSex"] = get_list_node_iri("sex", sex_lut[data.firstChild.nodeValue])
+                    if valpos[i] == "GND":
+                        record["hasGND"] = data.firstChild.nodeValue
+                    if valpos[i] == "Artikeltyp":
+                        record["hasLemmatype"] = get_list_node_iri("articletype", article_type_lut[data.firstChild.nodeValue])
+            i += 1
+
+        if record.get("hasLemmaText") is None:
+            record["hasLemmaText"] = "XXX"
+
+        print("=========================")
+        print("ID=" + str(id))
+        pprint(record)
+
+        bulk.add_resource(
+            'Location',
+            'LM_' + str(id), record["hasLemmaText"], record)
 
 
 def create_lemma_location_resources(xmlfile, bulk):
@@ -270,17 +355,20 @@ werte_personentaetigkeit_xml = './data/werte_personentaetigkeit.xml'
 # create Library resources
 # create_library_resources(bibliotheken_xml, bulk_object)
 
+# create mls:Lemma resources
+create_lemma_resources(lemma_xml, bulk_object)
+
 # create LemmaLocation resources
-create_lemma_location_resources(lemma_x_ort_xml, bulk_object)
+# create_lemma_location_resources(lemma_x_ort_xml, bulk_object)
 
 # create Location resources
 # create_location_resources(werte_orte_xml, bulk_object)
 
 # create LemmaOccupation resources
-create_lemma_occupation_resources(lemma_x_wert_xml, bulk_object)
+# create_lemma_occupation_resources(lemma_x_wert_xml, bulk_object)
 
 # create Occupation resources
 # create_occupation_resources(werte_personentaetigkeit_xml, bulk_object)
 
 # write the bulk import xml
-bulk_object.write_xml(args.xml)
+# bulk_object.write_xml(args.xml)

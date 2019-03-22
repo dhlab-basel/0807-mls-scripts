@@ -29,6 +29,12 @@
             "labels": {
               "de": "weiblich"
             }
+          },
+          {
+            "name": "male+female",
+            "labels": {
+              "de": "weiblich & männliche Gruppe"
+            }
           }
         ]
       },
@@ -143,7 +149,7 @@
           },
           "properties": [
             {
-              "name": "hasLemmaval",
+              "name": "hasLemmaText",
               "object": "TextValue",
               "labels": {
                 "de": "Lemma"

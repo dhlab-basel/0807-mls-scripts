@@ -1,45 +1,50 @@
 {
    "articletype": {
-      "id": "http://rdfh.ch/lists/0807/Qa65TtwoQfyrkf9Y_A42QA",
+      "id": "http://rdfh.ch/lists/0807/Vy9UnTd0Q4Wkfgg-SUH2-g",
       "nodes": [
          {
             "person": {
-               "id": "http://rdfh.ch/lists/0807/YEzE3PJzSWmW4etAxUypXg"
+               "id": "http://rdfh.ch/lists/0807/QGG5vI4ERNemKWKqbNoasA"
             }
          },
          {
             "institution": {
-               "id": "http://rdfh.ch/lists/0807/pEm4QG3HTearZ67nmuO7fg"
+               "id": "http://rdfh.ch/lists/0807/dmnppDxVQO2AMeYFKfIHXg"
             }
          },
          {
             "list": {
-               "id": "http://rdfh.ch/lists/0807/vfiphneaQ6KvPNlPHnW5-w"
+               "id": "http://rdfh.ch/lists/0807/5z5OJCbURgamGywgBzmXlg"
             }
          },
          {
             "location": {
-               "id": "http://rdfh.ch/lists/0807/7bsqTTTvSOGo_qijAh7mzA"
+               "id": "http://rdfh.ch/lists/0807/5FizCd1wR-G4VHYmYAZwOw"
             }
          },
          {
             "thing": {
-               "id": "http://rdfh.ch/lists/0807/FOFTqIKGSnK3UtfqLb8P_Q"
+               "id": "http://rdfh.ch/lists/0807/ypZS4JKPTemyswGGEKAb6w"
             }
          }
       ]
    },
    "sex": {
-      "id": "http://rdfh.ch/lists/0807/qV_dVToBR0y8DlaPbuGcqg",
+      "id": "http://rdfh.ch/lists/0807/JpY59Gy0TSCzJVVJgVgH-g",
       "nodes": [
          {
             "male": {
-               "id": "http://rdfh.ch/lists/0807/Rhohc4VpR-6BMoBQHG0pRw"
+               "id": "http://rdfh.ch/lists/0807/3CAEAWvfSKC2ghpmhqWxcA"
             }
          },
          {
             "female": {
-               "id": "http://rdfh.ch/lists/0807/SsIH7G5TQGyDOmdUmw2Qsw"
+               "id": "http://rdfh.ch/lists/0807/5otto1SFRrmyOg6HiIivvg"
+            }
+         },
+         {
+            "male+female": {
+               "id": "http://rdfh.ch/lists/0807/DKg_QGKXRLy_n7n7f161eA"
             }
          }
       ]
