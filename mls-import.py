@@ -101,20 +101,20 @@ def create_lemma_location_resources(xmlfile, bulk):
         record = {}
         for data in datas:
             if data.firstChild is not None:
-                if valpos[i] == "PK_Wert":
+                if valpos[i] == "PK_Lemma_x_Ort":
                     id = data.firstChild.nodeValue
-                if valpos[i] == "Land":
-                    record["hasCountry"] = data.firstChild.nodeValue
-                if valpos[i] == "Ortsname":
-                    record["hasPlacename"] = data.firstChild.nodeValue
-                if valpos[i] == "Kanton 1":
-                    record["hasCanton"] = data.firstChild.nodeValue
-                if valpos[i] == "Komentar Ort":
-                    record["hasLocationComment"] = data.firstChild.nodeValue
+                if valpos[i] == "PKF_Lemma":
+                    record["hasLLLinkToLemma"] = data.firstChild.nodeValue
+                if valpos[i] == "PKF_Wert":
+                    record["hasLLLinkToLocation"] = data.firstChild.nodeValue
+                if valpos[i] == "Bezug zum Ort":
+                    record["hasLLRelation"] = data.firstChild.nodeValue
+                if valpos[i] == "Komentar":
+                    record["hasLLComment"] = data.firstChild.nodeValue
             i += 1
 
-        if record.get("hasPlacename") is None:
-            record["hasPlacename"] = "XXX"
+        if record.get("hasLLRelation") is None:
+            record["hasLLRelation"] = "XXX"
 
         print("=========================")
         print("ID=" + str(id))
@@ -122,7 +122,7 @@ def create_lemma_location_resources(xmlfile, bulk):
 
         bulk.add_resource(
             'Location',
-            'LL_' + str(id), record["hasPlacename"], record)
+            'LL_' + str(id), record["hasLLRelation"], record)
 
 
 def create_location_resources(xmlfile, bulk):
@@ -183,20 +183,15 @@ def create_lemma_occupation_resources(xmlfile, bulk):
         record = {}
         for data in datas:
             if data.firstChild is not None:
-                if valpos[i] == "PK_Wert":
+                if valpos[i] == "PK_Lemma_x_Wert":
                     id = data.firstChild.nodeValue
-                if valpos[i] == "Land":
-                    record["hasCountry"] = data.firstChild.nodeValue
-                if valpos[i] == "Ortsname":
-                    record["hasPlacename"] = data.firstChild.nodeValue
-                if valpos[i] == "Kanton 1":
-                    record["hasCanton"] = data.firstChild.nodeValue
-                if valpos[i] == "Komentar Ort":
-                    record["hasLocationComment"] = data.firstChild.nodeValue
+                if valpos[i] == "PKF_Lemma":
+                    record["hasLOLinkToLemma"] = data.firstChild.nodeValue
+                if valpos[i] == "PKF_Wert":
+                    record["hasLOLinkToOccupation"] = data.firstChild.nodeValue
+                if valpos[i] == "Komentar":
+                    record["hasLOComment"] = data.firstChild.nodeValue
             i += 1
-
-        if record.get("hasPlacename") is None:
-            record["hasPlacename"] = "XXX"
 
         print("=========================")
         print("ID=" + str(id))
@@ -204,7 +199,7 @@ def create_lemma_occupation_resources(xmlfile, bulk):
 
         bulk.add_resource(
             'Location',
-            'LO_' + str(id), record["hasPlacename"], record)
+            'LO_' + str(id), id, record)
 
 
 def create_occupation_resourcess(xmlfile, bulk):
@@ -276,11 +271,13 @@ werte_personentaetigkeit_xml = './data/werte_personentaetigkeit.xml'
 # create_library_resources(bibliotheken_xml, bulk_object)
 
 # create LemmaLocation resources
+create_lemma_location_resources(lemma_x_ort_xml, bulk_object)
 
 # create Location resources
 # create_location_resources(werte_orte_xml, bulk_object)
 
 # create LemmaOccupation resources
+create_lemma_occupation_resources(lemma_x_wert_xml, bulk_object)
 
 # create Occupation resources
 # create_occupation_resources(werte_personentaetigkeit_xml, bulk_object)

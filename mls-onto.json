@@ -586,7 +586,7 @@
           },
           "properties": [
             {
-              "name": "hasLinkToLemma",
+              "name": "hasLLLinkToLemma",
               "super": ["hasLinkTo"],
               "object": "mls:Lemma",
               "labels": {
@@ -597,7 +597,7 @@
               "cardinality": "1"
             },
             {
-              "name": "hasLinkToLocation",
+              "name": "hasLLLinkToLocation",
               "super": ["hasLinkTo"],
               "object": "mls:Location",
               "labels": {
@@ -608,7 +608,7 @@
               "cardinality": "1"
             },
             {
-              "name": "hasRelation",
+              "name": "hasLLRelation",
               "object": "TextValue",
               "labels": {
                 "de": "Bezug zum Ort"
@@ -618,7 +618,7 @@
               "cardinality": "0-1"
             },
             {
-              "name": "hasLemmaLocationComment",
+              "name": "hasLLComment",
               "object": "TextValue",
               "labels": {
                 "de": "Kommentar"
@@ -686,7 +686,7 @@
           },
           "properties": [
             {
-              "name": "hasLinkToLemma",
+              "name": "hasLOLinkToLemma",
               "super": ["hasLinkTo"],
               "object": "mls:Lemma",
               "labels": {
@@ -697,7 +697,7 @@
               "cardinality": "1"
             },
             {
-              "name": "hasLinkToOccupation",
+              "name": "hasLOLinkToOccupation",
               "super": ["hasLinkTo"],
               "object": "mls:Occupation",
               "labels": {
@@ -708,7 +708,7 @@
               "cardinality": "1"
             },
             {
-              "name": "hasLemmaOccupationComment",
+              "name": "hasLOComment",
               "object": "TextValue",
               "labels": {
                 "de": "Kommentar"
