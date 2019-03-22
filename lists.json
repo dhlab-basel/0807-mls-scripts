@@ -1,0 +1,47 @@
+{
+   "articletype": {
+      "id": "http://rdfh.ch/lists/0807/3ORF_BkWRFKi_WucJisudg",
+      "nodes": [
+         {
+            "person": {
+               "id": "http://rdfh.ch/lists/0807/7w2i0h5cRZOKFN7fF9MS4w"
+            }
+         },
+         {
+            "institution": {
+               "id": "http://rdfh.ch/lists/0807/mJkaPTLETYatmStbpFQWAQ"
+            }
+         },
+         {
+            "list": {
+               "id": "http://rdfh.ch/lists/0807/D-RKxgNYQ96BWLLf2aGSow"
+            }
+         },
+         {
+            "location": {
+               "id": "http://rdfh.ch/lists/0807/XW7hI9YqQZ-bl5ieeq8iaQ"
+            }
+         },
+         {
+            "thing": {
+               "id": "http://rdfh.ch/lists/0807/ptuvhHh1TnC_o4jPXmqW9Q"
+            }
+         }
+      ]
+   },
+   "sex": {
+      "id": "http://rdfh.ch/lists/0807/gInXiod6Qnebt-DQLAlrHw",
+      "nodes": [
+         {
+            "male": {
+               "id": "http://rdfh.ch/lists/0807/viTiTtpSTH-c0wmy4QUGzg"
+            }
+         },
+         {
+            "female": {
+               "id": "http://rdfh.ch/lists/0807/qbm4AX4LTFSw8NpLScWYLw"
+            }
+         }
+      ]
+   }
+}

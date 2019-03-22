@@ -6,11 +6,11 @@ import xml.dom.minidom
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-s", "--server", type=str, default="http://0.0.0.0:3333", help="URL of the Knora server")
-parser.add_argument("-u", "--user", default="root@example.com", help="Username for Knora")
-parser.add_argument("-p", "--password", default="test", help="The password for login")
-parser.add_argument("-P", "--projectcode", required=True, help="Project short code")
-parser.add_argument("-O", "--ontoname", required=True, help="Shortname of ontology")
-parser.add_argument("-x", "--xml", default="data.xml", help="Name of bulk import XML-File")
+parser.add_argument("-u", "--user", type=str, default="root@example.com", help="Username for Knora")
+parser.add_argument("-p", "--password", type=str, default="test", help="The password for login")
+parser.add_argument("-P", "--projectcode", type=str, default="0807", help="Project short code")
+parser.add_argument("-O", "--ontoname", type=str, default="mls", help="Shortname of ontology")
+parser.add_argument("-x", "--xml", type=str, default="mls-bulk.xml", help="Name of bulk import XML-File")
 parser.add_argument("--start", default="1", help="Start with given line")
 parser.add_argument("--stop", default="all", help="End with given line ('all' reads all lines")
 
@@ -19,64 +19,271 @@ args = parser.parse_args()
 con = knora(args.server, args.user, args.password)
 schema = con.create_schema(args.projectcode, args.ontoname)
 
-bulk = BulkImport(schema)
-
-mapping = {
-    "Eindeutige_Sigle": None,
-    "Land": None,
-    "Stadt": None,
-    "Beschreibung": "librarydescription",
-    "Bibliothekssigle_ohne_Land" : "sigle",
-    "Email": None,
-    "Kontakadresse": None,
-    "Kontakdatum": None,
-    "Kontakperson": None,
-    "Kontaktiert": None,
-    "Kontaktnotizen": None,
-    "Land_Kuerzel": None,
-    "Online_Katalog": "catalogue",
-    "PK_Bibl": None,
-    "Telephonnr": None,
-    "Web_site": "libraryweblink",
-    "Zitierbare_Sigle": "None"
-}
-
-DOMTree = xml.dom.minidom.parse(args.xmlfile)
-collection = DOMTree.documentElement
-fields = collection.getElementsByTagName("FIELD")
-
-valpos = []
-for field in fields:
-    name = field.getAttribute('NAME')
-    valpos.append(name)
+bulk_object = BulkImport(schema)
 
 
-rows = collection.getElementsByTagName("ROW")
-for row in rows:
-    datas = row.getElementsByTagName("DATA")
-    i = 0
-    record = {}
-    for data in datas:
-        if data.firstChild is not None:
-            if valpos[i] == "PK_Bibl":
-                library_id = data.firstChild.nodeValue
-            if valpos[i] == "Beschreibung":
-                record["librarydescription"] = data.firstChild.nodeValue
-            if valpos[i] == "Bibliothekssigle_ohne_Land":
-                record["sigle"] = data.firstChild.nodeValue
-            if valpos[i] == "Online_Katalog":
-                record["catalogue"] = data.firstChild.nodeValue.strip("#")
-            if valpos[i] == "Web_site":
-                record["libraryweblink"] = data.firstChild.nodeValue.strip("#")
-        i += 1
+def get_valpos(xmlfile):
+    DOMTree = xml.dom.minidom.parse(xmlfile)
+    collection = DOMTree.documentElement
+    fields = collection.getElementsByTagName("FIELD")
 
-    if record.get("sigle") is None:
-        record["sigle"] = "XXX"
-    pprint(record)
-    print("ID=" + str(library_id))
+    valpos = []
+    for field in fields:
+        name = field.getAttribute('NAME')
+        valpos.append(name)
+
+    pprint(valpos)
+    return valpos
+
+
+def get_rows(xmlfile):
+    DOMTree = xml.dom.minidom.parse(xmlfile)
+    collection = DOMTree.documentElement
+    rows = collection.getElementsByTagName("ROW")
+    return rows
+
+
+def create_library_resources(xmlfile, bulk):
+    """Creates mls:Library resources"""
+
     print("=========================")
-    bulk.add_resource(
-        'library',
-        'LIB_' + str(library_id), record["sigle"], record)
+    print("=========================")
+    print("create_library_resources")
+    print("=========================")
 
-bulk.write_xml(args.xml)
+    valpos = get_valpos(xmlfile)
+    rows = get_rows(xmlfile)
+
+    for row in rows:
+        datas = row.getElementsByTagName("DATA")
+        i = 0
+        record = {}
+        for data in datas:
+            if data.firstChild is not None:
+                if valpos[i] == "PK_Bibl":
+                    id = data.firstChild.nodeValue
+                if valpos[i] == "Beschreibung":
+                    record["hasLibrarydescription"] = data.firstChild.nodeValue
+                if valpos[i] == "Bibliothekssigle_ohne_Land":
+                    record["hasSigle"] = data.firstChild.nodeValue
+                if valpos[i] == "Online_Katalog":
+                    record["hasCatalogue"] = data.firstChild.nodeValue.strip("#")
+                if valpos[i] == "Web_site":
+                    record["hasLibraryweblink"] = data.firstChild.nodeValue.strip("#")
+            i += 1
+
+        if record.get("hasSigle") is None:
+            record["hasSigle"] = "XXX"
+
+        print("=========================")
+        print("ID=" + str(id))
+        pprint(record)
+
+        bulk.add_resource(
+            'Library',
+            'LIB_' + str(id), record["hasSigle"], record)
+
+
+def create_lemma_location_resources(xmlfile, bulk):
+    """Creates mls:LemmaLocation resources"""
+
+    print("=========================")
+    print("=========================")
+    print("create_lemma_location_resources")
+    print("=========================")
+
+    valpos = get_valpos(xmlfile)
+    rows = get_rows(xmlfile)
+
+    for row in rows:
+        datas = row.getElementsByTagName("DATA")
+        i = 0
+        record = {}
+        for data in datas:
+            if data.firstChild is not None:
+                if valpos[i] == "PK_Wert":
+                    id = data.firstChild.nodeValue
+                if valpos[i] == "Land":
+                    record["hasCountry"] = data.firstChild.nodeValue
+                if valpos[i] == "Ortsname":
+                    record["hasPlacename"] = data.firstChild.nodeValue
+                if valpos[i] == "Kanton 1":
+                    record["hasCanton"] = data.firstChild.nodeValue
+                if valpos[i] == "Komentar Ort":
+                    record["hasLocationComment"] = data.firstChild.nodeValue
+            i += 1
+
+        if record.get("hasPlacename") is None:
+            record["hasPlacename"] = "XXX"
+
+        print("=========================")
+        print("ID=" + str(id))
+        pprint(record)
+
+        bulk.add_resource(
+            'Location',
+            'LL_' + str(id), record["hasPlacename"], record)
+
+
+def create_location_resources(xmlfile, bulk):
+    """Creates mls:Location resources"""
+
+    print("=========================")
+    print("=========================")
+    print("create_location_resources")
+    print("=========================")
+
+    valpos = get_valpos(xmlfile)
+    rows = get_rows(xmlfile)
+
+    for row in rows:
+        datas = row.getElementsByTagName("DATA")
+        i = 0
+        record = {}
+        for data in datas:
+            if data.firstChild is not None:
+                if valpos[i] == "PK_Wert":
+                    id = data.firstChild.nodeValue
+                if valpos[i] == "Land":
+                    record["hasCountry"] = data.firstChild.nodeValue
+                if valpos[i] == "Ortsname":
+                    record["hasPlacename"] = data.firstChild.nodeValue
+                if valpos[i] == "Kanton 1":
+                    record["hasCanton"] = data.firstChild.nodeValue
+                if valpos[i] == "Komentar Ort":
+                    record["hasLocationComment"] = data.firstChild.nodeValue
+            i += 1
+
+        if record.get("hasPlacename") is None:
+            record["hasPlacename"] = "XXX"
+
+        print("=========================")
+        print("ID=" + str(id))
+        pprint(record)
+
+        bulk.add_resource(
+            'Location',
+            'LOC_' + str(id), record["hasPlacename"], record)
+
+
+def create_lemma_occupation_resources(xmlfile, bulk):
+    """Creates mls:LemmaOccupation resources"""
+
+    print("=========================")
+    print("=========================")
+    print("create_lemma_occupation_resources")
+    print("=========================")
+
+    valpos = get_valpos(xmlfile)
+    rows = get_rows(xmlfile)
+
+    for row in rows:
+        datas = row.getElementsByTagName("DATA")
+        i = 0
+        record = {}
+        for data in datas:
+            if data.firstChild is not None:
+                if valpos[i] == "PK_Wert":
+                    id = data.firstChild.nodeValue
+                if valpos[i] == "Land":
+                    record["hasCountry"] = data.firstChild.nodeValue
+                if valpos[i] == "Ortsname":
+                    record["hasPlacename"] = data.firstChild.nodeValue
+                if valpos[i] == "Kanton 1":
+                    record["hasCanton"] = data.firstChild.nodeValue
+                if valpos[i] == "Komentar Ort":
+                    record["hasLocationComment"] = data.firstChild.nodeValue
+            i += 1
+
+        if record.get("hasPlacename") is None:
+            record["hasPlacename"] = "XXX"
+
+        print("=========================")
+        print("ID=" + str(id))
+        pprint(record)
+
+        bulk.add_resource(
+            'Location',
+            'LO_' + str(id), record["hasPlacename"], record)
+
+
+def create_occupation_resourcess(xmlfile, bulk):
+    """Creates mls:Occupation resources"""
+
+    print("=========================")
+    print("=========================")
+    print("create_occupations")
+    print("=========================")
+
+    valpos = get_valpos(xmlfile)
+    rows = get_rows(xmlfile)
+
+    for row in rows:
+        cols = row.getElementsByTagName("COL")
+        i = 0
+        record = {}
+        for col in cols:
+            datas = col.getElementsByTagName("DATA")  # some columns can have multiple data tags
+            data = datas.item(0)  # we are only interested in the first one
+            if data is not None:
+                if data.firstChild is not None:  # and only look inside if there is some data inside the data tag
+                    if valpos[i] == "PK_Wert":
+                        id = data.firstChild.nodeValue
+                    if valpos[i] == "Wert_Personentätigkeit":
+                        record["hasOccupation"] = data.firstChild.nodeValue
+                    if valpos[i] == "Land":
+                        record["hasOccupationCountry"] = data.firstChild.nodeValue
+                    if valpos[i] == "Ortsname":
+                        record["hasOccupationPlacename"] = data.firstChild.nodeValue
+                    if valpos[i] == "Kanton 1":
+                        record["hasOccupationCanton"] = data.firstChild.nodeValue
+            i += 1
+
+        # if record.get("hasOccupation") is None:
+        #     record["hasOccupation"] = ""
+        #
+        # if record.get("hasOccupationCountry") is None:
+        #     record["hasOccupationCountry"] = ""
+        #
+        # if record.get("hasOccupationPlacename") is None:
+        #     record["hasOccupationPlacename"] = ""
+        #
+        # if record.get("hasOccupationCanton") is None:
+        #     record["hasOccupationCanton"] = ""
+
+        print("=========================")
+        print("ID=" + str(id))
+        pprint(record)
+
+        bulk.add_resource(
+            'Occupation',
+            'OCC_' + str(id), record["hasOccupation"], record)
+
+
+artikel_xml = './data/artikel.xml'
+bibliotheken_xml = './data/bibliotheken.xml'
+exemplar_xml = './data/exemplar.xml'
+lemma_xml = './data/lemma.xml'
+lemma1_x_lemma2_xml = './data/lemma1_x_lemma2.xml'
+lemma_x_ort_xml = './data/lemma_x_ort.xml'
+lemma_x_wert_xml = './data/lemma_x_wert.xml'
+lexikon_xml = './data/lexikon.xml'
+titelA_x_titelB_xml = './data/titelA_x_titelB.xml'
+werte_orte_xml = './data/werte_orte.xml'
+werte_personentaetigkeit_xml = './data/werte_personentaetigkeit.xml'
+
+# create Library resources
+# create_library_resources(bibliotheken_xml, bulk_object)
+
+# create LemmaLocation resources
+
+# create Location resources
+# create_location_resources(werte_orte_xml, bulk_object)
+
+# create LemmaOccupation resources
+
+# create Occupation resources
+# create_occupation_resources(werte_personentaetigkeit_xml, bulk_object)
+
+# write the bulk import xml
+bulk_object.write_xml(args.xml)
