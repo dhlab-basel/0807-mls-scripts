@@ -352,7 +352,7 @@
             },
             {
               "name": "hasLibraryweblink",
-              "object": "UriValue",
+              "object": "TextValue",
               "labels": {
                 "de": "Web-Link"
               },

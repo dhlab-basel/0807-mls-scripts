@@ -1,50 +1,50 @@
 {
    "articletype": {
-      "id": "http://rdfh.ch/lists/0807/Vy9UnTd0Q4Wkfgg-SUH2-g",
+      "id": "http://rdfh.ch/lists/0807/Cyhai2QLTXK17PkgEWmAtQ",
       "nodes": [
          {
             "person": {
-               "id": "http://rdfh.ch/lists/0807/QGG5vI4ERNemKWKqbNoasA"
+               "id": "http://rdfh.ch/lists/0807/Q6PvxYxlTli7Kei9yu0mGA"
             }
          },
          {
             "institution": {
-               "id": "http://rdfh.ch/lists/0807/dmnppDxVQO2AMeYFKfIHXg"
+               "id": "http://rdfh.ch/lists/0807/GVgkx69kSG64ChHESiMANw"
             }
          },
          {
             "list": {
-               "id": "http://rdfh.ch/lists/0807/5z5OJCbURgamGywgBzmXlg"
+               "id": "http://rdfh.ch/lists/0807/OfV7gxRvSayet5kz-T_c_A"
             }
          },
          {
             "location": {
-               "id": "http://rdfh.ch/lists/0807/5FizCd1wR-G4VHYmYAZwOw"
+               "id": "http://rdfh.ch/lists/0807/7ehUmAQzRw6CSPsoP7HlVg"
             }
          },
          {
             "thing": {
-               "id": "http://rdfh.ch/lists/0807/ypZS4JKPTemyswGGEKAb6w"
+               "id": "http://rdfh.ch/lists/0807/--TABufESUGWvZ-CGG6c8g"
             }
          }
       ]
    },
    "sex": {
-      "id": "http://rdfh.ch/lists/0807/JpY59Gy0TSCzJVVJgVgH-g",
+      "id": "http://rdfh.ch/lists/0807/ys84R-9gTzm0XUeLxljanA",
       "nodes": [
          {
             "male": {
-               "id": "http://rdfh.ch/lists/0807/3CAEAWvfSKC2ghpmhqWxcA"
+               "id": "http://rdfh.ch/lists/0807/BaqeMBVyS3C1gJdr4cIYjQ"
             }
          },
          {
             "female": {
-               "id": "http://rdfh.ch/lists/0807/5otto1SFRrmyOg6HiIivvg"
+               "id": "http://rdfh.ch/lists/0807/YfMP08kKR3eFHwyO-RjqyQ"
             }
          },
          {
             "male+female": {
-               "id": "http://rdfh.ch/lists/0807/DKg_QGKXRLy_n7n7f161eA"
+               "id": "http://rdfh.ch/lists/0807/lKftebw6QSyNmb6Oe_NTmw"
             }
          }
       ]

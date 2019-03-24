@@ -287,7 +287,7 @@ def create_lemma_occupation_resources(xmlfile, bulk):
             'LO_' + str(id), id, record)
 
 
-def create_occupation_resourcess(xmlfile, bulk):
+def create_occupation_resources(xmlfile, bulk):
     """Creates mls:Occupation resources"""
 
     print("=========================")
@@ -353,22 +353,22 @@ werte_orte_xml = './data/werte_orte.xml'
 werte_personentaetigkeit_xml = './data/werte_personentaetigkeit.xml'
 
 # create Library resources
-# create_library_resources(bibliotheken_xml, bulk_object)
+create_library_resources(bibliotheken_xml, bulk_object)
 
 # create mls:Lemma resources
 create_lemma_resources(lemma_xml, bulk_object)
 
 # create LemmaLocation resources
-# create_lemma_location_resources(lemma_x_ort_xml, bulk_object)
+create_lemma_location_resources(lemma_x_ort_xml, bulk_object)
 
 # create Location resources
-# create_location_resources(werte_orte_xml, bulk_object)
+create_location_resources(werte_orte_xml, bulk_object)
 
 # create LemmaOccupation resources
-# create_lemma_occupation_resources(lemma_x_wert_xml, bulk_object)
+create_lemma_occupation_resources(lemma_x_wert_xml, bulk_object)
 
 # create Occupation resources
-# create_occupation_resources(werte_personentaetigkeit_xml, bulk_object)
+create_occupation_resources(werte_personentaetigkeit_xml, bulk_object)
 
 # write the bulk import xml
-# bulk_object.write_xml(args.xml)
+bulk_object.write_xml(args.xml)
