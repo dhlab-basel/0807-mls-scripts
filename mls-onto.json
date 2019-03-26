@@ -197,7 +197,7 @@
               },
               "gui_element": "Pulldown",
               "gui_attributes": ["hlist=articletype"],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name": "hasSex",
@@ -600,7 +600,7 @@
               },
               "gui_element": "Searchbox",
               "gui_attributes": [],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name": "hasLLLinkToLocation",
@@ -611,7 +611,7 @@
               },
               "gui_element": "Searchbox",
               "gui_attributes": [],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name": "hasLLRelation",
@@ -711,7 +711,7 @@
               },
               "gui_element": "Searchbox",
               "gui_attributes": [],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name": "hasLOComment",

@@ -21,7 +21,7 @@
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Kommentar" TYPE="TEXT"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Werte|Lemma_x_Wert_PKWert::Lemma_Formel" TYPE="TEXT"/>
   </METADATA>
-  <RESULTSET FOUND="4455">
+  <RESULTSET FOUND="4461">
     <ROW MODID="4" RECORDID="8">
       <COL>
         <DATA>8</DATA>
@@ -198262,6 +198262,135 @@
       </COL>
       <COL/>
     </ROW>
+    <ROW MODID="3" RECORDID="5395">
+      <COL>
+        <DATA>5376</DATA>
+      </COL>
+      <COL>
+        <DATA>D</DATA>
+      </COL>
+      <COL>
+        <DATA>Fellbach bei Cannstatt</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Musikdirektor/in</DATA>
+      </COL>
+      <COL>
+        <DATA>Fellbach bei Cannstatt **</DATA>
+      </COL>
+      <COL>
+        <DATA>07.02.2018 09:33:58</DATA>
+      </COL>
+      <COL>
+        <DATA>28.09.2017 18:20:23</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Auberlen, Samuel Gottlob</DATA>
+        <DATA>Erismann, Hans</DATA>
+        <DATA>Högger, Ekkehard</DATA>
+        <DATA>Kelterborn, Louis</DATA>
+        <DATA>Schwilge, Andreas</DATA>
+        <DATA>Suevus (Schwab), Felician </DATA>
+        <DATA>Ackermann, Otto</DATA>
+        <DATA>Hasse, François-Xavier</DATA>
+        <DATA>Huber, Walter Simon</DATA>
+        <DATA>Kubelík, Rafael</DATA>
+        <DATA>Mengelberg, Willem</DATA>
+        <DATA>Sialm, Duri</DATA>
+        <DATA>Viotti, Marcello</DATA>
+        <DATA>Zentner, Johannes</DATA>
+        <DATA>Häußler, Ernst</DATA>
+        <DATA>Klee, Hans</DATA>
+        <DATA>Aeschbacher, Niklaus</DATA>
+        <DATA>Billeter, Agathon</DATA>
+        <DATA>Cherbuliez, Antoine-Elisée</DATA>
+        <DATA>Gassmann, Alfred Leonz</DATA>
+        <DATA>Henking, Bernhard</DATA>
+        <DATA>Hilber, Johann Baptist</DATA>
+        <DATA>Kirchner, Theodor</DATA>
+        <DATA>Kuhn, Antoine-Léonce</DATA>
+        <DATA>Lavater, Hans</DATA>
+        <DATA>Löhrer, Edwin</DATA>
+        <DATA>Maag, Peter</DATA>
+        <DATA>Mendel, Johann Jakob</DATA>
+        <DATA>Müller von Kulm, Walter</DATA>
+        <DATA>Münch, Hans</DATA>
+        <DATA>Munzinger, Edgar</DATA>
+        <DATA>Varviso, Silvio</DATA>
+        <DATA>Zürcher, Franz Xaver</DATA>
+        <DATA>Munzinger, Ulrich</DATA>
+        <DATA>Abt, Franz</DATA>
+        <DATA>Arnold, Gustav</DATA>
+        <DATA>Attenhofer, Carl</DATA>
+        <DATA>Denzler, Robert F.</DATA>
+        <DATA>Doret, Gustave</DATA>
+        <DATA>Forchhammer, Theophil</DATA>
+        <DATA>Haug, Hans</DATA>
+        <DATA>Hegar, Friedrich</DATA>
+        <DATA>Methfessel, Ernst</DATA>
+        <DATA>Bloch, Ernest</DATA>
+        <DATA>Liebermann, Rolf</DATA>
+        <DATA>Martin, Frank</DATA>
+        <DATA>Munzinger, Eduard</DATA>
+        <DATA>Munzinger, Karl</DATA>
+        <DATA>Reichel, Adolf</DATA>
+        <DATA>Rosbaud, Hans</DATA>
+        <DATA>Scherchen, Hermann</DATA>
+        <DATA>Schubiger, Anselm</DATA>
+        <DATA>Stauffer, Theodor</DATA>
+        <DATA>Vogt, Martin</DATA>
+        <DATA>Weber, Karl Gustav</DATA>
+        <DATA>Weingartner, Felix</DATA>
+        <DATA>Ammann, Benno</DATA>
+        <DATA>Bagge, Selmar</DATA>
+        <DATA>Balissat, Jean</DATA>
+        <DATA>Ekkehard IV.</DATA>
+        <DATA>Fröhlich, Friedrich Theodor</DATA>
+        <DATA>Garovi, Josef</DATA>
+        <DATA>Huber, Hans</DATA>
+        <DATA>Schmid, Erich</DATA>
+        <DATA>Wagner, Richard</DATA>
+        <DATA>Dätwyler [Daetwyler], Jean</DATA>
+        <DATA>Derungs, Gion Antoni</DATA>
+        <DATA>Vuataz, Roger</DATA>
+        <DATA>Huber, Paul</DATA>
+        <DATA>Mareschall, Samuel</DATA>
+        <DATA>Reindl, Constantin</DATA>
+        <DATA>Sturzenegger, Richard</DATA>
+        <DATA>Andreae, Volkmar</DATA>
+        <DATA>Jenny, Albert</DATA>
+        <DATA>Pfiffner, Ernst</DATA>
+        <DATA>Widmer, Ernst</DATA>
+        <DATA>Gagnebin, Henri</DATA>
+        <DATA>Gerber, René</DATA>
+        <DATA>Kelterborn, Rudolf</DATA>
+        <DATA>Wissmer, Pierre</DATA>
+      </COL>
+    </ROW>
     <ROW MODID="0" RECORDID="5396">
       <COL>
         <DATA>5377</DATA>
@@ -201432,6 +201561,72 @@
       </COL>
       <COL/>
     </ROW>
+    <ROW MODID="3" RECORDID="5541">
+      <COL>
+        <DATA>5522</DATA>
+      </COL>
+      <COL>
+        <DATA>S</DATA>
+      </COL>
+      <COL>
+        <DATA>Göteborg</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Rektorat</DATA>
+      </COL>
+      <COL>
+        <DATA>Göteborg **</DATA>
+      </COL>
+      <COL>
+        <DATA>24.10.2017 13:35:18</DATA>
+      </COL>
+      <COL>
+        <DATA>24.10.2017 13:29:31</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Marteau, Henri</DATA>
+        <DATA>Munzinger, Walther</DATA>
+        <DATA>Radegg, Rudolf von</DATA>
+        <DATA>Stapfer, Johann II.</DATA>
+        <DATA>Luban-Plozza, Boris</DATA>
+        <DATA>Grynaeus, Simon</DATA>
+        <DATA>Faesch, Remigius</DATA>
+        <DATA>Kolb, Franz</DATA>
+        <DATA>Platter, Felix</DATA>
+        <DATA>Vadian (von Watt), Joachim</DATA>
+        <DATA>Amerbach, Bonifacius</DATA>
+        <DATA>Egli, Raphael</DATA>
+        <DATA>Hottinger, Johann Heinrich</DATA>
+        <DATA>Wagner, Peter</DATA>
+        <DATA>Crousaz, Jean Pierre de</DATA>
+        <DATA>Huber, Christian I.</DATA>
+        <DATA>Beza, Theodor</DATA>
+      </COL>
+    </ROW>
     <ROW MODID="1" RECORDID="5544">
       <COL>
         <DATA>5525</DATA>
@@ -202295,6 +202490,64 @@
         <DATA/>
       </COL>
       <COL/>
+    </ROW>
+    <ROW MODID="2" RECORDID="5587">
+      <COL>
+        <DATA>5568</DATA>
+      </COL>
+      <COL>
+        <DATA>ITA</DATA>
+      </COL>
+      <COL>
+        <DATA>Parma</DATA>
+      </COL>
+      <COL>
+        <DATA>Emilia-Romagna</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Vikar</DATA>
+      </COL>
+      <COL>
+        <DATA>Parma *Emilia-Romagna*</DATA>
+      </COL>
+      <COL>
+        <DATA>07.02.2018 09:57:29</DATA>
+      </COL>
+      <COL>
+        <DATA>01.11.2017 12:34:09</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Suevus (Schwab), Felician </DATA>
+        <DATA>Kuhn, Gottlieb Jakob</DATA>
+        <DATA>Werro, Sebastian</DATA>
+        <DATA>Buchstab, Johann</DATA>
+        <DATA>Garcin, Jean Laurent</DATA>
+        <DATA>Bovet, Joseph</DATA>
+        <DATA>Sulzer, Johann Georg</DATA>
+        <DATA>Weber, Heinrich</DATA>
+        <DATA>Schmidlin, Johannes</DATA>
+      </COL>
     </ROW>
     <ROW MODID="0" RECORDID="5590">
       <COL>
@@ -203402,6 +203655,59 @@
       </COL>
       <COL/>
     </ROW>
+    <ROW MODID="2" RECORDID="5650">
+      <COL>
+        <DATA>5631</DATA>
+      </COL>
+      <COL>
+        <DATA>F</DATA>
+      </COL>
+      <COL>
+        <DATA>Saint-Omer</DATA>
+      </COL>
+      <COL>
+        <DATA>Hauts-de-France</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Studiomusiker/in</DATA>
+      </COL>
+      <COL>
+        <DATA>Saint-Omer *Hauts-de-France*</DATA>
+      </COL>
+      <COL>
+        <DATA>08.05.2018 14:41:53</DATA>
+      </COL>
+      <COL>
+        <DATA>29.11.2017 11:13:58</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Dähler, Jörg Ewald</DATA>
+        <DATA>Guyonnet, Jacques</DATA>
+        <DATA>Mariétan, Pierre</DATA>
+        <DATA>Eisenmann, Will</DATA>
+      </COL>
+    </ROW>
     <ROW MODID="0" RECORDID="5651">
       <COL>
         <DATA>5632</DATA>
@@ -203689,6 +203995,56 @@
         <DATA/>
       </COL>
       <COL/>
+    </ROW>
+    <ROW MODID="1" RECORDID="5676">
+      <COL>
+        <DATA>5657</DATA>
+      </COL>
+      <COL>
+        <DATA>NL</DATA>
+      </COL>
+      <COL>
+        <DATA>Niederlande</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Königin</DATA>
+      </COL>
+      <COL>
+        <DATA>Niederlande **</DATA>
+      </COL>
+      <COL>
+        <DATA>29.11.2017 15:14:01</DATA>
+      </COL>
+      <COL>
+        <DATA>29.11.2017 15:12:21</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Beauharnais, Eugénie Hortense Auguste Napoléone de</DATA>
+      </COL>
     </ROW>
     <ROW MODID="0" RECORDID="5679">
       <COL>
@@ -204025,6 +204381,58 @@
         <DATA/>
       </COL>
       <COL/>
+    </ROW>
+    <ROW MODID="1" RECORDID="5697">
+      <COL>
+        <DATA>5678</DATA>
+      </COL>
+      <COL>
+        <DATA>D</DATA>
+      </COL>
+      <COL>
+        <DATA>Eschweiler</DATA>
+      </COL>
+      <COL>
+        <DATA>NRW</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Seelsorger/in</DATA>
+      </COL>
+      <COL>
+        <DATA>Eschweiler *NRW*</DATA>
+      </COL>
+      <COL>
+        <DATA>08.12.2017 14:35:22</DATA>
+      </COL>
+      <COL>
+        <DATA>08.12.2017 14:32:06</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Högger, Ekkehard</DATA>
+        <DATA>Rappard-Gobat, Dora</DATA>
+        <DATA>Tschopp, Athanasius</DATA>
+      </COL>
     </ROW>
     <ROW MODID="0" RECORDID="5699">
       <COL>

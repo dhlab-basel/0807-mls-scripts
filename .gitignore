@@ -104,3 +104,4 @@ venv.bak/
 .mypy_cache/
 .idea/
 /mls-bulk.xml
+/mls-lemma-bulk.xml
