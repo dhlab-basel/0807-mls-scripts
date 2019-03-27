@@ -105,3 +105,7 @@ venv.bak/
 .idea/
 /mls-bulk.xml
 /mls-lemma-bulk.xml
+/mls-lemma-location-bulk.xml
+/mls-library-bulk.xml
+/mls-location-bulk.xml
+/lists.json
