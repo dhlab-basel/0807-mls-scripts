@@ -67,24 +67,29 @@ def get_resource_iri(local_id, local_id_to_iri_json):
     #                        'label': '1',
     #                        'resourceIri': 'http://rdfh.ch/0807/rNxoIK-oR_i0-lO21Y9-CQ'},
     #                       {'clientResourceID': 'LM_2']}
-    resources = local_id_to_iri_json["createdResources"]
-    iri = ""
-    for resource in resources:
-        try:
-            res_id = resource["clientResourceID"]
-            if res_id == local_id:
-                iri = resource["resourceIri"]
-            else:
+    try:
+        resources = local_id_to_iri_json["createdResources"]
+        iri = ""
+        for resource in resources:
+            try:
+                res_id = resource["clientResourceID"]
+                if res_id == local_id:
+                    iri = resource["resourceIri"]
+                else:
+                    pass
+            except KeyError:
                 pass
-        except KeyError:
-            pass
 
-    if iri == "":
-        print("get_resource_iri - local_id: " + local_id + ", iri: " + str(None))
-        return None
-    else:
-        print("get_resource_iri - local_id: " + local_id + ", iri: " + iri)
-        return iri
+        if iri == "":
+            print("get_resource_iri - local_id: " + local_id + ", iri: " + str(None))
+            return None
+        else:
+            print("get_resource_iri - local_id: " + local_id + ", iri: " + iri)
+            return iri
+    except KeyError:
+        print("get_resource_iri - 'createdResources' not found")
+        pprint(local_id_to_iri_json)
+
 
 
 def get_valpos(xmlfile):
@@ -191,46 +196,45 @@ def create_lemma_resources(xmlfile, bulk):
         print("------------------------------------------")
 
 
-def create_lemma_location_resources(xmlfile, lemma_iris_json, location_iris_json, bulk):
-    """Creates mls:LemmaLocation resources"""
+def create_occupation_resources(xmlfile, bulk):
+    """Creates mls:Occupation resources"""
 
     print("------------------------------------------")
     print("------------------------------------------")
-    print("create_lemma_location_resources")
+    print("create_occupations")
     print("------------------------------------------")
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
 
     for row in rows:
-        datas = row.getElementsByTagName("DATA")
+        cols = row.getElementsByTagName("COL")
         i = 0
         record = {}
-        for data in datas:
-            if data.firstChild is not None:
-                if valpos[i] == "PK_Lemma_x_Ort":
-                    id = data.firstChild.nodeValue
-                if valpos[i] == "PKF_Lemma":
-                    record["hasLLLinkToLemma"] = get_resource_iri('LM_' + data.firstChild.nodeValue, lemma_iris_json)
-                if valpos[i] == "PKF_Wert":
-                    record["hasLLLinkToLocation"] = get_resource_iri('LOC_' + data.firstChild.nodeValue, location_iris_json)
-                if valpos[i] == "Bezug zum Ort":
-                    record["hasLLRelation"] = data.firstChild.nodeValue
-                if valpos[i] == "Komentar":
-                    record["hasLLComment"] = data.firstChild.nodeValue
+        for col in cols:
+            datas = col.getElementsByTagName("DATA")  # some columns can have multiple data tags
+            data = datas.item(0)  # we are only interested in the first one
+            if data is not None:
+                if data.firstChild is not None:  # and only look inside if there is some data inside the data tag
+                    if valpos[i] == "PK_Wert":
+                        id = data.firstChild.nodeValue
+                    if valpos[i] == "Wert_Personentätigkeit":
+                        record["hasOccupation"] = data.firstChild.nodeValue
+                    if valpos[i] == "Land":
+                        record["hasOccupationCountry"] = data.firstChild.nodeValue
+                    if valpos[i] == "Ortsname":
+                        record["hasOccupationPlacename"] = data.firstChild.nodeValue
+                    if valpos[i] == "Kanton 1":
+                        record["hasOccupationCanton"] = data.firstChild.nodeValue
             i += 1
 
-        # filter out links to dead-ends
-        if record.get("hasLLLinkToLocation") == None:
-            pass
-        else:
-            print("------------------------------------------")
-            print("ID=" + str(id))
-            pprint(record)
-            bulk.add_resource(
-                'LemmaLocation',
-                'LL_' + str(id), id, record)
-            print("------------------------------------------")
+        print("------------------------------------------")
+        print("ID=" + str(id))
+        pprint(record)
+        bulk.add_resource(
+            'Occupation',
+            'OCC_' + str(id), id, record)
+        print("------------------------------------------")
 
 
 def create_location_resources(xmlfile, bulk):
@@ -274,7 +278,7 @@ def create_location_resources(xmlfile, bulk):
         print("------------------------------------------")
 
 
-def create_lemma_occupation_resources(xmlfile, bulk):
+def create_lemma_occupation_resources(xmlfile, bulk, lemma_resource_iris, occupation_resource_iris):
     """Creates mls:LemmaOccupation resources"""
 
     print("------------------------------------------")
@@ -294,19 +298,17 @@ def create_lemma_occupation_resources(xmlfile, bulk):
                 if valpos[i] == "PK_Lemma_x_Wert":
                     id = data.firstChild.nodeValue
                 if valpos[i] == "PKF_Lemma":
-                    record["hasLOLinkToLemma"] = 'LM_' + data.firstChild.nodeValue
+                    record["hasLOLinkToLemma"] = get_resource_iri('LM_' + data.firstChild.nodeValue, lemma_resource_iris)
                 if valpos[i] == "PKF_Wert":
-                    record["hasLOLinkToOccupation"] = 'OCC_' + data.firstChild.nodeValue
+                    record["hasLOLinkToOccupation"] = get_resource_iri('OCC_' + data.firstChild.nodeValue, occupation_resource_iris)
                 if valpos[i] == "Komentar":
                     record["hasLOComment"] = data.firstChild.nodeValue
             i += 1
 
         # filter out links to dead-ends
-        if record.get("hasLOLinkToOccupation") == "OCC_3":
+        if record.get("hasLOLinkToLemma") is None:
             pass
-        elif record.get("hasLOLinkToOccupation") == "OCC_5368":
-            pass
-        elif record.get("hasLOLinkToOccupation") == "OCC_5518":
+        elif record.get("hasLOLinkToOccupation") is None:
             pass
         else:
             print("------------------------------------------")
@@ -318,45 +320,48 @@ def create_lemma_occupation_resources(xmlfile, bulk):
             print("------------------------------------------")
 
 
-def create_occupation_resources(xmlfile, bulk):
-    """Creates mls:Occupation resources"""
+def create_lemma_location_resources(xmlfile, bulk, lemma_resource_iris, location_resource_iris):
+    """Creates mls:LemmaLocation resources"""
 
     print("------------------------------------------")
     print("------------------------------------------")
-    print("create_occupations")
+    print("create_lemma_location_resources")
     print("------------------------------------------")
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
 
     for row in rows:
-        cols = row.getElementsByTagName("COL")
+        datas = row.getElementsByTagName("DATA")
         i = 0
         record = {}
-        for col in cols:
-            datas = col.getElementsByTagName("DATA")  # some columns can have multiple data tags
-            data = datas.item(0)  # we are only interested in the first one
-            if data is not None:
-                if data.firstChild is not None:  # and only look inside if there is some data inside the data tag
-                    if valpos[i] == "PK_Wert":
-                        id = data.firstChild.nodeValue
-                    if valpos[i] == "Wert_Personentätigkeit":
-                        record["hasOccupation"] = data.firstChild.nodeValue
-                    if valpos[i] == "Land":
-                        record["hasOccupationCountry"] = data.firstChild.nodeValue
-                    if valpos[i] == "Ortsname":
-                        record["hasOccupationPlacename"] = data.firstChild.nodeValue
-                    if valpos[i] == "Kanton 1":
-                        record["hasOccupationCanton"] = data.firstChild.nodeValue
+        for data in datas:
+            if data.firstChild is not None:
+                if valpos[i] == "PK_Lemma_x_Ort":
+                    id = data.firstChild.nodeValue
+                if valpos[i] == "PKF_Lemma":
+                    record["hasLLLinkToLemma"] = get_resource_iri('LM_' + data.firstChild.nodeValue, lemma_resource_iris)
+                if valpos[i] == "PKF_Wert":
+                    record["hasLLLinkToLocation"] = get_resource_iri('LOC_' + data.firstChild.nodeValue, location_resource_iris)
+                if valpos[i] == "Bezug zum Ort":
+                    record["hasLLRelation"] = data.firstChild.nodeValue
+                if valpos[i] == "Komentar":
+                    record["hasLLComment"] = data.firstChild.nodeValue
             i += 1
 
-        print("------------------------------------------")
-        print("ID=" + str(id))
-        pprint(record)
-        bulk.add_resource(
-            'Occupation',
-            'OCC_' + str(id), id, record)
-        print("------------------------------------------")
+        # filter out links to dead-ends
+        if record.get("hasLLLinkToLemma") is None:
+            pass
+        elif record.get("hasLLLinkToLocation") is None:
+            pass
+        else:
+            print("------------------------------------------")
+            print("ID=" + str(id))
+            pprint(record)
+            bulk.add_resource(
+                'LemmaLocation',
+                'LL_' + str(id), id, record)
+            print("------------------------------------------")
 
 
 BULKIMPORT_API_ENDPOINT="http://localhost:3333/v1/resources/xmlimport/http%3A%2F%2Frdfh.ch%2Fprojects%2F0807"
@@ -364,57 +369,68 @@ headers = {"Content-Type": "application/xml"}
 artikel_xml = './data/artikel.xml'
 exemplar_xml = './data/exemplar.xml'
 lemma1_x_lemma2_xml = './data/lemma1_x_lemma2.xml'
-lemma_x_wert_xml = './data/lemma_x_wert.xml'
+
 lexikon_xml = './data/lexikon.xml'
 titelA_x_titelB_xml = './data/titelA_x_titelB.xml'
 werte_personentaetigkeit_xml = './data/werte_personentaetigkeit.xml'
 
 # create Library resources
-# library_data_xml = './data/bibliotheken.xml'
+library_data_xml = './data/bibliotheken.xml'
 library_bulk_xml="mls-library-bulk.xml"
-# library_bulk_object = BulkImport(schema)
-# create_library_resources(library_data_xml, library_bulk_object)
-# library_bulk_object.write_xml(library_bulk_xml)
+library_bulk_object = BulkImport(schema)
+create_library_resources(library_data_xml, library_bulk_object)
+library_bulk_object.write_xml(library_bulk_xml)
 library_bulk_xml_string = open(library_bulk_xml).read().encode("utf-8")
 r = requests.post(BULKIMPORT_API_ENDPOINT, data=library_bulk_xml_string, headers=headers, auth=('root@example.com', 'test'))
 library_iris_json = r.json()
 
 # create mls:Lemma resources
-# lemma_data_xml = './data/lemma.xml'
+lemma_data_xml = './data/lemma.xml'
 lemma_bulk_xml="mls-lemma-bulk.xml"
-# lemma_bulk_object = BulkImport(schema)
-# create_lemma_resources(lemma_data_xml, lemma_bulk_object)
-# lemma_bulk_object.write_xml(lemma_bulk_xml)
+lemma_bulk_object = BulkImport(schema)
+create_lemma_resources(lemma_data_xml, lemma_bulk_object)
+lemma_bulk_object.write_xml(lemma_bulk_xml)
 lemma_bulk_xml_string = open(lemma_bulk_xml).read().encode("utf-8")
 r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_bulk_xml_string, headers=headers, auth=('root@example.com', 'test'))
 lemma_iris_json = r.json()
 
+# create Occupation resources
+occupation_data_xml = './data/werte_personentaetigkeit.xml'
+occupation_bulk_xml = "mls-occupation-bulk.xml"
+occupation_bulk_object = BulkImport(schema)
+create_occupation_resources(occupation_data_xml, occupation_bulk_object)
+occupation_bulk_object.write_xml(occupation_bulk_xml)
+occupation_bulk_xml_string = open(occupation_bulk_xml).read().encode("utf-8")
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=occupation_bulk_xml_string, headers=headers, auth=('root@example.com', 'test'))
+occupation_iris_json = r.json()
+
 # create Location resources
-# location_data_xml = './data/werte_orte.xml'
+location_data_xml = './data/werte_orte.xml'
 location_bulk_xml = "mls-location-bulk.xml"
-# location_bulk_object = BulkImport(schema)
-# create_location_resources(location_data_xml, location_bulk_object)
-# location_bulk_object.write_xml(location_bulk_xml)
+location_bulk_object = BulkImport(schema)
+create_location_resources(location_data_xml, location_bulk_object)
+location_bulk_object.write_xml(location_bulk_xml)
 location_bulk_xml_string = open(location_bulk_xml).read().encode("utf-8")
 r = requests.post(BULKIMPORT_API_ENDPOINT, data=location_bulk_xml_string, headers=headers, auth=('root@example.com', 'test'))
 location_iris_json = r.json()
 
+# create LemmaOccupation resources
+lemma_occupation_data_xml = './data/lemma_x_wert.xml'
+lemma_occupation_bulk_xml = "mls-lemma-occupation-bulk.xml"
+lemma_occupation_bulk_object = BulkImport(schema)
+create_lemma_occupation_resources(lemma_occupation_data_xml, lemma_occupation_bulk_object, lemma_iris_json, occupation_iris_json)
+lemma_occupation_bulk_object.write_xml(lemma_occupation_bulk_xml)
+lemma_occupation_bulk_xml_string = open(lemma_occupation_bulk_xml).read().encode("utf-8")
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_occupation_bulk_xml_string, headers=headers, auth=('root@example.com', 'test'))
+lemma_occupation_iris_json = r.json()
+
+
 # create LemmaLocation resources
-lemma_location_xml = './data/lemma_x_ort.xml'
+lemma_location_data_xml = './data/lemma_x_ort.xml'
 lemma_location_bulk_xml = "mls-lemma-location-bulk.xml"
 lemma_location_bulk_object = BulkImport(schema)
-create_lemma_location_resources(lemma_location_xml, lemma_iris_json, location_iris_json, lemma_location_bulk_object)
+create_lemma_location_resources(lemma_location_data_xml, lemma_location_bulk_object, lemma_iris_json, location_iris_json)
 lemma_location_bulk_object.write_xml(lemma_location_bulk_xml)
 lemma_location_bulk_xml_string = open(lemma_location_bulk_xml).read().encode("utf-8")
 r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_location_bulk_xml_string, headers=headers, auth=('root@example.com', 'test'))
 lemma_location_iris_json = r.json()
-
-
-# create LemmaOccupation resources
-# create_lemma_occupation_resources(lemma_x_wert_xml, bulk_object)
-
-# create Occupation resources
-#create_occupation_resources(werte_personentaetigkeit_xml, bulk_object)
-
-# write the bulk import xml
-

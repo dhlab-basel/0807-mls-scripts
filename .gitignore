@@ -109,3 +109,5 @@ venv.bak/
 /mls-library-bulk.xml
 /mls-location-bulk.xml
 /lists.json
+/mls-lemma-occupation-bulk.xml
+/mls-occupation-bulk.xml
