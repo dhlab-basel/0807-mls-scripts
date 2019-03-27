@@ -371,6 +371,22 @@ pprint(lemma_iris_json)
 #                        'resourceIri': 'http://rdfh.ch/0807/rNxoIK-oR_i0-lO21Y9-CQ'},
 #                       {'clientResourceID': 'LM_2']}
 
+def get_lemma_iri(internal_id):
+    resources = lemma_iris_json["createdResources"]
+    iri = ""
+    for resource in resources:
+        try:
+            iri = resource[][internal_id]
+        except KeyError:
+            pass
+
+    if iri == "":
+        return None
+    else:
+        return iri
+
+
+
 # create Location resources
 # create_location_resources(werte_orte_xml, bulk_object)
 
