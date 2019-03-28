@@ -96,7 +96,7 @@
               },
               "gui_element": "SimpleText",
               "gui_attributes": ["size=32", "maxlength=128"],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name": "hasCitationform",
@@ -106,7 +106,7 @@
               },
               "gui_element": "SimpleText",
               "gui_attributes": ["size=32", "maxlength=128"],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name": "hasLexiconcomment",
@@ -156,7 +156,7 @@
               },
               "gui_element": "SimpleText",
               "gui_attributes": ["size=32", "maxlength=128"],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name": "isDeceased",
@@ -328,7 +328,7 @@
               },
               "gui_element": "SimpleText",
               "gui_attributes": ["size=16", "maxlength=16"],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name": "hasLocation",
@@ -407,7 +407,7 @@
               },
               "gui_element": "Pulldown",
               "gui_attributes": ["hlist=articletype"],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name":"hasLemma",
@@ -418,7 +418,7 @@
               },
               "gui_element": "Searchbox",
               "gui_attributes": ["numprops=1"],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name": "hasOrigspelling",
@@ -439,7 +439,7 @@
               },
               "gui_element": "Searchbox",
               "gui_attributes": ["numprops=1"],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name": "hasPages",
@@ -459,7 +459,7 @@
               },
               "gui_element": "Textarea",
               "gui_attributes": ["rows=5", "width=99%", "wrap=soft"],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name": "hasNumlines",
@@ -700,7 +700,7 @@
               },
               "gui_element": "Searchbox",
               "gui_attributes": [],
-              "cardinality": "1"
+              "cardinality": "0-1"
             },
             {
               "name": "hasLOLinkToOccupation",
