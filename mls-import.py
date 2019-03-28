@@ -8,7 +8,7 @@ import requests
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-s", "--server", type=str, default="http://0.0.0.0:3333", help="URL of the Knora server")
-parser.add_argument("-u", "--user", type=str, default="root@example.com", help="Username for Knora")
+parser.add_argument("-u", "--user", type=str, default="mls01@example.com", help="Username for Knora")
 parser.add_argument("-p", "--password", type=str, default="test", help="The password for login")
 parser.add_argument("-P", "--projectcode", type=str, default="0807", help="Project short code")
 parser.add_argument("-O", "--ontoname", type=str, default="mls", help="Shortname of ontology")
@@ -381,7 +381,7 @@ library_bulk_object = BulkImport(schema)
 create_library_resources(library_data_xml, library_bulk_object)
 library_bulk_object.write_xml(library_bulk_xml)
 library_bulk_xml_string = open(library_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=library_bulk_xml_string, headers=headers, auth=('root@example.com', 'test'))
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=library_bulk_xml_string, headers=headers, auth=(args.user, args.password))
 library_iris_json = r.json()
 
 # create mls:Lemma resources
@@ -391,7 +391,7 @@ lemma_bulk_object = BulkImport(schema)
 create_lemma_resources(lemma_data_xml, lemma_bulk_object)
 lemma_bulk_object.write_xml(lemma_bulk_xml)
 lemma_bulk_xml_string = open(lemma_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_bulk_xml_string, headers=headers, auth=('root@example.com', 'test'))
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_bulk_xml_string, headers=headers, auth=(args.user, args.password))
 lemma_iris_json = r.json()
 
 # create Occupation resources
@@ -401,7 +401,7 @@ occupation_bulk_object = BulkImport(schema)
 create_occupation_resources(occupation_data_xml, occupation_bulk_object)
 occupation_bulk_object.write_xml(occupation_bulk_xml)
 occupation_bulk_xml_string = open(occupation_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=occupation_bulk_xml_string, headers=headers, auth=('root@example.com', 'test'))
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=occupation_bulk_xml_string, headers=headers, auth=(args.user, args.password))
 occupation_iris_json = r.json()
 
 # create Location resources
@@ -411,7 +411,7 @@ location_bulk_object = BulkImport(schema)
 create_location_resources(location_data_xml, location_bulk_object)
 location_bulk_object.write_xml(location_bulk_xml)
 location_bulk_xml_string = open(location_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=location_bulk_xml_string, headers=headers, auth=('root@example.com', 'test'))
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=location_bulk_xml_string, headers=headers, auth=(args.user, args.password))
 location_iris_json = r.json()
 
 # create LemmaOccupation resources
@@ -421,7 +421,7 @@ lemma_occupation_bulk_object = BulkImport(schema)
 create_lemma_occupation_resources(lemma_occupation_data_xml, lemma_occupation_bulk_object, lemma_iris_json, occupation_iris_json)
 lemma_occupation_bulk_object.write_xml(lemma_occupation_bulk_xml)
 lemma_occupation_bulk_xml_string = open(lemma_occupation_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_occupation_bulk_xml_string, headers=headers, auth=('root@example.com', 'test'))
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_occupation_bulk_xml_string, headers=headers, auth=(args.user, args.password))
 lemma_occupation_iris_json = r.json()
 
 
@@ -432,5 +432,5 @@ lemma_location_bulk_object = BulkImport(schema)
 create_lemma_location_resources(lemma_location_data_xml, lemma_location_bulk_object, lemma_iris_json, location_iris_json)
 lemma_location_bulk_object.write_xml(lemma_location_bulk_xml)
 lemma_location_bulk_xml_string = open(lemma_location_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_location_bulk_xml_string, headers=headers, auth=('root@example.com', 'test'))
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_location_bulk_xml_string, headers=headers, auth=(args.user, args.password))
 lemma_location_iris_json = r.json()

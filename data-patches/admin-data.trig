@@ -1,0 +1,63 @@
+@prefix knora-base: <http://www.knora.org/ontology/knora-base#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix standoff: <http://www.knora.org/ontology/standoff#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix salsah-gui: <http://www.knora.org/ontology/salsah-gui#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix beol: <http://www.knora.org/ontology/0801/beol#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix luc: <http://www.ontotext.com/owlim/lucene#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://www.knora.org/data/admin> {
+    ## Project Admin
+    <http://rdfh.ch/users/b16ca564-5146-11e9-8647-d663bd873d93> rdf:type knora-base:User ;
+
+                                   knora-base:username "mls01"^^xsd:string ;
+
+                                   knora-base:email "mls01@example.com"^^xsd:string ;
+
+                                   knora-base:givenName "MLS01"^^xsd:string ;
+
+                                   knora-base:familyName "User"^^xsd:string ;
+
+                                   knora-base:password "$e0801$FGl9FDIWw+D83OeNPGmD9u2VTqIkJopIQECgmb2DSWQLS0TeKSvYoWAkbEv6KxePPlCI3CP9MmVHuvnWv8/kag==$mlegCYdGXt+ghuo8i0rLjgOiNnGDW604Q5g/v7zwBPU="^^xsd:string ;
+
+                                   knora-base:preferredLanguage "de"^^xsd:string ;
+
+                                   knora-base:status "true"^^xsd:boolean ;
+
+                                   knora-base:isInProject <http://rdfh.ch/projects/0807> ;
+
+                                   knora-base:isInSystemAdminGroup "false"^^xsd:boolean ;
+
+                                   knora-base:isInProjectAdminGroup <http://rdfh.ch/projects/0807> .
+
+
+    ## Project Member
+    <http://rdfh.ch/users/cadb3e2a-5146-11e9-8647-d663bd873d93> rdf:type knora-base:User ;
+
+                                   knora-base:username "mls02"^^xsd:string ;
+
+                                   knora-base:email "mls02@example.com"^^xsd:string ;
+
+                                   knora-base:givenName "MLS02"^^xsd:string ;
+
+                                   knora-base:familyName "User"^^xsd:string ;
+
+                                   knora-base:password "$e0801$FGl9FDIWw+D83OeNPGmD9u2VTqIkJopIQECgmb2DSWQLS0TeKSvYoWAkbEv6KxePPlCI3CP9MmVHuvnWv8/kag==$mlegCYdGXt+ghuo8i0rLjgOiNnGDW604Q5g/v7zwBPU="^^xsd:string ;
+
+                                   knora-base:preferredLanguage "de"^^xsd:string ;
+
+                                   knora-base:status "true"^^xsd:boolean ;
+
+                                   knora-base:isInProject <http://rdfh.ch/projects/0807> ;
+
+                                   knora-base:isInSystemAdminGroup "false"^^xsd:boolean .
+}

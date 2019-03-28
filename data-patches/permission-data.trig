@@ -1,0 +1,54 @@
+@prefix : <http://www.knora.org/ontology/knora-base#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix standoff: <http://www.knora.org/ontology/standoff#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix salsah-gui: <http://www.knora.org/ontology/salsah-gui#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix beol: <http://www.knora.org/ontology/0801/beol#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix luc: <http://www.ontotext.com/owlim/lucene#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://www.knora.org/data/permissions> {
+
+	### Administrative Permissions on ProjectMember
+    <http://rdfh.ch/permissions/0807/a1>
+
+                      rdf:type knora-base:AdministrativePermission ;
+
+                      knora-base:forProject <http://rdfh.ch/projects/0807> ;
+
+                      knora-base:forGroup knora-base:ProjectMember ;
+
+                      knora-base:hasPermissions "ProjectResourceCreateAllPermission"^^xsd:string .
+
+
+    ### Administrative Permissions on ProjectAdmin
+    <http://rdfh.ch/permissions/0807/a2>
+
+                      rdf:type knora-base:AdministrativePermission ;
+
+                      knora-base:forProject <http://rdfh.ch/projects/0807> ;
+
+                      knora-base:forGroup knora-base:ProjectAdmin ;
+
+                      knora-base:hasPermissions "ProjectResourceCreateAllPermission|ProjectAdminAllPermission"^^xsd:string .
+
+
+    ### Default Object Access Permissions on ProjectMember Group
+    <http://rdfh.ch/permissions/0807/d1>
+
+                      rdf:type knora-base:DefaultObjectAccessPermission ;
+
+                      knora-base:forProject <http://rdfh.ch/projects/0807> ;
+
+                      knora-base:forGroup knora-base:ProjectMember ;
+
+                      knora-base:hasPermissions "CR knora-base:Creator|M knora-base:ProjectMember|V knora-base:KnownUser|V knora-base:UnknownUser"^^xsd:string .
+}
