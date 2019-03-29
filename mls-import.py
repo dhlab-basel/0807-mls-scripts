@@ -7,6 +7,7 @@ import json
 import requests
 import datetime
 import jdcal
+import os
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-s", "--server", type=str, default="http://0.0.0.0:3333", help="URL of the Knora server")
@@ -240,8 +241,6 @@ def create_lemma_resources(xmlfile, bulk):
             data = datas.item(0)  # we are only interested in the first one
             if data is not None:
                 if data.firstChild is not None:  # and only look inside if there is some data inside the data tag
-                    pprint(data.firstChild.nodeValue)
-
                     if valpos[i] == "PK_Lemma":
                         rec_id = data.firstChild.nodeValue
 
@@ -493,16 +492,42 @@ def create_lexicon_resources(xmlfile, bulk):
             data = datas.item(0)  # we are only interested in the first one
             if data is not None:
                 if data.firstChild is not None:
-                    if valpos[i] == "PK_Wert":
+                    if valpos[i] == "PK_Lexikon":
                         rec_id = data.firstChild.nodeValue
-                    if valpos[i] == "Land":
-                        record["hasCountry"] = data.firstChild.nodeValue
-                    if valpos[i] == "Ortsname":
-                        record["hasPlacename"] = data.firstChild.nodeValue
-                    if valpos[i] == "Kanton 1":
-                        record["hasCanton"] = data.firstChild.nodeValue
-                    if valpos[i] == "Komentar Ort":
-                        record["hasLocationComment"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Zitierform":
+                        record["hasCitationForm"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "kürzele":
+                        record["hasShortname"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Zitierform":
+                        record["hasCitationForm"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Komentar":
+                        record["hasLexiconComment"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Scan bearbeitet von":
+                        record["hasScanVendor"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Scan fertig":
+                        record["hasScanFinished"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "OCR bearbeitet von":
+                        record["hasOCRVendor"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "OCR fertig":
+                        record["hasOCRFinished"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Einträge bearbeitet von":
+                        record["hasEditVendor"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Einträge fertig":
+                        record["hasEditFinished"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Jahr":
+                        record["hasYear"] = data.firstChild.nodeValue
+
             i += 1
 
         print("------------------------------------------")
@@ -512,7 +537,6 @@ def create_lexicon_resources(xmlfile, bulk):
             'Lexicon',
             'LX_' + str(rec_id), rec_id, record)
         print("------------------------------------------")
-
 
 
 def create_article_resources(xmlfile, bulk, lemma_resource_iris, lexicon_resource_iris):
@@ -536,22 +560,52 @@ def create_article_resources(xmlfile, bulk, lemma_resource_iris, lexicon_resourc
             data = datas.item(0)  # we are only interested in the first one
             if data is not None:
                 if data.firstChild is not None:
-                    if valpos[i] == "PK_Wert":
+                    if valpos[i] == "PK_Artikel":
                         rec_id = data.firstChild.nodeValue
                     if valpos[i] == "PKF_Lemma":
                         record["hasALinkToLemma"] = get_resource_iri('LM_' + data.firstChild.nodeValue,
                                                                                         lemma_resource_iris)
                     if valpos[i] == "PKF_Lexikon":
                         record["hasALinkToLexicon"] = get_resource_iri('LX_' + data.firstChild.nodeValue,
-                                                                                        lemma_resource_iris)
-                    if valpos[i] == "Land":
-                        record["hasCountry"] = data.firstChild.nodeValue
-                    if valpos[i] == "Ortsname":
-                        record["hasPlacename"] = data.firstChild.nodeValue
-                    if valpos[i] == "Kanton 1":
-                        record["hasCanton"] = data.firstChild.nodeValue
-                    if valpos[i] == "Komentar Ort":
-                        record["hasLocationComment"] = data.firstChild.nodeValue
+                                                                                        lexicon_resource_iris)
+                    if valpos[i] == "Seite":
+                        record["hasPages"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Artikel":
+                        record["hasArticleText"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Zeilen":
+                        record["hasNumLines"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Kommentar":
+                        record["hasArticleComment"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Zustand":
+                        record["hasState"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Interne Lexicographische Information":
+                        record["hasInternalLex"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Link":
+                        record["hasWebLink"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Kurzinformation":
+                        record["hasShortInfo"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Theaterlexikon Code":
+                        record["hasTheaterLexCode"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Dizionario Ticinese Code":
+                        record["hasTicinoLexCode"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Fonoteca Code":
+                        record["hasFonotecacode"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "HLS Code":
+                        record["hasHlsCcode"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "OEML Code":
+                        record["hasOemlCode"] = data.firstChild.nodeValue
             i += 1
 
         print("------------------------------------------")
@@ -565,23 +619,24 @@ def create_article_resources(xmlfile, bulk, lemma_resource_iris, lexicon_resourc
 
 BULKIMPORT_API_ENDPOINT="http://localhost:3333/v1/resources/xmlimport/http%3A%2F%2Frdfh.ch%2Fprojects%2F0807"
 headers = {"Content-Type": "application/xml"}
-artikel_xml = './data/artikel.xml'
 exemplar_xml = './data/exemplar.xml'
 lemma1_x_lemma2_xml = './data/lemma1_x_lemma2.xml'
-
-lexikon_xml = './data/lexikon.xml'
 titelA_x_titelB_xml = './data/titelA_x_titelB.xml'
 werte_personentaetigkeit_xml = './data/werte_personentaetigkeit.xml'
 
-# # create Library resources
-# library_data_xml = './data/bibliotheken.xml'
-# library_bulk_xml = "mls-library-bulk.xml"
-# library_bulk_object = BulkImport(schema)
-# create_library_resources(library_data_xml, library_bulk_object)
-# library_bulk_object.write_xml(library_bulk_xml)
-# library_bulk_xml_string = open(library_bulk_xml).read().encode("utf-8")
-# r = requests.post(BULKIMPORT_API_ENDPOINT, data=library_bulk_xml_string, headers=headers, auth=(args.user, args.password))
-# library_iris_json = r.json()
+if not os.path.exists("./out"):
+    os.makedirs("./out")
+
+# create Library resources
+library_data_xml = './data/bibliotheken.xml'
+library_bulk_xml = "./out/mls-library-bulk.xml"
+library_bulk_object = BulkImport(schema)
+create_library_resources(library_data_xml, library_bulk_object)
+library_bulk_object.write_xml(library_bulk_xml)
+library_bulk_xml_string = open(library_bulk_xml).read().encode("utf-8")
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=library_bulk_xml_string, headers=headers, auth=(args.user,
+                                                                                                args.password))
+library_iris_json = r.json()
 
 # create mls:Lemma resources
 lemma_data_xml = './data/lemma.xml'
@@ -590,66 +645,81 @@ lemma_bulk_object = BulkImport(schema)
 create_lemma_resources(lemma_data_xml, lemma_bulk_object)
 lemma_bulk_object.write_xml(lemma_bulk_xml)
 lemma_bulk_xml_string = open(lemma_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_bulk_xml_string, headers=headers, auth=(args.user, args.password))
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_bulk_xml_string, headers=headers, auth=(args.user,
+                                                                                              args.password))
 lemma_iris_json = r.json()
 
-# # create Occupation resources
-# occupation_data_xml = './data/werte_personentaetigkeit.xml'
-# occupation_bulk_xml = "./out/mls-occupation-bulk.xml"
-# occupation_bulk_object = BulkImport(schema)
-# create_occupation_resources(occupation_data_xml, occupation_bulk_object)
-# occupation_bulk_object.write_xml(occupation_bulk_xml)
-# occupation_bulk_xml_string = open(occupation_bulk_xml).read().encode("utf-8")
-# r = requests.post(BULKIMPORT_API_ENDPOINT, data=occupation_bulk_xml_string, headers=headers, auth=(args.user, args.password))
-# occupation_iris_json = r.json()
-#
-# # create Location resources
-# location_data_xml = './data/werte_orte.xml'
-# location_bulk_xml = "./out/mls-location-bulk.xml"
-# location_bulk_object = BulkImport(schema)
-# create_location_resources(location_data_xml, location_bulk_object)
-# location_bulk_object.write_xml(location_bulk_xml)
-# location_bulk_xml_string = open(location_bulk_xml).read().encode("utf-8")
-# r = requests.post(BULKIMPORT_API_ENDPOINT, data=location_bulk_xml_string, headers=headers, auth=(args.user, args.password))
-# location_iris_json = r.json()
-#
-# # create LemmaOccupation resources
-# lemma_occupation_data_xml = './data/lemma_x_wert.xml'
-# lemma_occupation_bulk_xml = "./out/mls-lemma-occupation-bulk.xml"
-# lemma_occupation_bulk_object = BulkImport(schema)
-# create_lemma_occupation_resources(lemma_occupation_data_xml, lemma_occupation_bulk_object, lemma_iris_json, occupation_iris_json)
-# lemma_occupation_bulk_object.write_xml(lemma_occupation_bulk_xml)
-# lemma_occupation_bulk_xml_string = open(lemma_occupation_bulk_xml).read().encode("utf-8")
-# r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_occupation_bulk_xml_string, headers=headers, auth=(args.user, args.password))
-# lemma_occupation_iris_json = r.json()
-#
-#
-# # create LemmaLocation resources
-# lemma_location_data_xml = './data/lemma_x_ort.xml'
-# lemma_location_bulk_xml = "./out/mls-lemma-location-bulk.xml"
-# lemma_location_bulk_object = BulkImport(schema)
-# create_lemma_location_resources(lemma_location_data_xml, lemma_location_bulk_object, lemma_iris_json, location_iris_json)
-# lemma_location_bulk_object.write_xml(lemma_location_bulk_xml)
-# lemma_location_bulk_xml_string = open(lemma_location_bulk_xml).read().encode("utf-8")
-# r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_location_bulk_xml_string, headers=headers, auth=(args.user, args.password))
-# lemma_location_iris_json = r.json()
+# create Occupation resources
+occupation_data_xml = './data/werte_personentaetigkeit.xml'
+occupation_bulk_xml = "./out/mls-occupation-bulk.xml"
+occupation_bulk_object = BulkImport(schema)
+create_occupation_resources(occupation_data_xml, occupation_bulk_object)
+occupation_bulk_object.write_xml(occupation_bulk_xml)
+occupation_bulk_xml_string = open(occupation_bulk_xml).read().encode("utf-8")
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=occupation_bulk_xml_string, headers=headers, auth=(args.user,
+                                                                                                   args.password))
+occupation_iris_json = r.json()
+
+# create Location resources
+location_data_xml = './data/werte_orte.xml'
+location_bulk_xml = "./out/mls-location-bulk.xml"
+location_bulk_object = BulkImport(schema)
+create_location_resources(location_data_xml, location_bulk_object)
+location_bulk_object.write_xml(location_bulk_xml)
+location_bulk_xml_string = open(location_bulk_xml).read().encode("utf-8")
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=location_bulk_xml_string, headers=headers, auth=(args.user,
+                                                                                                 args.password))
+location_iris_json = r.json()
+
+# create LemmaOccupation resources
+lemma_occupation_data_xml = './data/lemma_x_wert.xml'
+lemma_occupation_bulk_xml = "./out/mls-lemma-occupation-bulk.xml"
+lemma_occupation_bulk_object = BulkImport(schema)
+create_lemma_occupation_resources(lemma_occupation_data_xml,
+                                  lemma_occupation_bulk_object,
+                                  lemma_iris_json,
+                                  occupation_iris_json)
+lemma_occupation_bulk_object.write_xml(lemma_occupation_bulk_xml)
+lemma_occupation_bulk_xml_string = open(lemma_occupation_bulk_xml).read().encode("utf-8")
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_occupation_bulk_xml_string, headers=headers, auth=(args.user,
+                                                                                                         args.password))
+lemma_occupation_iris_json = r.json()
+
+
+# create LemmaLocation resources
+lemma_location_data_xml = './data/lemma_x_ort.xml'
+lemma_location_bulk_xml = "./out/mls-lemma-location-bulk.xml"
+lemma_location_bulk_object = BulkImport(schema)
+create_lemma_location_resources(lemma_location_data_xml,
+                                lemma_location_bulk_object,
+                                lemma_iris_json,
+                                location_iris_json)
+lemma_location_bulk_object.write_xml(lemma_location_bulk_xml)
+lemma_location_bulk_xml_string = open(lemma_location_bulk_xml).read().encode("utf-8")
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_location_bulk_xml_string, headers=headers, auth=(args.user,
+                                                                                                       args.password))
+lemma_location_iris_json = r.json()
 
 # create Lexicon resources
-lexicon_data_xml = './data/lexicon.xml'
+lexicon_data_xml = './data/lexikon.xml'
 lexicon_bulk_xml = "./out/mls-lexicon-bulk.xml"
 lexicon_bulk_object = BulkImport(schema)
 create_lexicon_resources(lexicon_data_xml, lexicon_bulk_object)
 lexicon_bulk_object.write_xml(lexicon_bulk_xml)
 lexicon_bulk_xml_string = open(lexicon_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=lexicon_bulk_xml_string, headers=headers, auth=(args.user, args.password))
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=lexicon_bulk_xml_string, headers=headers, auth=(args.user,
+                                                                                                args.password))
 lexicon_iris_json = r.json()
 
 # create Article resources
 article_data_xml = './data/artikel.xml'
 article_bulk_xml = "./out/mls-article-bulk.xml"
 article_bulk_object = BulkImport(schema)
-create_article_resources(article_data_xml, article_bulk_object, lemma_iris_json, lexicon_iris_json)
+create_article_resources(article_data_xml, article_bulk_object,
+                         lemma_iris_json,
+                         lexicon_iris_json)
 article_bulk_object.write_xml(article_bulk_xml)
 article_bulk_xml_string = open(article_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=article_bulk_xml_string, headers=headers, auth=(args.user, args.password))
-lemma_location_iris_json = r.json()
+r = requests.post(BULKIMPORT_API_ENDPOINT, data=article_bulk_xml_string, headers=headers, auth=(args.user,
+                                                                                                args.password))
+article_iris_json = r.json()
