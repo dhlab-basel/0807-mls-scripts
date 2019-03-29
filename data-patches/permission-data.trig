@@ -24,7 +24,7 @@
 
                       knora-base:forProject <http://rdfh.ch/projects/0807> ;
 
-                      knora-base:forGroup knora-base:ProjectMember ;
+                      knora-base:forGroup knora-base:ProjectAdmin ;
 
                       knora-base:hasPermissions "ProjectResourceCreateAllPermission"^^xsd:string .
 
@@ -36,7 +36,7 @@
 
                       knora-base:forProject <http://rdfh.ch/projects/0807> ;
 
-                      knora-base:forGroup knora-base:ProjectMember ;
+                      knora-base:forGroup knora-base:ProjectAdmin ;
 
                       knora-base:hasPermissions "CR knora-base:Creator|M knora-base:ProjectMember|V knora-base:KnownUser|V knora-base:UnknownUser"^^xsd:string .
 }

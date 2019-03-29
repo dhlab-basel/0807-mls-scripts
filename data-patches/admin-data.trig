@@ -25,5 +25,6 @@
                    knora-base:preferredLanguage "de"^^xsd:string ;
                    knora-base:status "true"^^xsd:boolean ;
                    knora-base:isInProject <http://rdfh.ch/projects/0807> ;
-                   knora-base:isInSystemAdminGroup "false"^^xsd:boolean .
+                   knora-base:isInSystemAdminGroup "false"^^xsd:boolean ;
+                   knora-base:isInProjectAdminGroup <http://rdfh.ch/projects/0807> .
 }
