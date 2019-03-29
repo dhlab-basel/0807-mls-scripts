@@ -75,6 +75,122 @@
             }
           }
         ]
+      },{
+        "name": "deceased",
+        "labels": {
+          "de": "Verstorben"
+        },
+        "nodes": [
+          {
+            "name": "dec_ja",
+            "labels": {
+              "de": "Ja"
+            }
+          },
+          {
+            "name": "dec_nein",
+            "labels": {
+              "de": "Nein"
+            }
+          },
+          {
+            "name": "dec_imw",
+            "labels": {
+              "de": "IMW"
+            }
+          },
+          {
+            "name": "dec_umfeld",
+            "labels": {
+              "de": "Umfeld"
+            }
+          },
+          {
+            "name": "dec_irrelevant",
+            "labels": {
+              "de": "Irrelevant"
+            }
+          },
+          {
+            "name": "dec_verweis",
+            "labels": {
+              "de": "Verweis"
+            }
+          },
+          {
+            "name": "dec_sache_ort",
+            "labels": {
+              "de": "Sache / Ort"
+            }
+          }
+        ]
+      },{
+        "name": "relevance",
+        "labels": {
+          "de": "Relevantes Lemma"
+        },
+        "nodes": [
+          {
+            "name": "rel_ja",
+            "labels": {
+              "de": "Ja"
+            }
+          },
+          {
+            "name": "rel_1",
+            "labels": {
+              "de": "1"
+            }
+          },
+          {
+            "name": "rel_2",
+            "labels": {
+              "de": "2"
+            }
+          },
+          {
+            "name": "rel_3",
+            "labels": {
+              "de": "3"
+            }
+          },
+          {
+            "name": "rel_4",
+            "labels": {
+              "de": "4"
+            }
+          },
+          {
+            "name": "rel_5",
+            "labels": {
+              "de": "5"
+            }
+          },
+          {
+            "name": "rel_nein",
+            "labels": {
+              "de": "Nein"
+            }
+          },
+          {
+            "name": "rel_ausnahmefall",
+            "labels": {
+              "de": "Ausnahmefall"
+            }
+          },
+          {
+            "name": "rel_sache_ort",
+            "labels": {
+              "de": "Sache / Ort"
+            }
+          },
+          {
+            "name": "rel_irrelevant",
+            "labels": {
+              "de": "Irrelevant"
+            }
+          }
+        ]
       }
     ],
     "ontology": {
@@ -159,28 +275,7 @@
               "cardinality": "0-1"
             },
             {
-              "name": "isDeceased",
-              "object": "BooleanValue",
-              "labels": {
-                "de": "verstorben"
-              },
-              "gui_element": "Checkbox",
-              "gui_attributes": [],
-              "cardinality": "0-1"
-            },
-            {
-              "name": "isRelevant",
-              "object": "BooleanValue",
-              "labels": {
-                "de": "relevant"
-              },
-              "gui_element": "Checkbox",
-              "gui_attributes": [],
-              "cardinality": "0-1"
-
-            },
-            {
-              "name": "hasLemmadescription",
+              "name": "hasLemmaDescription",
               "object": "TextValue",
               "labels": {
                 "de": "Beschreibung"
@@ -190,7 +285,7 @@
               "cardinality": "0-1"
             },
             {
-              "name": "hasLemmatype",
+              "name": "hasLemmaType",
               "object": "ListValue",
               "labels": {
                 "de": "Lemmatyp"
@@ -210,7 +305,7 @@
               "cardinality": "0-1"
             },
             {
-              "name": "hasLemmacomment",
+              "name": "hasLemmaComment",
               "object": "TextValue",
               "labels": {
                 "de": "Kommentar"
@@ -220,17 +315,17 @@
               "cardinality": "0-n"
             },
             {
-              "name": "hasStartdate",
-              "object": "DateValue",
+              "name": "hasStartDate",
+              "object": "TextValue",
               "labels": {
                 "de": "Anfangsdatum"
               },
-              "gui_element": "Date",
-              "gui_attributes": [],
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=32", "maxlength=32"],
               "cardinality": "0-1"
             },
             {
-              "name": "hasStartinfo",
+              "name": "hasStartDateInfo",
               "object": "TextValue",
               "labels": {
                 "de": "Anfangsinfo"
@@ -239,18 +334,18 @@
               "gui_attributes": ["size=32", "maxlength=32"],
               "cardinality": "0-1"
             },
-                        {
-              "name": "hasEnddate",
-              "object": "DateValue",
+            {
+              "name": "hasEndDate",
+              "object": "TextValue",
               "labels": {
                 "de": "Enddatum"
               },
-              "gui_element": "Date",
-              "gui_attributes": [],
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=32", "maxlength=32"],
               "cardinality": "0-1"
             },
             {
-              "name": "hasEndinfo",
+              "name": "hasEndDateInfo",
               "object": "TextValue",
               "labels": {
                 "de": "Endinfo"
@@ -280,11 +375,22 @@
               "cardinality": "0-1"
             },
             {
-              "name": "hasFirstname",
+              "name": "hasGivenName",
               "super": ["hasValue", "foaf:givenName"],
               "object": "TextValue",
               "labels": {
                 "de": "Vorname"
+              },
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=32", "maxlength=32"],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasFamilyName",
+              "super": ["hasValue", "foaf:familyName"],
+              "object": "TextValue",
+              "labels": {
+                "de": "Familienname"
               },
               "gui_element": "SimpleText",
               "gui_attributes": ["size=32", "maxlength=32"],
@@ -301,7 +407,7 @@
               "cardinality": "0-n"
             },
             {
-              "name": "hasSublemma",
+              "name": "hasSubLemma",
               "super": ["hasLinkTo"],
               "object": "mls:Lemma",
               "labels": {
@@ -309,6 +415,36 @@
               },
               "gui_element": "Searchbox",
               "gui_attributes": [],
+              "cardinality": "0-n"
+            },
+            {
+              "name": "hasDeceasedValue",
+              "object": "ListValue",
+              "labels": {
+                "de": "Verstorben"
+              },
+              "gui_element": "Pulldown",
+              "gui_attributes": ["hlist=deceased"],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasRelevanceValue",
+              "object": "ListValue",
+              "labels": {
+                "de": "Relevantes Lemma"
+              },
+              "gui_element": "Pulldown",
+              "gui_attributes": ["hlist=relevance"],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasPseudonym",
+              "object": "TextValue",
+              "labels": {
+                "de": "Pseudonym"
+              },
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=32", "maxlength=32"],
               "cardinality": "0-n"
             }
           ]
