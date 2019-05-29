@@ -8,10 +8,12 @@ import requests
 import datetime
 import jdcal
 import os
+import sys
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-s", "--server", type=str, default="http://0.0.0.0:3333", help="URL of the Knora server")
-parser.add_argument("-u", "--user", type=str, default="mls0807import@example.com", help="Username for Knora")
+# parser.add_argument("-u", "--user", type=str, default="mls0807import@example.com", help="Username for Knora")
+parser.add_argument("-u", "--user", type=str, default="root@example.com", help="Username for Knora")
 parser.add_argument("-p", "--password", type=str, default="test", help="The password for login")
 parser.add_argument("-P", "--projectcode", type=str, default="0807", help="Project short code")
 parser.add_argument("-O", "--ontoname", type=str, default="mls", help="Shortname of ontology")
@@ -23,6 +25,7 @@ args = parser.parse_args()
 
 con = knora(args.server, args.user, args.password)
 schema = con.create_schema(args.projectcode, args.ontoname)
+# sys.exit()
 
 sex_lut = {
     'männlich': 'male',
