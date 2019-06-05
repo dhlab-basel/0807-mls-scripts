@@ -1,47 +1,30 @@
 import argparse
 from pprint import pprint
-from knora import KnoraError, knora, BulkImport
+from knora import KnoraError, Knora, BulkImport, IrisLookup, ListsLookup
 from xml.dom.minidom import parse
 import xml.dom.minidom
 import json
-import requests
 import datetime
 import jdcal
 import os
 import sys
 
-parser = argparse.ArgumentParser()
-parser.add_argument("-s", "--server", type=str, default="http://0.0.0.0:3333", help="URL of the Knora server")
-# parser.add_argument("-u", "--user", type=str, default="mls0807import@example.com", help="Username for Knora")
-parser.add_argument("-u", "--user", type=str, default="root@example.com", help="Username for Knora")
-parser.add_argument("-p", "--password", type=str, default="test", help="The password for login")
-parser.add_argument("-P", "--projectcode", type=str, default="0807", help="Project short code")
-parser.add_argument("-O", "--ontoname", type=str, default="mls", help="Shortname of ontology")
-parser.add_argument("-x", "--xml", type=str, default="mls-bulk.xml", help="Name of bulk import XML-File")
-parser.add_argument("--start", default="1", help="Start with given line")
-parser.add_argument("--stop", default="all", help="End with given line ('all' reads all lines")
-
-args = parser.parse_args()
-
-con = knora(args.server, args.user, args.password)
-schema = con.create_schema(args.projectcode, args.ontoname)
-# sys.exit()
+article_type_lut = {
+        'Person': 'person',
+        'Sache': 'thing',
+        'Ort': 'location',
+        'Institution': 'institution',
+        'Liste': 'List'
+}
 
 sex_lut = {
-    'männlich': 'male',
-    'weiblich': 'female',
-    'weiblich & männliche Gruppe': 'male+female'
-}
-
-article_type_lut = {
-    'Person': 'person',
-    'Sache': 'thing',
-    'Ort': 'location',
-    'Institution': 'institution',
-    'Liste': 'List'
+        'männlich': 'male',
+        'weiblich': 'female',
+        'weiblich & männliche Gruppe': 'male+female'
 }
 
 
+# converts the deceased key into a unique value
 def convert_deceased_key(key):
     deceased_lut = {
         'Ja': 'dec_ja',
@@ -83,7 +66,6 @@ def convert_relevance_key(key):
     return res
 
 
-
 def convert_to_julian_day_count(datestring):
 
     # data cleaning
@@ -100,64 +82,7 @@ def convert_to_julian_day_count(datestring):
 
 # load the lists.json file
 lists_json_string = open("lists.json").read()
-lists = json.loads(lists_json_string)
-
-
-def get_list_iri(listname):
-    return lists[listname]["id"]
-
-
-def get_list_node_iri(listname, nodename):
-    if nodename is not None:
-        nodes = lists[listname]["nodes"]
-        res = ""
-        for node in nodes:
-            try:
-                res = node[nodename]["id"]
-            except KeyError:
-                pass
-
-        if res == "":
-            print("get_list_node_iri - nodename: " + nodename + ", iri: None")
-            return None
-        else:
-            print("get_list_node_iri - nodename: " + nodename + ", iri: " + str(res))
-            return res
-    else:
-        print("get_list_node_iri - nodename: None, iri: None")
-        return None
-
-
-def get_resource_iri(local_id, local_id_to_iri_json):
-    # given the result of the builk import as json, allow retrieving the resource
-    # IRI based on the local ID.
-    # {'createdResources': [{'clientResourceID': 'LM_1',
-    #                        'label': '1',
-    #                        'resourceIri': 'http://rdfh.ch/0807/rNxoIK-oR_i0-lO21Y9-CQ'},
-    #                       {'clientResourceID': 'LM_2']}
-    try:
-        resources = local_id_to_iri_json["createdResources"]
-        iri = ""
-        for resource in resources:
-            try:
-                res_id = resource["clientResourceID"]
-                if res_id == local_id:
-                    iri = resource["resourceIri"]
-                else:
-                    pass
-            except KeyError:
-                pass
-
-        if iri == "":
-            print("get_resource_iri - local_id: " + local_id + ", iri: " + str(None))
-            return None
-        else:
-            print("get_resource_iri - local_id: " + local_id + ", iri: " + iri)
-            return iri
-    except KeyError:
-        print("get_resource_iri - 'createdResources' not found")
-        pprint(local_id_to_iri_json)
-
+ll = ListsLookup(json.loads(lists_json_string))
 
 
 def get_valpos(xmlfile):
@@ -251,7 +176,7 @@ def create_lemma_resources(xmlfile, bulk):
                         record["hasLemmaText"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Geschlecht":
-                        record["hasSex"] = get_list_node_iri("sex", sex_lut[data.firstChild.nodeValue])
+                        record["hasSex"] = ll.get_list_node_iri("sex", sex_lut[data.firstChild.nodeValue])
 
                     if valpos[i] == "GND":
                         record["hasGND"] = data.firstChild.nodeValue
@@ -263,7 +188,8 @@ def create_lemma_resources(xmlfile, bulk):
                         record["hasStartDateInfo"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Artikeltyp":
-                        record["hasLemmaType"] = get_list_node_iri("articletype", article_type_lut[data.firstChild.nodeValue])
+                        record["hasLemmaType"] = ll.get_list_node_iri("articletype",
+                                                                      article_type_lut[data.firstChild.nodeValue])
 
                     if valpos[i] == "Enddatum":
                         record["hasEndDate"] = data.firstChild.nodeValue
@@ -281,13 +207,15 @@ def create_lemma_resources(xmlfile, bulk):
                         record["hasPseudonym"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Relevantes Lemma":
-                        record["hasRelevanceValue"] = get_list_node_iri("relevance", convert_relevance_key(data.firstChild.nodeValue))
+                        record["hasRelevanceValue"] = ll.get_list_node_iri("relevance",
+                                                                           convert_relevance_key(data.firstChild.nodeValue))
 
                     if valpos[i] == "Varianten":
                         record["hasVariants"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Verstorben":
-                        record["hasDeceasedValue"] = get_list_node_iri("deceased", convert_deceased_key(data.firstChild.nodeValue))
+                        record["hasDeceasedValue"] = ll.get_list_node_iri("deceased",
+                                                                          convert_deceased_key(data.firstChild.nodeValue))
 
                     if valpos[i] == "VIAF":
                         record["hasViaf"] = data.firstChild.nodeValue
@@ -386,7 +314,7 @@ def create_location_resources(xmlfile, bulk):
         print("------------------------------------------")
 
 
-def create_lemma_occupation_resources(xmlfile, bulk, lemma_resource_iris, occupation_resource_iris):
+def create_lemma_occupation_resources(xmlfile, bulk, lemma_iris_lookup:IrisLookup, occupation_iris_lookup:IrisLookup):
     """Creates mls:LemmaOccupation resources"""
 
     print("------------------------------------------")
@@ -407,9 +335,9 @@ def create_lemma_occupation_resources(xmlfile, bulk, lemma_resource_iris, occupa
                 if valpos[i] == "PK_Lemma_x_Wert":
                     rec_id = data.firstChild.nodeValue
                 if valpos[i] == "PKF_Lemma":
-                    record["hasLOLinkToLemma"] = get_resource_iri('LM_' + data.firstChild.nodeValue, lemma_resource_iris)
+                    record["hasLOLinkToLemma"] = lemma_iris_lookup.get_resource_iri('LM_' + data.firstChild.nodeValue)
                 if valpos[i] == "PKF_Wert":
-                    record["hasLOLinkToOccupation"] = get_resource_iri('OCC_' + data.firstChild.nodeValue, occupation_resource_iris)
+                    record["hasLOLinkToOccupation"] = occupation_iris_lookup.get_resource_iri('OCC_' + data.firstChild.nodeValue)
                 if valpos[i] == "Komentar":
                     record["hasLOComment"] = data.firstChild.nodeValue
             i += 1
@@ -429,7 +357,7 @@ def create_lemma_occupation_resources(xmlfile, bulk, lemma_resource_iris, occupa
             print("------------------------------------------")
 
 
-def create_lemma_location_resources(xmlfile, bulk, lemma_resource_iris, location_resource_iris):
+def create_lemma_location_resources(xmlfile, bulk, lemma_iris_lookup:IrisLookup, location_iris_lookup:IrisLookup):
     """Creates mls:LemmaLocation resources"""
 
     print("------------------------------------------")
@@ -450,9 +378,9 @@ def create_lemma_location_resources(xmlfile, bulk, lemma_resource_iris, location
                 if valpos[i] == "PK_Lemma_x_Ort":
                     rec_id = data.firstChild.nodeValue
                 if valpos[i] == "PKF_Lemma":
-                    record["hasLLLinkToLemma"] = get_resource_iri('LM_' + data.firstChild.nodeValue, lemma_resource_iris)
+                    record["hasLLLinkToLemma"] = lemma_iris_lookup.get_resource_iri('LM_' + data.firstChild.nodeValue)
                 if valpos[i] == "PKF_Wert":
-                    record["hasLLLinkToLocation"] = get_resource_iri('LOC_' + data.firstChild.nodeValue, location_resource_iris)
+                    record["hasLLLinkToLocation"] = location_iris_lookup.get_resource_iri('LOC_' + data.firstChild.nodeValue)
                 if valpos[i] == "Bezug zum Ort":
                     record["hasLLRelation"] = data.firstChild.nodeValue
                 if valpos[i] == "Komentar":
@@ -542,7 +470,7 @@ def create_lexicon_resources(xmlfile, bulk):
         print("------------------------------------------")
 
 
-def create_article_resources(xmlfile, bulk, lemma_resource_iris, lexicon_resource_iris):
+def create_article_resources(xmlfile, bulk, lemma_iris_lookup: IrisLookup, lexicon_iris_lookup: IrisLookup):
     """Creates mls:Article resources"""
 
     print("------------------------------------------")
@@ -566,11 +494,9 @@ def create_article_resources(xmlfile, bulk, lemma_resource_iris, lexicon_resourc
                     if valpos[i] == "PK_Artikel":
                         rec_id = data.firstChild.nodeValue
                     if valpos[i] == "PKF_Lemma":
-                        record["hasALinkToLemma"] = get_resource_iri('LM_' + data.firstChild.nodeValue,
-                                                                                        lemma_resource_iris)
+                        record["hasALinkToLemma"] = lemma_iris_lookup.get_resource_iri('LM_' + data.firstChild.nodeValue)
                     if valpos[i] == "PKF_Lexikon":
-                        record["hasALinkToLexicon"] = get_resource_iri('LX_' + data.firstChild.nodeValue,
-                                                                                        lexicon_resource_iris)
+                        record["hasALinkToLexicon"] = lexicon_iris_lookup.get_resource_iri('LX_' + data.firstChild.nodeValue)
                     if valpos[i] == "Seite":
                         record["hasPages"] = data.firstChild.nodeValue
 
@@ -620,109 +546,116 @@ def create_article_resources(xmlfile, bulk, lemma_resource_iris, lexicon_resourc
         print("------------------------------------------")
 
 
-BULKIMPORT_API_ENDPOINT="http://localhost:3333/v1/resources/xmlimport/http%3A%2F%2Frdfh.ch%2Fprojects%2F0807"
-headers = {"Content-Type": "application/xml"}
-exemplar_xml = './data/exemplar.xml'
-lemma1_x_lemma2_xml = './data/lemma1_x_lemma2.xml'
-titelA_x_titelB_xml = './data/titelA_x_titelB.xml'
-werte_personentaetigkeit_xml = './data/werte_personentaetigkeit.xml'
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-s", "--server", type=str, default="http://0.0.0.0:3333", help="URL of the Knora server")
+    # parser.add_argument("-u", "--user", type=str, default="mls0807import@example.com", help="Username for Knora")
+    parser.add_argument("-u", "--user", type=str, default="root@example.com", help="Username for Knora")
+    parser.add_argument("-p", "--password", type=str, default="test", help="The password for login")
+    parser.add_argument("-P", "--projectcode", type=str, default="0807", help="Project short code")
+    parser.add_argument("-O", "--ontoname", type=str, default="mls", help="Shortname of ontology")
+    parser.add_argument("-x", "--xml", type=str, default="mls-bulk.xml", help="Name of bulk import XML-File")
+    parser.add_argument("--start", default="1", help="Start with given line")
+    parser.add_argument("--stop", default="all", help="End with given line ('all' reads all lines")
 
-if not os.path.exists("./out"):
-    os.makedirs("./out")
+    args = parser.parse_args()
 
-# create Library resources
-library_data_xml = './data/bibliotheken.xml'
-library_bulk_xml = "./out/mls-library-bulk.xml"
-library_bulk_object = BulkImport(schema)
-create_library_resources(library_data_xml, library_bulk_object)
-library_bulk_object.write_xml(library_bulk_xml)
-library_bulk_xml_string = open(library_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=library_bulk_xml_string, headers=headers, auth=(args.user,
-                                                                                                args.password))
-library_iris_json = r.json()
+    con = Knora(args.server, args.user, args.password)
+    schema = con.create_schema(args.projectcode, args.ontoname)
 
-# create mls:Lemma resources
-lemma_data_xml = './data/lemma.xml'
-lemma_bulk_xml = "./out/mls-lemma-bulk.xml"
-lemma_bulk_object = BulkImport(schema)
-create_lemma_resources(lemma_data_xml, lemma_bulk_object)
-lemma_bulk_object.write_xml(lemma_bulk_xml)
-lemma_bulk_xml_string = open(lemma_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_bulk_xml_string, headers=headers, auth=(args.user,
-                                                                                              args.password))
-lemma_iris_json = r.json()
+    exemplar_xml = './data/exemplar.xml'
+    lemma1_x_lemma2_xml = './data/lemma1_x_lemma2.xml'
+    titelA_x_titelB_xml = './data/titelA_x_titelB.xml'
+    werte_personentaetigkeit_xml = './data/werte_personentaetigkeit.xml'
 
-# create Occupation resources
-occupation_data_xml = './data/werte_personentaetigkeit.xml'
-occupation_bulk_xml = "./out/mls-occupation-bulk.xml"
-occupation_bulk_object = BulkImport(schema)
-create_occupation_resources(occupation_data_xml, occupation_bulk_object)
-occupation_bulk_object.write_xml(occupation_bulk_xml)
-occupation_bulk_xml_string = open(occupation_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=occupation_bulk_xml_string, headers=headers, auth=(args.user,
-                                                                                                   args.password))
-occupation_iris_json = r.json()
+    if not os.path.exists("./out"):
+        os.makedirs("./out")
 
-# create Location resources
-location_data_xml = './data/werte_orte.xml'
-location_bulk_xml = "./out/mls-location-bulk.xml"
-location_bulk_object = BulkImport(schema)
-create_location_resources(location_data_xml, location_bulk_object)
-location_bulk_object.write_xml(location_bulk_xml)
-location_bulk_xml_string = open(location_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=location_bulk_xml_string, headers=headers, auth=(args.user,
-                                                                                                 args.password))
-location_iris_json = r.json()
+    # create Library resources
+    print("Library start ...")
+    library_data_xml = './data/bibliotheken.xml'
+    library_bulk_object = BulkImport(schema)
+    create_library_resources(library_data_xml, library_bulk_object)
+    r = library_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    library_iris_lookup = IrisLookup(r)
+    print("... Library finished.")
 
-# create LemmaOccupation resources
-lemma_occupation_data_xml = './data/lemma_x_wert.xml'
-lemma_occupation_bulk_xml = "./out/mls-lemma-occupation-bulk.xml"
-lemma_occupation_bulk_object = BulkImport(schema)
-create_lemma_occupation_resources(lemma_occupation_data_xml,
-                                  lemma_occupation_bulk_object,
-                                  lemma_iris_json,
-                                  occupation_iris_json)
-lemma_occupation_bulk_object.write_xml(lemma_occupation_bulk_xml)
-lemma_occupation_bulk_xml_string = open(lemma_occupation_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_occupation_bulk_xml_string, headers=headers, auth=(args.user,
-                                                                                                         args.password))
-lemma_occupation_iris_json = r.json()
+    # create mls:Lemma resources
+    print("Lemma start ...")
+    lemma_data_xml = './data/lemma.xml'
+    lemma_bulk_object = BulkImport(schema)
+    create_lemma_resources(lemma_data_xml, lemma_bulk_object)
+    r = lemma_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    lemma_iris_lookup = IrisLookup(r)
+    print("... Lemma finished.")
+
+    # create Occupation resources
+    print("Occupation start ...")
+    occupation_data_xml = './data/werte_personentaetigkeit.xml'
+    occupation_bulk_object = BulkImport(schema)
+    create_occupation_resources(occupation_data_xml, occupation_bulk_object)
+    r = occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    occupation_iris_lookup = IrisLookup(r)
+    print("... Occupation finished.")
+
+    # create Location resources
+    print("Location start ...")
+    location_data_xml = './data/werte_orte.xml'
+    location_bulk_object = BulkImport(schema)
+    create_location_resources(location_data_xml, location_bulk_object)
+    r = location_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    location_iris_lookup = IrisLookup(r)
+    print("... Location finished.")
+
+    # create LemmaOccupation resources
+    print("LemmaOccupation start ...")
+    lemma_occupation_data_xml = './data/lemma_x_wert.xml'
+    lemma_occupation_bulk_object = BulkImport(schema)
+    create_lemma_occupation_resources(lemma_occupation_data_xml,
+                                      lemma_occupation_bulk_object,
+                                      lemma_iris_lookup,
+                                      occupation_iris_lookup)
+    r = lemma_occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    lemma_occupation_iris_lookup = IrisLookup(r)
+    print("... LemmaOccupation finished.")
 
 
-# create LemmaLocation resources
-lemma_location_data_xml = './data/lemma_x_ort.xml'
-lemma_location_bulk_xml = "./out/mls-lemma-location-bulk.xml"
-lemma_location_bulk_object = BulkImport(schema)
-create_lemma_location_resources(lemma_location_data_xml,
-                                lemma_location_bulk_object,
-                                lemma_iris_json,
-                                location_iris_json)
-lemma_location_bulk_object.write_xml(lemma_location_bulk_xml)
-lemma_location_bulk_xml_string = open(lemma_location_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=lemma_location_bulk_xml_string, headers=headers, auth=(args.user,
-                                                                                                       args.password))
-lemma_location_iris_json = r.json()
+    # create LemmaLocation resources
+    print("LemmaLocation start ...")
+    lemma_location_data_xml = './data/lemma_x_ort.xml'
+    lemma_location_bulk_object = BulkImport(schema)
+    create_lemma_location_resources(lemma_location_data_xml,
+                                    lemma_location_bulk_object,
+                                    lemma_iris_lookup,
+                                    location_iris_lookup)
+    r = lemma_location_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    lemma_location_iris_lookup = IrisLookup(r)
+    print("... LemmaLocation finished.")
 
-# create Lexicon resources
-lexicon_data_xml = './data/lexikon.xml'
-lexicon_bulk_xml = "./out/mls-lexicon-bulk.xml"
-lexicon_bulk_object = BulkImport(schema)
-create_lexicon_resources(lexicon_data_xml, lexicon_bulk_object)
-lexicon_bulk_object.write_xml(lexicon_bulk_xml)
-lexicon_bulk_xml_string = open(lexicon_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=lexicon_bulk_xml_string, headers=headers, auth=(args.user,
-                                                                                                args.password))
-lexicon_iris_json = r.json()
+    # create Lexicon resources
+    print("Lexicon start ...")
+    lexicon_data_xml = './data/lexikon.xml'
+    lexicon_bulk_object = BulkImport(schema)
+    create_lexicon_resources(lexicon_data_xml, lexicon_bulk_object)
+    r = lexicon_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    lexicon_iris_lookup = IrisLookup(r)
+    print("... Lexicon finished.")
 
-# create Article resources
-article_data_xml = './data/artikel.xml'
-article_bulk_xml = "./out/mls-article-bulk.xml"
-article_bulk_object = BulkImport(schema)
-create_article_resources(article_data_xml, article_bulk_object,
-                         lemma_iris_json,
-                         lexicon_iris_json)
-article_bulk_object.write_xml(article_bulk_xml)
-article_bulk_xml_string = open(article_bulk_xml).read().encode("utf-8")
-r = requests.post(BULKIMPORT_API_ENDPOINT, data=article_bulk_xml_string, headers=headers, auth=(args.user,
-                                                                                                args.password))
-article_iris_json = r.json()
+    # create Article resources
+    print("Article start ...")
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup)
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("... Article finished.")
+
+    con = None
+    sys.exit()
+
+
+if __name__ == "__main__":
+    main()
