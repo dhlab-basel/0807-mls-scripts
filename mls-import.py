@@ -8,6 +8,7 @@ import datetime
 import jdcal
 import os
 import sys
+import inspect
 
 article_type_lut = {
         'Person': 'person',
@@ -85,7 +86,7 @@ lists_json_string = open("lists.json").read()
 ll = ListsLookup(json.loads(lists_json_string))
 
 
-def get_valpos(xmlfile):
+def get_valpos(xmlfile, debug: bool = False):
     DOMTree = xml.dom.minidom.parse(xmlfile)
     collection = DOMTree.documentElement
     fields = collection.getElementsByTagName("FIELD")
@@ -95,7 +96,9 @@ def get_valpos(xmlfile):
         name = field.getAttribute('NAME')
         valpos.append(name)
 
-    pprint(valpos)
+    if debug is True:
+        pprint(valpos)
+
     return valpos
 
 
@@ -106,13 +109,9 @@ def get_rows(xmlfile):
     return rows
 
 
-def create_library_resources(xmlfile, bulk):
+def create_library_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     """Creates mls:Library resources"""
-
-    print("------------------------------------------")
-    print("------------------------------------------")
-    print("create_library_resources")
-    print("------------------------------------------")
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -139,22 +138,21 @@ def create_library_resources(xmlfile, bulk):
         if record.get("hasSigle") is None:
             record["hasSigle"] = "XXX"
 
-        print("------------------------------------------")
-        print("ID=" + str(rec_id))
-        pprint(record)
+        if debug is True:
+            print("------------------------------------------")
+            print("ID=" + str(rec_id))
+            pprint(record)
+            print("------------------------------------------")
         bulk.add_resource(
             'Library',
             'LIB_' + str(rec_id), record["hasSigle"], record)
-        print("------------------------------------------")
+
+    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
-def create_lemma_resources(xmlfile, bulk):
+def create_lemma_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     """Creates mls:Lemma resources"""
-
-    print("------------------------------------------")
-    print("------------------------------------------")
-    print("create_lemma_resources")
-    print("------------------------------------------")
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -174,6 +172,7 @@ def create_lemma_resources(xmlfile, bulk):
 
                     if valpos[i] == "Lemma":
                         record["hasLemmaText"] = data.firstChild.nodeValue
+                        rec_label = data.firstChild.nodeValue
 
                     if valpos[i] == "Geschlecht":
                         record["hasSex"] = ll.get_list_node_iri("sex", sex_lut[data.firstChild.nodeValue])
@@ -221,22 +220,25 @@ def create_lemma_resources(xmlfile, bulk):
                         record["hasViaf"] = data.firstChild.nodeValue
             i += 1
 
-        print("------------------------------------------")
-        print("ID=" + str(rec_id))
-        pprint(record)
+        if record.get("hasLemmaText") is None:
+            record["hasLemmaText"] = "XXX"
+
+        if debug is True:
+            print("------------------------------------------")
+            print("ID=" + str(rec_id))
+            pprint(record)
+            print("------------------------------------------")
+
         bulk.add_resource(
             'Lemma',
-            'LM_' + str(rec_id), rec_id, record)
-        print("------------------------------------------")
+            'LM_' + str(rec_id), record["hasLemmaText"], record)
+
+    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
-def create_occupation_resources(xmlfile, bulk):
+def create_occupation_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     """Creates mls:Occupation resources"""
-
-    print("------------------------------------------")
-    print("------------------------------------------")
-    print("create_occupations")
-    print("------------------------------------------")
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -263,22 +265,22 @@ def create_occupation_resources(xmlfile, bulk):
                         record["hasOccupationCanton"] = data.firstChild.nodeValue
             i += 1
 
-        print("------------------------------------------")
-        print("ID=" + str(rec_id))
-        pprint(record)
+        if debug is True:
+            print("------------------------------------------")
+            print("ID=" + str(rec_id))
+            pprint(record)
+            print("------------------------------------------")
+
         bulk.add_resource(
             'Occupation',
             'OCC_' + str(rec_id), rec_id, record)
-        print("------------------------------------------")
+
+    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
-def create_location_resources(xmlfile, bulk):
+def create_location_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     """Creates mls:Location resources"""
-
-    print("------------------------------------------")
-    print("------------------------------------------")
-    print("create_location_resources")
-    print("------------------------------------------")
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -305,22 +307,22 @@ def create_location_resources(xmlfile, bulk):
                         record["hasLocationComment"] = data.firstChild.nodeValue
             i += 1
 
-        print("------------------------------------------")
-        print("ID=" + str(rec_id))
-        pprint(record)
+        if debug is True:
+            print("------------------------------------------")
+            print("ID=" + str(rec_id))
+            pprint(record)
+            print("------------------------------------------")
+
         bulk.add_resource(
             'Location',
             'LOC_' + str(rec_id), rec_id, record)
-        print("------------------------------------------")
+
+    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
-def create_lemma_occupation_resources(xmlfile, bulk, lemma_iris_lookup:IrisLookup, occupation_iris_lookup:IrisLookup):
+def create_lemma_occupation_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisLookup, occupation_iris_lookup: IrisLookup, debug:bool = False):
     """Creates mls:LemmaOccupation resources"""
-
-    print("------------------------------------------")
-    print("------------------------------------------")
-    print("create_lemma_occupation_resources")
-    print("------------------------------------------")
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -348,22 +350,21 @@ def create_lemma_occupation_resources(xmlfile, bulk, lemma_iris_lookup:IrisLooku
         elif record.get("hasLOLinkToOccupation") is None:
             pass
         else:
-            print("------------------------------------------")
-            print("ID=" + str(rec_id))
-            pprint(record)
+            if debug is True:
+                print("------------------------------------------")
+                print("ID=" + str(rec_id))
+                pprint(record)
+                print("------------------------------------------")
             bulk.add_resource(
                 'LemmaOccupation',
                 'LO_' + str(rec_id), rec_id, record)
-            print("------------------------------------------")
+
+    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
-def create_lemma_location_resources(xmlfile, bulk, lemma_iris_lookup:IrisLookup, location_iris_lookup:IrisLookup):
+def create_lemma_location_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisLookup, location_iris_lookup: IrisLookup, debug: bool = False):
     """Creates mls:LemmaLocation resources"""
-
-    print("------------------------------------------")
-    print("------------------------------------------")
-    print("create_lemma_location_resources")
-    print("------------------------------------------")
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -393,22 +394,22 @@ def create_lemma_location_resources(xmlfile, bulk, lemma_iris_lookup:IrisLookup,
         elif record.get("hasLLLinkToLocation") is None:
             pass
         else:
-            print("------------------------------------------")
-            print("ID=" + str(rec_id))
-            pprint(record)
+            if debug is True:
+                print("------------------------------------------")
+                print("ID=" + str(rec_id))
+                pprint(record)
+                print("------------------------------------------")
+
             bulk.add_resource(
                 'LemmaLocation',
                 'LL_' + str(rec_id), rec_id, record)
-            print("------------------------------------------")
+
+    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
-def create_lexicon_resources(xmlfile, bulk):
+def create_lexicon_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     """Creates mls:Lexicon resources"""
-
-    print("------------------------------------------")
-    print("------------------------------------------")
-    print("create_Lexicon_resources")
-    print("------------------------------------------")
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -461,22 +462,22 @@ def create_lexicon_resources(xmlfile, bulk):
 
             i += 1
 
-        print("------------------------------------------")
-        print("ID=" + str(rec_id))
-        pprint(record)
+        if debug is True:
+            print("------------------------------------------")
+            print("ID=" + str(rec_id))
+            pprint(record)
+            print("------------------------------------------")
+
         bulk.add_resource(
             'Lexicon',
             'LX_' + str(rec_id), rec_id, record)
-        print("------------------------------------------")
+
+    print("==> ... {0} - {1} - finished".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
-def create_article_resources(xmlfile, bulk, lemma_iris_lookup: IrisLookup, lexicon_iris_lookup: IrisLookup):
+def create_article_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisLookup, lexicon_iris_lookup: IrisLookup, debug: bool = False):
     """Creates mls:Article resources"""
-
-    print("------------------------------------------")
-    print("------------------------------------------")
-    print("create_article_resources")
-    print("------------------------------------------")
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -537,13 +538,17 @@ def create_article_resources(xmlfile, bulk, lemma_iris_lookup: IrisLookup, lexic
                         record["hasOemlCode"] = data.firstChild.nodeValue
             i += 1
 
-        print("------------------------------------------")
-        print("ID=" + str(rec_id))
-        pprint(record)
+        if debug is True:
+            print("------------------------------------------")
+            print("ID=" + str(rec_id))
+            pprint(record)
+            print("------------------------------------------")
+
         bulk.add_resource(
             'Article',
             'A_' + str(rec_id), rec_id, record)
-        print("------------------------------------------")
+
+    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
 def main():
@@ -572,86 +577,85 @@ def main():
         os.makedirs("./out")
 
     # create Library resources
-    print("Library start ...")
     library_data_xml = './data/bibliotheken.xml'
     library_bulk_object = BulkImport(schema)
     create_library_resources(library_data_xml, library_bulk_object)
+    print("==> Library upload start ...")
     r = library_bulk_object.upload(args.user, args.password, "localhost", "3333")
     library_iris_lookup = IrisLookup(r)
-    print("... Library finished.")
+    print("==> Library upload finished.")
 
     # create mls:Lemma resources
-    print("Lemma start ...")
     lemma_data_xml = './data/lemma.xml'
     lemma_bulk_object = BulkImport(schema)
     create_lemma_resources(lemma_data_xml, lemma_bulk_object)
+    print("==> Lemma upload start ...")
     r = lemma_bulk_object.upload(args.user, args.password, "localhost", "3333")
     lemma_iris_lookup = IrisLookup(r)
-    print("... Lemma finished.")
+    print("==> Lemma upload finished.")
 
     # create Occupation resources
-    print("Occupation start ...")
     occupation_data_xml = './data/werte_personentaetigkeit.xml'
     occupation_bulk_object = BulkImport(schema)
     create_occupation_resources(occupation_data_xml, occupation_bulk_object)
+    print("==> Occupation upload start ...")
     r = occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
     occupation_iris_lookup = IrisLookup(r)
-    print("... Occupation finished.")
+    print("==> Occupation upload finished.")
 
     # create Location resources
-    print("Location start ...")
     location_data_xml = './data/werte_orte.xml'
     location_bulk_object = BulkImport(schema)
     create_location_resources(location_data_xml, location_bulk_object)
+    print("==> Location upload start ...")
     r = location_bulk_object.upload(args.user, args.password, "localhost", "3333")
     location_iris_lookup = IrisLookup(r)
-    print("... Location finished.")
+    print("==> Location upload finished.")
 
     # create LemmaOccupation resources
-    print("LemmaOccupation start ...")
     lemma_occupation_data_xml = './data/lemma_x_wert.xml'
     lemma_occupation_bulk_object = BulkImport(schema)
     create_lemma_occupation_resources(lemma_occupation_data_xml,
                                       lemma_occupation_bulk_object,
                                       lemma_iris_lookup,
                                       occupation_iris_lookup)
+    print("==> LemmaOccupation upload start ...")
     r = lemma_occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
     lemma_occupation_iris_lookup = IrisLookup(r)
-    print("... LemmaOccupation finished.")
-
+    print("==> LemmaOccupation upload finished.")
 
     # create LemmaLocation resources
-    print("LemmaLocation start ...")
     lemma_location_data_xml = './data/lemma_x_ort.xml'
     lemma_location_bulk_object = BulkImport(schema)
     create_lemma_location_resources(lemma_location_data_xml,
                                     lemma_location_bulk_object,
                                     lemma_iris_lookup,
                                     location_iris_lookup)
+    print("==> LemmaLocation upload start ...")
     r = lemma_location_bulk_object.upload(args.user, args.password, "localhost", "3333")
     lemma_location_iris_lookup = IrisLookup(r)
-    print("... LemmaLocation finished.")
+    print("==> LemmaLocation upload finished.")
 
     # create Lexicon resources
-    print("Lexicon start ...")
     lexicon_data_xml = './data/lexikon.xml'
     lexicon_bulk_object = BulkImport(schema)
     create_lexicon_resources(lexicon_data_xml, lexicon_bulk_object)
+    print("==> Lexicon upload start ...")
     r = lexicon_bulk_object.upload(args.user, args.password, "localhost", "3333")
     lexicon_iris_lookup = IrisLookup(r)
-    print("... Lexicon finished.")
+    print("==> Lexicon upload finished.")
 
     # create Article resources
-    print("Article start ...")
     article_data_xml = './data/artikel.xml'
     article_bulk_object = BulkImport(schema)
     create_article_resources(article_data_xml,
                              article_bulk_object,
                              lemma_iris_lookup,
                              lexicon_iris_lookup)
+    print("==> Article upload start ...")
     r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
     article_iris_lookup = IrisLookup(r)
-    print("... Article finished.")
+    print("==> Article upload finished.")
 
     con = None
     sys.exit()
