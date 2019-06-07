@@ -475,6 +475,16 @@
               "cardinality": "0-1"
             },
             {
+              "name": "hasCentury",
+              "object": "TextValue",
+              "labels": {
+                "de": "Jahrhundertangabe"
+              },
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=32", "maxlength=32"],
+              "cardinality": "0-1"
+            },
+            {
               "name": "hasViaf",
               "object": "TextValue",
               "labels": {

@@ -180,7 +180,7 @@ def create_lemma_resources(xmlfile, bulk: BulkImport, debug: bool = False):
                     if valpos[i] == "GND":
                         record["hasGND"] = data.firstChild.nodeValue
 
-                    if valpos[i] == "Anfangsdatum":
+                    if valpos[i] == "Anfangasdatum":
                         record["hasStartDate"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Information_Anfangsdatum":
@@ -195,6 +195,9 @@ def create_lemma_resources(xmlfile, bulk: BulkImport, debug: bool = False):
 
                     if valpos[i] == "Information_Enddatum":
                         record["hasEndDateInfo"] = data.firstChild.nodeValue
+
+                    if valpos[i] == "Jahrhundertangabe":
+                        record["hasCentury"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Familienname":
                         record["hasFamilyName"] = data.firstChild.nodeValue
@@ -430,7 +433,7 @@ def create_lexicon_resources(xmlfile, bulk: BulkImport, debug: bool = False):
                     if valpos[i] == "Zitierform":
                         record["hasCitationForm"] = data.firstChild.nodeValue
 
-                    if valpos[i] == "kürzele":
+                    if valpos[i] == "kürzel":
                         record["hasShortname"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Zitierform":
@@ -554,7 +557,7 @@ def create_article_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisL
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--server", type=str, default="http://0.0.0.0:3333", help="URL of the Knora server")
-    # parser.add_argument("-u", "--user", type=str, default="mls0807import@example.com", help="Username for Knora")
+    #parser.add_argument("-u", "--user", type=str, default="mls0807import@example.com", help="Username for Knora")
     parser.add_argument("-u", "--user", type=str, default="root@example.com", help="Username for Knora")
     parser.add_argument("-p", "--password", type=str, default="test", help="The password for login")
     parser.add_argument("-P", "--projectcode", type=str, default="0807", help="Project short code")
@@ -588,7 +591,7 @@ def main():
     # create mls:Lemma resources
     lemma_data_xml = './data/lemma.xml'
     lemma_bulk_object = BulkImport(schema)
-    create_lemma_resources(lemma_data_xml, lemma_bulk_object)
+    create_lemma_resources(lemma_data_xml, lemma_bulk_object, True)
     print("==> Lemma upload start ...")
     r = lemma_bulk_object.upload(args.user, args.password, "localhost", "3333")
     lemma_iris_lookup = IrisLookup(r)
