@@ -25,6 +25,34 @@ sex_lut = {
 }
 
 
+def lemma2lemma_lut():
+    xmlfile = './data/lemma1_x_lemma2.xml'
+
+    valpos = get_valpos(xmlfile)
+    rows = get_rows(xmlfile)
+
+    lut = {}
+    for row in rows:
+        datas = row.getElementsByTagName("DATA")
+        i = 0
+        for data in datas:
+            if data.firstChild is not None:
+                if valpos[i] == "PKF_Lemma1":
+                    lemma1 = data.firstChild.nodeValue
+                if valpos[i] == "PKF_Lemma2":
+                    lemma2 = data.firstChild.nodeValue
+            i += 1
+
+        # store the lemma1 ID as key and lemma2 ID as value
+        # if lemma1 ID exists, append lemma2 ID to existing array of values
+        if lut[lemma1] is None:
+            lut[lemma1] = [lemma2]
+        else:
+            lut[lemma1].append(lemma2)
+
+    pprint(lut)
+    return lut
+
 # converts the deceased key into a unique value
 def convert_deceased_key(key):
     deceased_lut = {
@@ -150,7 +178,7 @@ def create_library_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
-def create_lemma_resources(xmlfile, bulk: BulkImport, debug: bool = False):
+def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = False):
     """Creates mls:Lemma resources"""
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
 
@@ -557,8 +585,8 @@ def create_article_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisL
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--server", type=str, default="http://0.0.0.0:3333", help="URL of the Knora server")
-    #parser.add_argument("-u", "--user", type=str, default="mls0807import@example.com", help="Username for Knora")
-    parser.add_argument("-u", "--user", type=str, default="root@example.com", help="Username for Knora")
+    parser.add_argument("-u", "--user", type=str, default="mls0807import@example.com", help="Username for Knora")
+    # parser.add_argument("-u", "--user", type=str, default="root@example.com", help="Username for Knora")
     parser.add_argument("-p", "--password", type=str, default="test", help="The password for login")
     parser.add_argument("-P", "--projectcode", type=str, default="0807", help="Project short code")
     parser.add_argument("-O", "--ontoname", type=str, default="mls", help="Shortname of ontology")
@@ -572,7 +600,7 @@ def main():
     schema = con.create_schema(args.projectcode, args.ontoname)
 
     exemplar_xml = './data/exemplar.xml'
-    lemma1_x_lemma2_xml = './data/lemma1_x_lemma2.xml'
+
     titelA_x_titelB_xml = './data/titelA_x_titelB.xml'
     werte_personentaetigkeit_xml = './data/werte_personentaetigkeit.xml'
 
@@ -589,76 +617,77 @@ def main():
     print("==> Library upload finished.")
 
     # create mls:Lemma resources
+    l2l_lut = lemma2lemma_lut()
     lemma_data_xml = './data/lemma.xml'
     lemma_bulk_object = BulkImport(schema)
-    create_lemma_resources(lemma_data_xml, lemma_bulk_object, True)
+    create_lemma_resources(lemma_data_xml, l2l_lut, lemma_bulk_object, True)
     print("==> Lemma upload start ...")
     r = lemma_bulk_object.upload(args.user, args.password, "localhost", "3333")
     lemma_iris_lookup = IrisLookup(r)
     print("==> Lemma upload finished.")
 
-    # create Occupation resources
-    occupation_data_xml = './data/werte_personentaetigkeit.xml'
-    occupation_bulk_object = BulkImport(schema)
-    create_occupation_resources(occupation_data_xml, occupation_bulk_object)
-    print("==> Occupation upload start ...")
-    r = occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
-    occupation_iris_lookup = IrisLookup(r)
-    print("==> Occupation upload finished.")
-
-    # create Location resources
-    location_data_xml = './data/werte_orte.xml'
-    location_bulk_object = BulkImport(schema)
-    create_location_resources(location_data_xml, location_bulk_object)
-    print("==> Location upload start ...")
-    r = location_bulk_object.upload(args.user, args.password, "localhost", "3333")
-    location_iris_lookup = IrisLookup(r)
-    print("==> Location upload finished.")
-
-    # create LemmaOccupation resources
-    lemma_occupation_data_xml = './data/lemma_x_wert.xml'
-    lemma_occupation_bulk_object = BulkImport(schema)
-    create_lemma_occupation_resources(lemma_occupation_data_xml,
-                                      lemma_occupation_bulk_object,
-                                      lemma_iris_lookup,
-                                      occupation_iris_lookup)
-    print("==> LemmaOccupation upload start ...")
-    r = lemma_occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
-    lemma_occupation_iris_lookup = IrisLookup(r)
-    print("==> LemmaOccupation upload finished.")
-
-    # create LemmaLocation resources
-    lemma_location_data_xml = './data/lemma_x_ort.xml'
-    lemma_location_bulk_object = BulkImport(schema)
-    create_lemma_location_resources(lemma_location_data_xml,
-                                    lemma_location_bulk_object,
-                                    lemma_iris_lookup,
-                                    location_iris_lookup)
-    print("==> LemmaLocation upload start ...")
-    r = lemma_location_bulk_object.upload(args.user, args.password, "localhost", "3333")
-    lemma_location_iris_lookup = IrisLookup(r)
-    print("==> LemmaLocation upload finished.")
-
-    # create Lexicon resources
-    lexicon_data_xml = './data/lexikon.xml'
-    lexicon_bulk_object = BulkImport(schema)
-    create_lexicon_resources(lexicon_data_xml, lexicon_bulk_object)
-    print("==> Lexicon upload start ...")
-    r = lexicon_bulk_object.upload(args.user, args.password, "localhost", "3333")
-    lexicon_iris_lookup = IrisLookup(r)
-    print("==> Lexicon upload finished.")
-
-    # create Article resources
-    article_data_xml = './data/artikel.xml'
-    article_bulk_object = BulkImport(schema)
-    create_article_resources(article_data_xml,
-                             article_bulk_object,
-                             lemma_iris_lookup,
-                             lexicon_iris_lookup)
-    print("==> Article upload start ...")
-    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
-    article_iris_lookup = IrisLookup(r)
-    print("==> Article upload finished.")
+    # # create Occupation resources
+    # occupation_data_xml = './data/werte_personentaetigkeit.xml'
+    # occupation_bulk_object = BulkImport(schema)
+    # create_occupation_resources(occupation_data_xml, occupation_bulk_object)
+    # print("==> Occupation upload start ...")
+    # r = occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    # occupation_iris_lookup = IrisLookup(r)
+    # print("==> Occupation upload finished.")
+    #
+    # # create Location resources
+    # location_data_xml = './data/werte_orte.xml'
+    # location_bulk_object = BulkImport(schema)
+    # create_location_resources(location_data_xml, location_bulk_object)
+    # print("==> Location upload start ...")
+    # r = location_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    # location_iris_lookup = IrisLookup(r)
+    # print("==> Location upload finished.")
+    #
+    # # create LemmaOccupation resources
+    # lemma_occupation_data_xml = './data/lemma_x_wert.xml'
+    # lemma_occupation_bulk_object = BulkImport(schema)
+    # create_lemma_occupation_resources(lemma_occupation_data_xml,
+    #                                   lemma_occupation_bulk_object,
+    #                                   lemma_iris_lookup,
+    #                                   occupation_iris_lookup)
+    # print("==> LemmaOccupation upload start ...")
+    # r = lemma_occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    # lemma_occupation_iris_lookup = IrisLookup(r)
+    # print("==> LemmaOccupation upload finished.")
+    #
+    # # create LemmaLocation resources
+    # lemma_location_data_xml = './data/lemma_x_ort.xml'
+    # lemma_location_bulk_object = BulkImport(schema)
+    # create_lemma_location_resources(lemma_location_data_xml,
+    #                                 lemma_location_bulk_object,
+    #                                 lemma_iris_lookup,
+    #                                 location_iris_lookup)
+    # print("==> LemmaLocation upload start ...")
+    # r = lemma_location_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    # lemma_location_iris_lookup = IrisLookup(r)
+    # print("==> LemmaLocation upload finished.")
+    #
+    # # create Lexicon resources
+    # lexicon_data_xml = './data/lexikon.xml'
+    # lexicon_bulk_object = BulkImport(schema)
+    # create_lexicon_resources(lexicon_data_xml, lexicon_bulk_object)
+    # print("==> Lexicon upload start ...")
+    # r = lexicon_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    # lexicon_iris_lookup = IrisLookup(r)
+    # print("==> Lexicon upload finished.")
+    #
+    # # create Article resources
+    # article_data_xml = './data/artikel.xml'
+    # article_bulk_object = BulkImport(schema)
+    # create_article_resources(article_data_xml,
+    #                          article_bulk_object,
+    #                          lemma_iris_lookup,
+    #                          lexicon_iris_lookup)
+    # print("==> Article upload start ...")
+    # r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    # article_iris_lookup = IrisLookup(r)
+    # print("==> Article upload finished.")
 
     con = None
     sys.exit()
