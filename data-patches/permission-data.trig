@@ -27,7 +27,7 @@
 
                       knora-admin:forGroup knora-admin:ProjectAdmin ;
 
-                      knora-admin:hasPermissions "ProjectResourceCreateAllPermission"^^xsd:string .
+                      knora-base:hasPermissions "ProjectResourceCreateAllPermission"^^xsd:string .
 
 
     ### Default Object Access Permissions on ProjectMember Group
@@ -39,5 +39,5 @@
 
                       knora-admin:forGroup knora-admin:ProjectAdmin ;
 
-                      knora-admin:hasPermissions "CR knora-admin:Creator|M knora-admin:ProjectMember|V knora-admin:KnownUser|V knora-admin:UnknownUser"^^xsd:string .
+                      knora-base:hasPermissions "CR knora-admin:Creator|M knora-admin:ProjectMember|V knora-admin:KnownUser|V knora-admin:UnknownUser"^^xsd:string .
 }

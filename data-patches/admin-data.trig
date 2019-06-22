@@ -22,7 +22,7 @@
                    knora-admin:email "mls0807import@example.com"^^xsd:string ;
                    knora-admin:givenName "MLS0807"^^xsd:string ;
                    knora-admin:familyName "Import User"^^xsd:string ;
-                   knora-admin:password "$e0801$FGl9FDIWw+D83OeNPGmD9u2VTqIkJopIQECgmb2DSWQLS0TeKSvYoWAkbEv6KxePPlCI3CP9MmVHuvnWv8/kag==$mlegCYdGXt+ghuo8i0rLjgOiNnGDW604Q5g/v7zwBPU="^^xsd:string ;
+                   knora-admin:password "$2a$12$7XEBehimXN1rbhmVgQsyve08.vtDmKK7VMin4AdgCEtE4DWgfQbTK"^^xsd:string ;
                    knora-admin:preferredLanguage "de"^^xsd:string ;
                    knora-admin:status "true"^^xsd:boolean ;
                    knora-admin:isInProject <http://rdfh.ch/projects/0807> ;

@@ -718,6 +718,8 @@ def main():
     lemma_iris_lookup = IrisLookup(r)
     print("==> Lemma upload finished.")
 
+
+
     # # create Occupation resources
     # occupation_data_xml = './data/werte_personentaetigkeit.xml'
     # occupation_bulk_object = BulkImport(schema)
@@ -759,6 +761,8 @@ def main():
     # r = lemma_location_bulk_object.upload(args.user, args.password, "localhost", "3333")
     # lemma_location_iris_lookup = IrisLookup(r)
     # print("==> LemmaLocation upload finished.")
+
+
 
     # create Lexicon resources
     lexicon_data_xml = './data/lexikon.xml'
