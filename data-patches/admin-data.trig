@@ -1,4 +1,5 @@
 @prefix knora-base: <http://www.knora.org/ontology/knora-base#> .
+@prefix knora-admin: <http://www.knora.org/ontology/knora-admin#> .
 @prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix standoff: <http://www.knora.org/ontology/standoff#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -16,15 +17,15 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <http://www.knora.org/data/admin> {
-    <http://rdfh.ch/users/mls-0807-import-user> rdf:type knora-base:User ;
-                   knora-base:username "mls0807import"^^xsd:string ;
-                   knora-base:email "mls0807import@example.com"^^xsd:string ;
-                   knora-base:givenName "MLS0807"^^xsd:string ;
-                   knora-base:familyName "Import User"^^xsd:string ;
-                   knora-base:password "$e0801$FGl9FDIWw+D83OeNPGmD9u2VTqIkJopIQECgmb2DSWQLS0TeKSvYoWAkbEv6KxePPlCI3CP9MmVHuvnWv8/kag==$mlegCYdGXt+ghuo8i0rLjgOiNnGDW604Q5g/v7zwBPU="^^xsd:string ;
-                   knora-base:preferredLanguage "de"^^xsd:string ;
-                   knora-base:status "true"^^xsd:boolean ;
-                   knora-base:isInProject <http://rdfh.ch/projects/0807> ;
-                   knora-base:isInSystemAdminGroup "false"^^xsd:boolean ;
-                   knora-base:isInProjectAdminGroup <http://rdfh.ch/projects/0807> .
+    <http://rdfh.ch/users/mls-0807-import-user> rdf:type knora-admin:User ;
+                   knora-admin:username "mls0807import"^^xsd:string ;
+                   knora-admin:email "mls0807import@example.com"^^xsd:string ;
+                   knora-admin:givenName "MLS0807"^^xsd:string ;
+                   knora-admin:familyName "Import User"^^xsd:string ;
+                   knora-admin:password "$e0801$FGl9FDIWw+D83OeNPGmD9u2VTqIkJopIQECgmb2DSWQLS0TeKSvYoWAkbEv6KxePPlCI3CP9MmVHuvnWv8/kag==$mlegCYdGXt+ghuo8i0rLjgOiNnGDW604Q5g/v7zwBPU="^^xsd:string ;
+                   knora-admin:preferredLanguage "de"^^xsd:string ;
+                   knora-admin:status "true"^^xsd:boolean ;
+                   knora-admin:isInProject <http://rdfh.ch/projects/0807> ;
+                   knora-admin:isInSystemAdminGroup "false"^^xsd:boolean ;
+                   knora-admin:isInProjectAdminGroup <http://rdfh.ch/projects/0807> .
 }

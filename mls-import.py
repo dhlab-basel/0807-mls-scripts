@@ -25,7 +25,9 @@ sex_lut = {
 }
 
 
+# creates a lut allowing to lookup lemma1 to lemma2 links
 def lemma2lemma_lut():
+    print("creating lemma2lemma lut ...")
     xmlfile = './data/lemma1_x_lemma2.xml'
 
     valpos = get_valpos(xmlfile)
@@ -45,13 +47,16 @@ def lemma2lemma_lut():
 
         # store the lemma1 ID as key and lemma2 ID as value
         # if lemma1 ID exists, append lemma2 ID to existing array of values
-        if lut[lemma1] is None:
-            lut[lemma1] = [lemma2]
-        else:
-            lut[lemma1].append(lemma2)
+        try:
+            l1 = lut[lemma1]
+            l1.append("LM_" + lemma2)
+        except KeyError:
+            lut[lemma1] = ["LM_" + lemma2]
 
-    pprint(lut)
+    # pprint(lut)
+    print("creating lemma2lemma lut finished.")
     return lut
+
 
 # converts the deceased key into a unique value
 def convert_deceased_key(key):
@@ -249,6 +254,13 @@ def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = Fal
 
                     if valpos[i] == "VIAF":
                         record["hasViaf"] = data.firstChild.nodeValue
+
+                    # try to find sublemmata for current lemma
+                    try:
+                        l2s = l2l_lut[rec_id]
+                        record["hasSubLema"] = l2s
+                    except KeyError:
+                        pass
             i += 1
 
         if record.get("hasLemmaText") is None:
@@ -261,8 +273,8 @@ def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = Fal
             print("------------------------------------------")
 
         bulk.add_resource(
-            'Lemma',
-            'LM_' + str(rec_id), record["hasLemmaText"], record)
+             'Lemma',
+             'LM_' + str(rec_id), record["hasLemmaText"], record)
 
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
@@ -506,18 +518,26 @@ def create_lexicon_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     print("==> ... {0} - {1} - finished".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
-def create_article_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisLookup, lexicon_iris_lookup: IrisLookup, debug: bool = False):
+def create_article_resources(
+        xmlfile, bulk: BulkImport,
+        lemma_iris_lookup: IrisLookup,
+        lexicon_iris_lookup: IrisLookup,
+        part: int,
+        debug: bool = False):
+
     """Creates mls:Article resources"""
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
 
+    cnt = 0
     for row in rows:
         cols = row.getElementsByTagName("COL")
         i = 0
         rec_id = 0
         record = {}
+
         for col in cols:
             datas = col.getElementsByTagName("DATA")  # some columns can have multiple data tags
             data = datas.item(0)  # we are only interested in the first one
@@ -525,10 +545,13 @@ def create_article_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisL
                 if data.firstChild is not None:
                     if valpos[i] == "PK_Artikel":
                         rec_id = data.firstChild.nodeValue
+
                     if valpos[i] == "PKF_Lemma":
                         record["hasALinkToLemma"] = lemma_iris_lookup.get_resource_iri('LM_' + data.firstChild.nodeValue)
+
                     if valpos[i] == "PKF_Lexikon":
                         record["hasALinkToLexicon"] = lexicon_iris_lookup.get_resource_iri('LX_' + data.firstChild.nodeValue)
+
                     if valpos[i] == "Seite":
                         record["hasPages"] = data.firstChild.nodeValue
 
@@ -575,9 +598,77 @@ def create_article_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisL
             pprint(record)
             print("------------------------------------------")
 
-        bulk.add_resource(
-            'Article',
-            'A_' + str(rec_id), rec_id, record)
+        # depending on the value of 'part', add the first 3001
+        # or the rest
+        if part == 1 and 0 <= cnt < 1000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        elif part == 2 and 1000 <= cnt < 2000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        elif part == 3 and 2000 <= cnt < 3000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        elif part == 4 and 3000 <= cnt < 4000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        elif part == 5 and 4000 <= cnt < 5000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        elif part == 6 and 5000 <= cnt < 6000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        elif part == 7 and 6000 <= cnt < 7000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        elif part == 8 and 7000 <= cnt < 8000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        elif part == 9 and 8000 <= cnt < 9000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        elif part == 10 and 9000 <= cnt < 10000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        elif part == 11 and 10000 <= cnt < 11000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        elif part == 12 and 11000 <= cnt < 12000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        elif part == 13 and 12000 <= cnt < 13000:
+            print(cnt)
+            bulk.add_resource(
+                'Article',
+                'A_' + str(rec_id), rec_id, record)
+        else:
+            pass
+
+        cnt += 1
 
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
@@ -596,7 +687,8 @@ def main():
 
     args = parser.parse_args()
 
-    con = Knora(args.server, args.user, args.password)
+    con = Knora(args.server)
+    con.login(args.user, args.password)
     schema = con.create_schema(args.projectcode, args.ontoname)
 
     exemplar_xml = './data/exemplar.xml'
@@ -620,7 +712,7 @@ def main():
     l2l_lut = lemma2lemma_lut()
     lemma_data_xml = './data/lemma.xml'
     lemma_bulk_object = BulkImport(schema)
-    create_lemma_resources(lemma_data_xml, l2l_lut, lemma_bulk_object, True)
+    create_lemma_resources(lemma_data_xml, l2l_lut, lemma_bulk_object)
     print("==> Lemma upload start ...")
     r = lemma_bulk_object.upload(args.user, args.password, "localhost", "3333")
     lemma_iris_lookup = IrisLookup(r)
@@ -667,27 +759,184 @@ def main():
     # r = lemma_location_bulk_object.upload(args.user, args.password, "localhost", "3333")
     # lemma_location_iris_lookup = IrisLookup(r)
     # print("==> LemmaLocation upload finished.")
-    #
-    # # create Lexicon resources
-    # lexicon_data_xml = './data/lexikon.xml'
-    # lexicon_bulk_object = BulkImport(schema)
-    # create_lexicon_resources(lexicon_data_xml, lexicon_bulk_object)
-    # print("==> Lexicon upload start ...")
-    # r = lexicon_bulk_object.upload(args.user, args.password, "localhost", "3333")
-    # lexicon_iris_lookup = IrisLookup(r)
-    # print("==> Lexicon upload finished.")
-    #
-    # # create Article resources
-    # article_data_xml = './data/artikel.xml'
-    # article_bulk_object = BulkImport(schema)
-    # create_article_resources(article_data_xml,
-    #                          article_bulk_object,
-    #                          lemma_iris_lookup,
-    #                          lexicon_iris_lookup)
-    # print("==> Article upload start ...")
-    # r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
-    # article_iris_lookup = IrisLookup(r)
-    # print("==> Article upload finished.")
+
+    # create Lexicon resources
+    lexicon_data_xml = './data/lexikon.xml'
+    lexicon_bulk_object = BulkImport(schema)
+    create_lexicon_resources(lexicon_data_xml, lexicon_bulk_object)
+    print("==> Lexicon upload start ...")
+    r = lexicon_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    lexicon_iris_lookup = IrisLookup(r)
+    print("==> Lexicon upload finished.")
+
+    # create Article resources (part 1)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             1)
+    print("==> Article upload (part 1) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 1) finished.")
+
+    # create Article resources (part 2)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             2)
+    print("==> Article upload (part 2) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 2) finished.")
+
+    # create Article resources (part 3)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             3)
+    print("==> Article upload (part 3) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 3) finished.")
+
+    # create Article resources (part 4)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             4)
+    print("==> Article upload (part 4) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 4) finished.")
+
+    # create Article resources (part 5)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             5)
+    print("==> Article upload (part 5) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 5) finished.")
+
+    # create Article resources (part 6)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             6)
+    print("==> Article upload (part 6) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 6) finished.")
+
+    # create Article resources (part 7)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             7)
+    print("==> Article upload (part 7) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 7) finished.")
+
+    # create Article resources (part 8)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             8)
+    print("==> Article upload (part 8) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 8) finished.")
+
+    # create Article resources (part 9)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             9)
+    print("==> Article upload (part 9) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 9) finished.")
+
+    # create Article resources (part 10)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             10)
+    print("==> Article upload (part 10) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 10) finished.")
+
+    # create Article resources (part 11)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             11)
+    print("==> Article upload (part 11) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 11) finished.")
+
+    # create Article resources (part 12)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             12)
+    print("==> Article upload (part 12) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 12) finished.")
+
+    # create Article resources (part 13)
+    article_data_xml = './data/artikel.xml'
+    article_bulk_object = BulkImport(schema)
+    create_article_resources(article_data_xml,
+                             article_bulk_object,
+                             lemma_iris_lookup,
+                             lexicon_iris_lookup,
+                             13)
+    print("==> Article upload (part 13) start ...")
+    r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    article_iris_lookup = IrisLookup(r)
+    print("==> Article upload (part 13) finished.")
 
     con = None
     sys.exit()
