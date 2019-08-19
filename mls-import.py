@@ -205,13 +205,9 @@ def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = Fal
 
                     if valpos[i] == "Lemma":
                         record["hasLemmaText"] = data.firstChild.nodeValue
-                        rec_label = data.firstChild.nodeValue
 
                     if valpos[i] == "Geschlecht":
                         record["hasSex"] = ll.get_list_node_iri("sex", sex_lut[data.firstChild.nodeValue])
-
-                    if valpos[i] == "GND":
-                        record["hasGND"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Anfangasdatum":
                         record["hasStartDate"] = data.firstChild.nodeValue
@@ -251,6 +247,9 @@ def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = Fal
                     if valpos[i] == "Verstorben":
                         record["hasDeceasedValue"] = ll.get_list_node_iri("deceased",
                                                                           convert_deceased_key(data.firstChild.nodeValue))
+
+                    if valpos[i] == "GND":
+                        record["hasGnd"] = data.firstChild.nodeValue
 
                     if valpos[i] == "VIAF":
                         record["hasViaf"] = data.firstChild.nodeValue
