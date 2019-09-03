@@ -300,65 +300,20 @@ def create_occupation_resources(xmlfile, bulk: BulkImport, debug: bool = False):
                         rec_id = data.firstChild.nodeValue
                     if valpos[i] == "Wert_Personentätigkeit":
                         record["hasOccupation"] = data.firstChild.nodeValue
-                    if valpos[i] == "Land":
-                        record["hasOccupationCountry"] = data.firstChild.nodeValue
-                    if valpos[i] == "Ortsname":
-                        record["hasOccupationPlacename"] = data.firstChild.nodeValue
-                    if valpos[i] == "Kanton 1":
-                        record["hasOccupationCanton"] = data.firstChild.nodeValue
             i += 1
 
-        if debug is True:
-            print("------------------------------------------")
-            print("ID=" + str(rec_id))
-            pprint(record)
-            print("------------------------------------------")
+        # only create occupation resources if the hasOccupation field has a value
+        if record.get("hasOccupation") is not None:
 
-        bulk.add_resource(
-            'Occupation',
-            'OCC_' + str(rec_id), rec_id, record)
+            if debug is True:
+                print("------------------------------------------")
+                print("ID=" + str(rec_id))
+                pprint(record)
+                print("------------------------------------------")
 
-    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
-
-
-def create_location_resources(xmlfile, bulk: BulkImport, debug: bool = False):
-    """Creates mls:Location resources"""
-    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
-
-    valpos = get_valpos(xmlfile)
-    rows = get_rows(xmlfile)
-
-    for row in rows:
-        cols = row.getElementsByTagName("COL")
-        i = 0
-        rec_id = 0
-        record = {}
-        for col in cols:
-            datas = col.getElementsByTagName("DATA")  # some columns can have multiple data tags
-            data = datas.item(0)  # we are only interested in the first one
-            if data is not None:
-                if data.firstChild is not None:
-                    if valpos[i] == "PK_Wert":
-                        rec_id = data.firstChild.nodeValue
-                    if valpos[i] == "Land":
-                        record["hasCountry"] = data.firstChild.nodeValue
-                    if valpos[i] == "Ortsname":
-                        record["hasPlacename"] = data.firstChild.nodeValue
-                    if valpos[i] == "Kanton 1":
-                        record["hasCanton"] = data.firstChild.nodeValue
-                    if valpos[i] == "Komentar Ort":
-                        record["hasLocationComment"] = data.firstChild.nodeValue
-            i += 1
-
-        if debug is True:
-            print("------------------------------------------")
-            print("ID=" + str(rec_id))
-            pprint(record)
-            print("------------------------------------------")
-
-        bulk.add_resource(
-            'Location',
-            'LOC_' + str(rec_id), rec_id, record)
+            bulk.add_resource(
+                'Occupation',
+                'OCC_' + str(rec_id), rec_id, record)
 
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
@@ -401,6 +356,51 @@ def create_lemma_occupation_resources(xmlfile, bulk: BulkImport, lemma_iris_look
             bulk.add_resource(
                 'LemmaOccupation',
                 'LO_' + str(rec_id), rec_id, record)
+
+    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
+
+
+def create_location_resources(xmlfile, bulk: BulkImport, debug: bool = False):
+    """Creates mls:Location resources"""
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+
+    valpos = get_valpos(xmlfile)
+    rows = get_rows(xmlfile)
+
+    for row in rows:
+        cols = row.getElementsByTagName("COL")
+        i = 0
+        rec_id = 0
+        record = {}
+        for col in cols:
+            datas = col.getElementsByTagName("DATA")  # some columns can have multiple data tags
+            data = datas.item(0)  # we are only interested in the first one
+            if data is not None:
+                if data.firstChild is not None:
+                    if valpos[i] == "PK_Wert":
+                        rec_id = data.firstChild.nodeValue
+                    if valpos[i] == "Land":
+                        record["hasCountry"] = data.firstChild.nodeValue
+                    if valpos[i] == "Ortsname":
+                        record["hasPlacename"] = data.firstChild.nodeValue
+                    if valpos[i] == "Kanton 1":
+                        record["hasCanton"] = data.firstChild.nodeValue
+                    if valpos[i] == "Komentar Ort":
+                        record["hasLocationComment"] = data.firstChild.nodeValue
+            i += 1
+
+        # only create location resource if the hasCountry field has a value
+        if record.get("hasCountry") is not None:
+
+            if debug is True:
+                print("------------------------------------------")
+                print("ID=" + str(rec_id))
+                pprint(record)
+                print("------------------------------------------")
+
+            bulk.add_resource(
+                'Location',
+                'LOC_' + str(rec_id), rec_id, record)
 
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
@@ -692,9 +692,7 @@ def main():
     schema = con.create_schema(args.projectcode, args.ontoname)
 
     exemplar_xml = './data/exemplar.xml'
-
     titelA_x_titelB_xml = './data/titelA_x_titelB.xml'
-    werte_personentaetigkeit_xml = './data/werte_personentaetigkeit.xml'
 
     if not os.path.exists("./out"):
         os.makedirs("./out")
@@ -718,51 +716,47 @@ def main():
     lemma_iris_lookup = IrisLookup(r)
     print("==> Lemma upload finished.")
 
+    # create Occupation resources
+    occupation_data_xml = './data/werte.xml'
+    occupation_bulk_object = BulkImport(schema)
+    create_occupation_resources(occupation_data_xml, occupation_bulk_object)
+    print("==> Occupation upload start ...")
+    r = occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    occupation_iris_lookup = IrisLookup(r)
+    print("==> Occupation upload finished.")
 
+    # create LemmaOccupation resources
+    lemma_occupation_data_xml = './data/lemma_x_wert.xml'
+    lemma_occupation_bulk_object = BulkImport(schema)
+    create_lemma_occupation_resources(lemma_occupation_data_xml,
+                                      lemma_occupation_bulk_object,
+                                      lemma_iris_lookup,
+                                      occupation_iris_lookup)
+    print("==> LemmaOccupation upload start ...")
+    r = lemma_occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    lemma_occupation_iris_lookup = IrisLookup(r)
+    print("==> LemmaOccupation upload finished.")
 
-    # # create Occupation resources
-    # occupation_data_xml = './data/werte_personentaetigkeit.xml'
-    # occupation_bulk_object = BulkImport(schema)
-    # create_occupation_resources(occupation_data_xml, occupation_bulk_object)
-    # print("==> Occupation upload start ...")
-    # r = occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
-    # occupation_iris_lookup = IrisLookup(r)
-    # print("==> Occupation upload finished.")
-    #
-    # # create Location resources
-    # location_data_xml = './data/werte_orte.xml'
-    # location_bulk_object = BulkImport(schema)
-    # create_location_resources(location_data_xml, location_bulk_object)
-    # print("==> Location upload start ...")
-    # r = location_bulk_object.upload(args.user, args.password, "localhost", "3333")
-    # location_iris_lookup = IrisLookup(r)
-    # print("==> Location upload finished.")
-    #
-    # # create LemmaOccupation resources
-    # lemma_occupation_data_xml = './data/lemma_x_wert.xml'
-    # lemma_occupation_bulk_object = BulkImport(schema)
-    # create_lemma_occupation_resources(lemma_occupation_data_xml,
-    #                                   lemma_occupation_bulk_object,
-    #                                   lemma_iris_lookup,
-    #                                   occupation_iris_lookup)
-    # print("==> LemmaOccupation upload start ...")
-    # r = lemma_occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
-    # lemma_occupation_iris_lookup = IrisLookup(r)
-    # print("==> LemmaOccupation upload finished.")
-    #
-    # # create LemmaLocation resources
-    # lemma_location_data_xml = './data/lemma_x_ort.xml'
-    # lemma_location_bulk_object = BulkImport(schema)
-    # create_lemma_location_resources(lemma_location_data_xml,
-    #                                 lemma_location_bulk_object,
-    #                                 lemma_iris_lookup,
-    #                                 location_iris_lookup)
-    # print("==> LemmaLocation upload start ...")
-    # r = lemma_location_bulk_object.upload(args.user, args.password, "localhost", "3333")
-    # lemma_location_iris_lookup = IrisLookup(r)
-    # print("==> LemmaLocation upload finished.")
+    # create Location resources
+    location_data_xml = './data/werte.xml'
+    location_bulk_object = BulkImport(schema)
+    create_location_resources(location_data_xml, location_bulk_object)
+    print("==> Location upload start ...")
+    r = location_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    location_iris_lookup = IrisLookup(r)
+    print("==> Location upload finished.")
 
-
+    # create LemmaLocation resources
+    lemma_location_data_xml = './data/lemma_x_ort.xml'
+    lemma_location_bulk_object = BulkImport(schema)
+    create_lemma_location_resources(lemma_location_data_xml,
+                                    lemma_location_bulk_object,
+                                    lemma_iris_lookup,
+                                    location_iris_lookup)
+    print("==> LemmaLocation upload start ...")
+    r = lemma_location_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    lemma_location_iris_lookup = IrisLookup(r)
+    print("==> LemmaLocation upload finished.")
 
     # create Lexicon resources
     lexicon_data_xml = './data/lexikon.xml'

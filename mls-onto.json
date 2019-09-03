@@ -997,36 +997,6 @@
               "gui_element": "SimpleText",
               "gui_attributes": ["size=64", "maxlength=128"],
               "cardinality": "0-1"
-            },
-            {
-              "name": "hasOccupationPlacename",
-              "object": "TextValue",
-              "labels": {
-                "de": "Ortsname"
-              },
-              "gui_element": "SimpleText",
-              "gui_attributes": ["size=64", "maxlength=128"],
-              "cardinality": "0-1"
-            },
-            {
-              "name":"hasOccupationCanton",
-              "object": "TextValue",
-              "labels": {
-                "de": "Kanton"
-              },
-              "gui_element": "SimpleText",
-              "gui_attributes": ["size=64", "maxlength=128"],
-              "cardinality": "0-1"
-            },
-            {
-              "name": "hasOccupationCountry",
-              "object": "TextValue",
-              "labels": {
-                "de": "Land"
-              },
-              "gui_element": "SimpleText",
-              "gui_attributes": ["size=64", "maxlength=128"],
-              "cardinality": "0-1"
             }
           ]
         }
