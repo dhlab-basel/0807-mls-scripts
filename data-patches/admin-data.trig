@@ -17,15 +17,16 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <http://www.knora.org/data/admin> {
+
     <http://rdfh.ch/users/mls-0807-import-user> rdf:type knora-admin:User ;
-                   knora-admin:username "mls0807import"^^xsd:string ;
-                   knora-admin:email "mls0807import@example.com"^^xsd:string ;
-                   knora-admin:givenName "MLS0807"^^xsd:string ;
-                   knora-admin:familyName "Import User"^^xsd:string ;
-                   knora-admin:password "$2a$12$7XEBehimXN1rbhmVgQsyve08.vtDmKK7VMin4AdgCEtE4DWgfQbTK"^^xsd:string ;
-                   knora-admin:preferredLanguage "de"^^xsd:string ;
-                   knora-admin:status "true"^^xsd:boolean ;
-                   knora-admin:isInProject <http://rdfh.ch/projects/0807> ;
-                   knora-admin:isInSystemAdminGroup "false"^^xsd:boolean ;
-                   knora-admin:isInProjectAdminGroup <http://rdfh.ch/projects/0807> .
+            knora-admin:username "mls0807import"^^xsd:string ;
+            knora-admin:email "mls0807import@example.com"^^xsd:string ;
+            knora-admin:givenName "MLS0807"^^xsd:string ;
+            knora-admin:familyName "Import User"^^xsd:string ;
+            knora-admin:password "$2a$12$7XEBehimXN1rbhmVgQsyve08.vtDmKK7VMin4AdgCEtE4DWgfQbTK"^^xsd:string ;
+            knora-admin:preferredLanguage "de"^^xsd:string ;
+            knora-admin:status "true"^^xsd:boolean ;
+            knora-admin:isInProject <http://rdfh.ch/projects/0807> ;
+            knora-admin:isInSystemAdminGroup "false"^^xsd:boolean ;
+            knora-admin:isInProjectAdminGroup <http://rdfh.ch/projects/0807> .
 }
