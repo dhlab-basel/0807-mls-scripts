@@ -338,7 +338,7 @@ def create_lemma_occupation_resources(xmlfile, bulk: BulkImport, lemma_iris_look
                     record["hasLOLinkToLemma"] = lemma_iris_lookup.get_resource_iri('LM_' + data.firstChild.nodeValue)
                 if valpos[i] == "PKF_Wert":
                     record["hasLOLinkToOccupation"] = occupation_iris_lookup.get_resource_iri('OCC_' + data.firstChild.nodeValue)
-                if valpos[i] == "Komentar":
+                if valpos[i] == "Kommentar":
                     record["hasLOComment"] = data.firstChild.nodeValue
             i += 1
 
@@ -385,7 +385,7 @@ def create_location_resources(xmlfile, bulk: BulkImport, debug: bool = False):
                         record["hasPlacename"] = data.firstChild.nodeValue
                     if valpos[i] == "Kanton 1":
                         record["hasCanton"] = data.firstChild.nodeValue
-                    if valpos[i] == "Komentar Ort":
+                    if valpos[i] == "Kommentar Ort":
                         record["hasLocationComment"] = data.firstChild.nodeValue
             i += 1
 
@@ -427,7 +427,7 @@ def create_lemma_location_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup
                     record["hasLLLinkToLocation"] = location_iris_lookup.get_resource_iri('LOC_' + data.firstChild.nodeValue)
                 if valpos[i] == "Bezug zum Ort":
                     record["hasLLRelation"] = data.firstChild.nodeValue
-                if valpos[i] == "Komentar":
+                if valpos[i] == "Kommentar":
                     record["hasLLComment"] = data.firstChild.nodeValue
             i += 1
 
@@ -479,7 +479,7 @@ def create_lexicon_resources(xmlfile, bulk: BulkImport, debug: bool = False):
                     if valpos[i] == "Zitierform":
                         record["hasCitationForm"] = data.firstChild.nodeValue
 
-                    if valpos[i] == "Komentar":
+                    if valpos[i] == "Kommentar":
                         record["hasLexiconComment"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Scan bearbeitet von":
@@ -672,6 +672,93 @@ def create_article_resources(
 
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
+def create_exemplar_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: IrisLookup, library_iris_lookup: IrisLookup, debug: bool = False):
+    """Creates mls:Exemplar resources"""
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+
+    valpos = get_valpos(xmlfile)
+    rows = get_rows(xmlfile)
+
+    for row in rows:
+        datas = row.getElementsByTagName("DATA")
+        i = 0
+        rec_id = 0
+        record = {}
+        for data in datas:
+            if data.firstChild is not None:
+                if valpos[i] == "PK_Exe":
+                    rec_id = data.firstChild.nodeValue
+                if valpos[i] == "PKF_Bibl":
+                    record["hasExamplarLinkToLibrary"] = library_iris_lookup.get_resource_iri('LIB_' + data.firstChild.nodeValue)
+                if valpos[i] == "PKF_Titel":
+                    record["hasExemplarLinkToLexicon"] = lexicon_iris_lookup.get_resource_iri('LX_' + data.firstChild.nodeValue)
+                if valpos[i] == "Exemplarnr":
+                    record["hasExamplarNumber"] = data.firstChild.nodeValue
+                if valpos[i] == "Signatur":
+                    record["hasExemplarSignatur"] = data.firstChild.nodeValue
+                if valpos[i] == "Kommentar":
+                    record["hasExamplarComment"] = data.firstChild.nodeValue
+            i += 1
+
+        # filter out links to dead-ends
+        if record.get("hasExamplarLinkToLibrary") is None:
+            pass
+        elif record.get("hasExemplarLinkToLexicon") is None:
+            pass
+        else:
+            if debug is True:
+                print("------------------------------------------")
+                print("ID=" + str(rec_id))
+                pprint(record)
+                print("------------------------------------------")
+
+            bulk.add_resource(
+                'Exemplar',
+                'EX_' + str(rec_id), rec_id, record)
+
+    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
+
+def create_lexicon_lexicon_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: IrisLookup, debug: bool = False):
+    """Creates mls:LexiconLexicon resources"""
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+
+    valpos = get_valpos(xmlfile)
+    rows = get_rows(xmlfile)
+
+    for row in rows:
+        datas = row.getElementsByTagName("DATA")
+        i = 0
+        rec_id = ""
+        record = {}
+        for data in datas:
+            if data.firstChild is not None:
+                if valpos[i] == "PKF_TitelA":
+                    record["hasLexiconLinkToParent"] = lexicon_iris_lookup.get_resource_iri('LX_' + data.firstChild.nodeValue)
+                    rec_id += data.firstChild.nodeValue
+                if valpos[i] == "PKF_TitelB":
+                    record["hasLexiconLinkToChild"] = lexicon_iris_lookup.get_resource_iri('LX_' + data.firstChild.nodeValue)
+                    rec_id += '-' + data.firstChild.nodeValue
+                if valpos[i] == "Kommentar":
+                    record["hasLexiconLexiconComment"] = data.firstChild.nodeValue
+            i += 1
+
+        # filter out links to dead-ends
+        if record.get("hasLexiconLinkToParent") is None:
+            pass
+        elif record.get("hasLexiconLinkToChild") is None:
+            pass
+        else:
+            if debug is True:
+                print("------------------------------------------")
+                print("ID=" + str(rec_id))
+                pprint(record)
+                print("------------------------------------------")
+
+            bulk.add_resource(
+                'LexiconLexicon',
+                'LXLX_' + str(rec_id), rec_id, record)
+
+    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 def main():
     parser = argparse.ArgumentParser()
@@ -935,6 +1022,29 @@ def main():
     r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
     article_iris_lookup = IrisLookup(r)
     print("==> Article upload (part 13) finished.")
+
+    # create Exemplar resources
+    exemplar_data_xml = './data/exemplar.xml'
+    exemplar_bulk_object = BulkImport(schema)
+    create_exemplar_resources(exemplar_data_xml,
+                             exemplar_bulk_object,
+                             lexicon_iris_lookup,
+                             library_iris_lookup)
+    print("==> Exemplar upload start ...")
+    r = exemplar_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    exemplar_iris_lookup = IrisLookup(r)
+    print("==> Exemplar upload finished.")
+
+    # create LexiconLexicon resources
+    lexlex_data_xml = './data/titelA_x_titelB.xml'
+    lexlex_bulk_object = BulkImport(schema)
+    create_lexicon_lexicon_resources(lexlex_data_xml,
+                                     lexlex_bulk_object,
+                                     lexicon_iris_lookup)
+    print("==> LexiconLexicon upload start ...")
+    r = lexlex_bulk_object.upload(args.user, args.password, "localhost", "3333")
+    lexlex_iris_lookup = IrisLookup(r)
+    print("==> LexiconLexicon upload finished.")
 
     con = None
     sys.exit()

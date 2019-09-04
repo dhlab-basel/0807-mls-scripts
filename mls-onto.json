@@ -999,6 +999,197 @@
               "cardinality": "0-1"
             }
           ]
+        },
+        {
+          "name": "Exemplar",
+          "super": "Resource",
+          "labels": {
+            "de": "Exemplar"
+          },
+          "properties": [
+            {
+              "name": "hasExemplarLinkToLexicon",
+              "super": ["hasLinkTo"],
+              "object": "mls:Lexicon",
+              "labels": {
+                "de": "In Lexikon"
+              },
+              "gui_element": "Searchbox",
+              "gui_attributes": [],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasExamplarLinkToLibrary",
+              "super": ["hasLinkTo"],
+              "object": "mls:Library",
+              "labels": {
+                "de": "In Bibliothek"
+              },
+              "gui_element": "Searchbox",
+              "gui_attributes": [],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasExamplarNumber",
+              "object": "TextValue",
+              "labels": {
+                "de": "Exemplarnummer"
+              },
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=64", "maxlength=128"],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasExemplarSignatur",
+              "object": "TextValue",
+              "labels": {
+                "de": "Exemplarsignatur"
+              },
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=64", "maxlength=128"],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasExamplarComment",
+              "object": "TextValue",
+              "labels": {
+                "de": "Kommentar"
+              },
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=64", "maxlength=128"],
+              "cardinality": "0-1"
+            }
+          ]
+        },
+        {
+          "name": "LexiconLexicon",
+          "super": "Resource",
+          "labels": {
+            "de": "Übergeordnetes Lexikon zu Untergeordnetem Lexikon"
+          },
+          "properties": [
+            {
+              "name": "hasLexiconLinkToParent",
+              "super": ["hasLinkTo"],
+              "object": "mls:Lexicon",
+              "labels": {
+                "de": "Übergeordnetes Lexikon"
+              },
+              "gui_element": "Searchbox",
+              "gui_attributes": [],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasLexiconLinkToChild",
+              "super": ["hasLinkTo"],
+              "object": "mls:Lexicon",
+              "labels": {
+                "de": "Untergeordnetes Lexikon"
+              },
+              "gui_element": "Searchbox",
+              "gui_attributes": [],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasLexiconList",
+              "object": "TextValue",
+              "labels": {
+                "de": "Liste"
+              },
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=64", "maxlength=128"],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasParentLexiconReltype",
+              "object": "TextValue",
+              "labels": {
+                "de": "Beziehungstyp zu übergeordnetem Lexikon"
+              },
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=64", "maxlength=128"],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasChildLexiconReltype",
+              "object": "TextValue",
+              "labels": {
+                "de": "Beziehungstyp zu untergeordnetem Lexikon"
+              },
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=64", "maxlength=128"],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasLexiconLexiconComment",
+              "object": "TextValue",
+              "labels": {
+                "de": "Kommentar"
+              },
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=64", "maxlength=128"],
+              "cardinality": "0-1"
+            }
+          ]
+        },
+        {
+          "name": "Newsitem",
+          "super": "StillImageRepresentation",
+          "labels": {
+            "en": "Newsitem with image"
+          },
+          "properties": [
+            {
+              "name": "hasNewsTitle",
+              "object": "TextValue",
+              "labels": {
+                "de": "Titel"
+              },
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=64", "maxlength=256"],
+              "cardinality": "1"
+            },
+            {
+              "name": "hasNewsText",
+              "object": "TextValue",
+              "labels": {
+                "de": "Titel"
+              },
+              "gui_element": "Textarea",
+              "gui_attributes": ["rows=5", "width=99%", "wrap=soft"],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasNewsitemLinkToLemma",
+              "super": ["hasLinkTo"],
+              "object": "mls:Lemma",
+              "labels": {
+                "de": "Lemma"
+              },
+              "gui_element": "Searchbox",
+              "gui_attributes": [],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasNewsitemWeblink",
+              "object": "UriValue",
+              "labels": {
+                "de": "Externer Link"
+              },
+              "gui_element": "SimpleText",
+              "gui_attributes": ["size=64", "maxlength=128"],
+              "cardinality": "0-1"
+            },
+            {
+              "name": "hasNewitemActiveDate",
+              "object": "DateValue",
+              "labels": {
+                "de": "Aktiver Zeitraum"
+              },
+              "gui_element": "Date",
+              "cardinality": "0-1"
+            }
+          ]
         }
       ]
     }
