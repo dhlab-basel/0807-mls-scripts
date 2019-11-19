@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
   <ERRORCODE>0</ERRORCODE>
-  <PRODUCT BUILD="12-18-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.4"/>
-  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2019_08_20.fmp12" RECORDS="4702" TIMEFORMAT="k:mm:ss "/>
+  <PRODUCT BUILD="04-12-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.1"/>
+  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2019_10_12.fmp12" RECORDS="4702" TIMEFORMAT="k:mm:ss "/>
   <METADATA>
     <FIELD EMPTYOK="NO" MAXREPEAT="1" NAME="PK_Wert" TYPE="NUMBER"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Land" TYPE="TEXT"/>

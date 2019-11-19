@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
   <ERRORCODE>0</ERRORCODE>
-  <PRODUCT BUILD="12-18-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.4"/>
-  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2019_08_20.fmp12" RECORDS="11" TIMEFORMAT="k:mm:ss "/>
+  <PRODUCT BUILD="04-12-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.1"/>
+  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2019_10_12.fmp12" RECORDS="12" TIMEFORMAT="k:mm:ss "/>
   <METADATA>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Änderungsdatum" TYPE="TIMESTAMP"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="bestellt" TYPE="TEXT"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Bibl_Formel" TYPE="TEXT"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Erstellungsdatum" TYPE="TIMESTAMP"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Exemplarnr" TYPE="NUMBER"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Fehler" TYPE="NUMBER"/>
@@ -14,14 +15,18 @@
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="PKF_Titel" TYPE="NUMBER"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Signatur" TYPE="TEXT"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="SingleCodeExemplare" TYPE="TEXT"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Titel_Formel" TYPE="TEXT"/>
   </METADATA>
-  <RESULTSET FOUND="11">
+  <RESULTSET FOUND="12">
     <ROW MODID="1" RECORDID="6423">
       <COL>
         <DATA>03.04.2017 16:18:53</DATA>
       </COL>
       <COL>
         <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
       </COL>
       <COL>
         <DATA>03.04.2017 16:18:48</DATA>
@@ -47,6 +52,9 @@
       <COL>
         <DATA>6297|21|</DATA>
       </COL>
+      <COL>
+        <DATA>DT Online °</DATA>
+      </COL>
     </ROW>
     <ROW MODID="1" RECORDID="6424">
       <COL>
@@ -54,6 +62,9 @@
       </COL>
       <COL>
         <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
       </COL>
       <COL>
         <DATA>04.04.2017 22:10:56</DATA>
@@ -79,6 +90,9 @@
       <COL>
         <DATA>6297|17|</DATA>
       </COL>
+      <COL>
+        <DATA>SUISA 1999 /</DATA>
+      </COL>
     </ROW>
     <ROW MODID="3" RECORDID="6425">
       <COL>
@@ -86,6 +100,9 @@
       </COL>
       <COL>
         <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
       </COL>
       <COL>
         <DATA>05.04.2017 18:32:30</DATA>
@@ -111,6 +128,9 @@
       <COL>
         <DATA>6297|1|D-Mbs: Mus,th. 314 8275148 Mus.th. 314 </DATA>
       </COL>
+      <COL>
+        <DATA>Becker 1874 *</DATA>
+      </COL>
     </ROW>
     <ROW MODID="3" RECORDID="6426">
       <COL>
@@ -118,6 +138,9 @@
       </COL>
       <COL>
         <DATA/>
+      </COL>
+      <COL>
+        <DATA>D_M_bs</DATA>
       </COL>
       <COL>
         <DATA>05.04.2017 18:35:21</DATA>
@@ -143,6 +166,9 @@
       <COL>
         <DATA>1537|1|</DATA>
       </COL>
+      <COL>
+        <DATA>Becker 1874 *</DATA>
+      </COL>
     </ROW>
     <ROW MODID="2" RECORDID="6428">
       <COL>
@@ -150,6 +176,9 @@
       </COL>
       <COL>
         <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
       </COL>
       <COL>
         <DATA>21.05.2017 17:55:57</DATA>
@@ -175,6 +204,9 @@
       <COL>
         <DATA>6297|7|www,musinfo.ch</DATA>
       </COL>
+      <COL>
+        <DATA>Musinfo Online 2005 °</DATA>
+      </COL>
     </ROW>
     <ROW MODID="1" RECORDID="6429">
       <COL>
@@ -182,6 +214,9 @@
       </COL>
       <COL>
         <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
       </COL>
       <COL>
         <DATA>21.05.2017 17:59:03</DATA>
@@ -207,6 +242,9 @@
       <COL>
         <DATA>6297|4|</DATA>
       </COL>
+      <COL>
+        <DATA>HLS Online 2017 °</DATA>
+      </COL>
     </ROW>
     <ROW MODID="2" RECORDID="6430">
       <COL>
@@ -214,6 +252,9 @@
       </COL>
       <COL>
         <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
       </COL>
       <COL>
         <DATA>21.05.2017 17:59:58</DATA>
@@ -239,6 +280,9 @@
       <COL>
         <DATA>6297|29|</DATA>
       </COL>
+      <COL>
+        <DATA>MLS Online 2019 *</DATA>
+      </COL>
     </ROW>
     <ROW MODID="1" RECORDID="6431">
       <COL>
@@ -246,6 +290,9 @@
       </COL>
       <COL>
         <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
       </COL>
       <COL>
         <DATA>23.05.2017 15:12</DATA>
@@ -271,6 +318,9 @@
       <COL>
         <DATA>6297|13|</DATA>
       </COL>
+      <COL>
+        <DATA>Spoerri 2006 /</DATA>
+      </COL>
     </ROW>
     <ROW MODID="1" RECORDID="6432">
       <COL>
@@ -278,6 +328,9 @@
       </COL>
       <COL>
         <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
       </COL>
       <COL>
         <DATA>23.05.2017 15:12:43</DATA>
@@ -303,6 +356,9 @@
       <COL>
         <DATA>6297|25|</DATA>
       </COL>
+      <COL>
+        <DATA>Spoerri Online 2017 °</DATA>
+      </COL>
     </ROW>
     <ROW MODID="1" RECORDID="6433">
       <COL>
@@ -310,6 +366,9 @@
       </COL>
       <COL>
         <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
       </COL>
       <COL>
         <DATA>23.11.2017 11:51</DATA>
@@ -335,6 +394,9 @@
       <COL>
         <DATA>6297|27|</DATA>
       </COL>
+      <COL>
+        <DATA>OEML Online 2013 °</DATA>
+      </COL>
     </ROW>
     <ROW MODID="1" RECORDID="6435">
       <COL>
@@ -342,6 +404,9 @@
       </COL>
       <COL>
         <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
       </COL>
       <COL>
         <DATA>20.08.2019 11:24:43</DATA>
@@ -366,6 +431,47 @@
       </COL>
       <COL>
         <DATA>6297|22|</DATA>
+      </COL>
+      <COL>
+        <DATA>Theater Lexikon Online 2005 °</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="6436">
+      <COL>
+        <DATA>20.10.2019 16:01:09</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>0_Web</DATA>
+      </COL>
+      <COL>
+        <DATA>20.10.2019 16:00:59</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>14</DATA>
+      </COL>
+      <COL>
+        <DATA>6297</DATA>
+      </COL>
+      <COL>
+        <DATA>30</DATA>
+      </COL>
+      <COL>
+        <DATA>http://www.rism.info/de/startseite.html</DATA>
+      </COL>
+      <COL>
+        <DATA>6297|30|</DATA>
+      </COL>
+      <COL>
+        <DATA>RISM Online 2019 °</DATA>
       </COL>
     </ROW>
   </RESULTSET>

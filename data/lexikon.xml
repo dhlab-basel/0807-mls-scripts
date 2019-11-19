@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
   <ERRORCODE>0</ERRORCODE>
-  <PRODUCT BUILD="12-18-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.4"/>
-  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2019_08_20.fmp12" RECORDS="24" TIMEFORMAT="k:mm:ss "/>
+  <PRODUCT BUILD="04-12-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.1"/>
+  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2019_10_12.fmp12" RECORDS="25" TIMEFORMAT="k:mm:ss "/>
   <METADATA>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Zitierform" TYPE="TEXT"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Änderungsdatum" TYPE="TIMESTAMP"/>
@@ -18,13 +18,13 @@
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Scan bearbeitet von" TYPE="TEXT"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Scan fertig" TYPE="TEXT"/>
   </METADATA>
-  <RESULTSET FOUND="24">
-    <ROW MODID="27" RECORDID="12725">
+  <RESULTSET FOUND="25">
+    <ROW MODID="33" RECORDID="12725">
       <COL>
         <DATA>Becker, Georges: La musique en Suisse depuis les temps les plus reculés jusqu'à la fin du dix-huitième siècle : notices historiques, biographiques et bibliographiques. Genéve [Richard] 1874.</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 11:22:05</DATA>
+        <DATA>15.10.2019 20:30:06</DATA>
       </COL>
       <COL>
         <DATA>CUS</DATA>
@@ -39,10 +39,10 @@
         <DATA>1874</DATA>
       </COL>
       <COL>
-        <DATA>30.3.2017: Vollständig gescannt; als OCR einzupflegen</DATA>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Becker 1874</DATA>
+        <DATA>Becker 1874 *</DATA>
       </COL>
       <COL>
         <DATA>CUS</DATA>
@@ -60,12 +60,12 @@
         <DATA>fertig</DATA>
       </COL>
     </ROW>
-    <ROW MODID="10" RECORDID="12726">
+    <ROW MODID="15" RECORDID="12726">
       <COL>
         <DATA>Becker, Georges: La musique en Suisse depuis les temps les plus reculés jusqu'à la fin du dix-huitième siècle : notices historiques, biographiques et bibliographiques. Nouv. édition publié par l’Association des musiciens suisses. Genève [Henn] 1923.</DATA>
       </COL>
       <COL>
-        <DATA>03.01.2018 15:45:11</DATA>
+        <DATA>15.10.2019 20:30:28</DATA>
       </COL>
       <COL>
         <DATA>CUS</DATA>
@@ -80,10 +80,10 @@
         <DATA>1923</DATA>
       </COL>
       <COL>
-        <DATA>30.3.2017: vollständig als OCR vorhanden; in Datenbank einzufügen</DATA>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Becker 1923</DATA>
+        <DATA>Becker 1923 *</DATA>
       </COL>
       <COL>
         <DATA>Ralli</DATA>
@@ -101,54 +101,12 @@
         <DATA>fertig</DATA>
       </COL>
     </ROW>
-    <ROW MODID="8" RECORDID="12753">
-      <COL>
-        <DATA>Dizionario dei musicisti della Svizzera italiana. Online [http://www.ricercamusica.ch/dizionario/index.html]</DATA>
-      </COL>
-      <COL>
-        <DATA>20.08.2019 11:22:22</DATA>
-      </COL>
-      <COL>
-        <DATA>CUS</DATA>
-      </COL>
-      <COL>
-        <DATA>fertig Links</DATA>
-      </COL>
-      <COL>
-        <DATA>02.04.2017 12:11:46</DATA>
-      </COL>
-      <COL>
-        <DATA>Online</DATA>
-      </COL>
-      <COL>
-        <DATA>Un imponente lavoro redazionale condotto negli ultimi decenni del Novecento da vari specialisti ha permesso la creazione di un dizionario dei musicisti della Svizzera italiana. La musicologa Lorenza Guiot, responsabile del Fondo Leoncavallo presso la Biblioteca cantonale di Locarno, ha raccolto le schede fornendo alla redazione una veste unitaria. Nel corso del 2002 il Conservatorio della Svizzera italiana, sotto la supervisione di Massimo Zicari, ha proposto le schede in questa versione finale.
-Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazione online dovrebbe favorire la rigenerazione del dizionario: comunicate le vostre annotazioni al nostro indirizzo e-mail.</DATA>
-      </COL>
-      <COL>
-        <DATA>DT Online</DATA>
-      </COL>
-      <COL>
-        <DATA>online</DATA>
-      </COL>
-      <COL>
-        <DATA>fertig</DATA>
-      </COL>
-      <COL>
-        <DATA>21</DATA>
-      </COL>
-      <COL>
-        <DATA>online</DATA>
-      </COL>
-      <COL>
-        <DATA>fertig</DATA>
-      </COL>
-    </ROW>
-    <ROW MODID="5" RECORDID="12727">
+    <ROW MODID="8" RECORDID="12727">
       <COL>
         <DATA>Ehrismann, Sibylle und Meyer, Thomas: Schweizer Komponistinnen der Gegenwart. Eine Dokumentation. Hrsg. von Frauenmusik-Forum. Zürich [Musik Hug Verlag] 1985.</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 11:13:19</DATA>
+        <DATA>15.10.2019 20:30:44</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -163,10 +121,10 @@ Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazi
         <DATA>1985</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Ehrismann_Meyer 1985</DATA>
+        <DATA>Ehrismann_Meyer 1985 /</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -184,12 +142,12 @@ Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazi
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="17" RECORDID="12728">
+    <ROW MODID="20" RECORDID="12728">
       <COL>
         <DATA>Historisches Lexikon der Schweiz. Online [http://www.hls-dhs-dss.ch/]</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 11:14:16</DATA>
+        <DATA>15.10.2019 20:30:47</DATA>
       </COL>
       <COL>
         <DATA>CUS</DATA>
@@ -201,13 +159,13 @@ Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazi
         <DATA>08.09.2016</DATA>
       </COL>
       <COL>
-        <DATA>Online</DATA>
+        <DATA>2017</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>HLS Online</DATA>
+        <DATA>HLS Online 2017 °</DATA>
       </COL>
       <COL>
         <DATA>Online</DATA>
@@ -225,12 +183,12 @@ Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazi
         <DATA>fertig</DATA>
       </COL>
     </ROW>
-    <ROW MODID="8" RECORDID="12729">
+    <ROW MODID="15" RECORDID="12729">
       <COL>
-        <DATA>Frauen Musikforum. Lemmataliste 2007.</DATA>
+        <DATA>Frauen Musikforum. Stichwortliste. Zusammengestellt von Marc-Joachim Wasmer, stand 2007. Maschr.</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 11:22:54</DATA>
+        <DATA>15.10.2019 20:30:49</DATA>
       </COL>
       <COL>
         <DATA>keine Artikel</DATA>
@@ -245,10 +203,10 @@ Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazi
         <DATA>2007</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Liste FMF 2007</DATA>
+        <DATA>Liste FMF 2007 -</DATA>
       </COL>
       <COL>
         <DATA>keine Artikel</DATA>
@@ -266,53 +224,12 @@ Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazi
         <DATA>irrelevant</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="12761">
-      <COL>
-        <DATA>Musiklexikon der Schweiz / Dictinonnaire de la musique en Suisse / Dizionario della musica in Svizzera / Dictionary of Music in Switzerland. Hrsg. von der Schweizerischen Musikforschenden Gesellschaft im Auftrag des Schweizer Musikrats. Online [https://mls.0807.dasch.swiss/]</DATA>
-      </COL>
-      <COL>
-        <DATA>20.08.2019 11:23:13</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>20.08.2019 10:45:02</DATA>
-      </COL>
-      <COL>
-        <DATA>Online</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>MLS Online</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>29</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="6" RECORDID="12730">
+    <ROW MODID="8" RECORDID="12730">
       <COL>
         <DATA>Mooser, R.-Aloys: Regards sur la Musique contemporaine 1921-1946. Lausanne [Librerie F. Rouge &amp; Cie.] 1946.</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 11:04:18</DATA>
+        <DATA>15.10.2019 20:30:59</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -327,10 +244,10 @@ Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazi
         <DATA>1946</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Mooser 1946</DATA>
+        <DATA>Mooser 1946 °</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -348,12 +265,12 @@ Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazi
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="15" RECORDID="12731">
+    <ROW MODID="18" RECORDID="12731">
       <COL>
         <DATA>Musinfo: die Datenbank zur Schweizer Musik = la base de données de la musique Suisse = the database of Swiss music. Luzern [Swiss Music Edition SME] Online seit 2005 [www.musinfo.ch]</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 11:24:10</DATA>
+        <DATA>15.10.2019 20:31</DATA>
       </COL>
       <COL>
         <DATA>CUS</DATA>
@@ -365,13 +282,13 @@ Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazi
         <DATA>08.09.2016</DATA>
       </COL>
       <COL>
-        <DATA>Online</DATA>
+        <DATA>2005</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Musinfo Online</DATA>
+        <DATA>Musinfo Online 2005 °</DATA>
       </COL>
       <COL>
         <DATA>Online</DATA>
@@ -389,53 +306,12 @@ Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazi
         <DATA>fertig</DATA>
       </COL>
     </ROW>
-    <ROW MODID="4" RECORDID="12759">
-      <COL>
-        <DATA>Österreichisches Musiklexikon. Österreichische Akademie der Wissenschaften Online [http://www.oeaw.ac.at]</DATA>
-      </COL>
-      <COL>
-        <DATA>20.08.2019 11:13:55</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>23.11.2017 11:48:11</DATA>
-      </COL>
-      <COL>
-        <DATA>Online</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>OEML Online</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>27</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="12" RECORDID="12732">
+    <ROW MODID="14" RECORDID="12732">
       <COL>
         <DATA>Refardt, Edgar: Historisch-Biographisches Musikerlexikon der Schweiz. Leipzig und Zürich [Gebrüder Hug &amp; Co.] 1928.</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 10:06:07</DATA>
+        <DATA>15.10.2019 20:31:05</DATA>
       </COL>
       <COL>
         <DATA>Radivojevic</DATA>
@@ -450,10 +326,10 @@ Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazi
         <DATA>1928</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Refardt 1928</DATA>
+        <DATA>Refardt 1928 *</DATA>
       </COL>
       <COL>
         <DATA>Ralli</DATA>
@@ -471,182 +347,12 @@ Le schede sono datate e necessitano di un aggiornamento ma proprio la pubblicazi
         <DATA>fertig</DATA>
       </COL>
     </ROW>
-    <ROW MODID="14" RECORDID="12752">
-      <COL>
-        <DATA>Refardt, Edgar: Ergänzungen und Berichtigungen zum Historisch-Biographischen Musikerlexikon der Schweiz 1928. Basel [Maschr.] 1941. CH-BEn: Signatur NGq744</DATA>
-      </COL>
-      <COL>
-        <DATA>20.08.2019 11:05:22</DATA>
-      </COL>
-      <COL>
-        <DATA>CUS</DATA>
-      </COL>
-      <COL>
-        <DATA>mit 1. Korrektur</DATA>
-      </COL>
-      <COL>
-        <DATA>30.03.2017 13:56:25</DATA>
-      </COL>
-      <COL>
-        <DATA>1941</DATA>
-      </COL>
-      <COL>
-        <DATA>Gleich nach Beendigung des Lexikons hatte ich angefangen, Nachträge und Berichtigungen zu sammeln. Dabei bestand der Plan, bei einer anfälligen Neuauflage sowohl alle Glockengiesser auszuscheiden, als auch den Kreis der übrigen Namen sohon vom Jahre 1600 an so einzuschränken, wie ihn das Lexikon für das 19. Jahrhundert einschränkt. Etwa 600 Namen der 1. Auflage werden dadurch ausgemärzt und durch die rund 500 neuen Namen der Nachträge ersetzt. Die Redaktion der Namen der
-lebenden Generation hätte bei einer Neuauflage mein Freund Herr Dr.
-Hans Ehinger übernommen. Bas Erscheinen des Lexikons im Schweizer
-Musikbuch von 1939 hat diesen Plan geändert; jetzt ist für die Le-
-benden aufs beste gesorgt, und eine Neuauflage meines Lexikons von
-1928 ist nicht mehr zu erwarten. Vielleicht kann die Zusammenstell-
-ung der Bachträge aber doch einmal jemandem nützlich sein, wenn sie
-auch dem Kenner der Materie nichts Neues bringt. In einer Rezension des Lexikons hatte Prof. Cherbuliez s. Zt. beanstandet, dass die Angaben des Hist.-Biogr. Lexikons der Schweiz zu wenig berücksichtigt seien. Herr Dr. Ehinger hat sich darum vor Jahren der grossen Mühe unterzogen, die ersten Bände nach musikhistorischen Daten zu durchsuchen. Das Ergebnis seiner Funde ist in den Nachträgen verwertet. Wohl ist eine Anzahl von Stifts- und Kirchenkantoren zum
-Vorschein gekommen, aber das Bild der Schweizerischen Musikgeschichte wird dadurch wirklich nicht bereichert, und die übrigen Angaben über Musik, die sich da und dort in dem grossen Werke finden, bedürfen denn doch recht genauer Nachprüfung. Darum haben wir das mühsame
-und wenig lohnende Durchsuchen der späteren Bände aufgegeben.
-
-NB. Neue Namen sind durch * gekennzeichnet.
-
-
-Weitere Abkürzungen zum Literaturverzeichnis. 
-Braun, Lenzb. _ Emil Braun, Geschichte des Orchesters des Musik-
-vereins Lenzburg. Festschrift 1832-1932. 
-*
-Braun MCh Lenzg. = Emil Braun, Der Männerchor Lenzburg 1837-1937, 
-Lenzburg 1938. 
-Brunner	=	Carl Brunner, Das alte Zofingen und sein Chor-
-herrenstift. Aarau 1877
-Büsser	=	Max Büsser, Bie Römerdramen in der Theaterge-
-schichte der deutschen Schweiz 1500-1800. 
-Luzern: Theaterkultur-Verlag 1938. 
-Cherbuliez Quell. = A. E. Charbuliez, Quellen und Materialien zur Mu-
-sikgeschichte in Graubünden, ein bibliogra-
-phischer Versuch. Chur 1937 (S. _A. aus dem
-67. Jahresbericht der Historisch-Antiquari-
-schen Gesellschaft von Graubünden). 
-Eberle	=	Osker Eberle, Theatergeschichte der innern Schweiz. 
-Das Theater ln Luzern, Uri, Schwyz, Unterwal-
-den und Zug im Mittelalter und zur Zeit des
-Barock 1200-1800. Königsberg 1929. 
-Fallet	=	Ed. M. Fallet, La vie musicale au pays de Neuchâtel
-du 13e à la fin du 18e siècle. Strasbourg
-1936. 
-Fehr Winterthur ■ Max Fehr, Bas Musikkollegium Winterthur 1629-1837. Nach den Quollen dargestellt. Winterthur 1929
-Beilerer I, = K. G. Polierer, Mittelalterliches Musikleben der
-Stadt Breiburg im Uechtland. Regensburg 1935. 
-{Breiburger Studien zur Musikwissenschaft, 
-Heft 3), 
-Furrer	=	Sigismund Furrer, Statistik und Urkundensammlung
-über Wallis, 3 Bände, Sitten 1850-1852. 
-Geering	=	Arnold Geering, Die Vokalmusik in der Schweiz zur
-Zeit der Reformation. Schweiz. Jahrbuch für
-Musikwissenschaft, Bd. 6, Aarau 1933. 
-Gross	=	Gustav Gross, Bas Volksmusikwesen unserer Heimat. 
-Zum fünfzigjährigen Jubiläum der Stadtmusik
-Zofingen. Zofingen 1930. 
-HBL	=	Historisch-biographisches Lexikon der Schweiz. 
-Neuchâtel. 
-Haller	=	B. Haller, Bern in seinen Ratsmanualen 1465-1565. 
-2 Bände. Bern 1900, 1901. 
-Helv. sacra =	Helvetia sacra oder Reihenfolge der Kirchlichen
-Obern und Oberinnen... von E. B. v. Mülinen. 
-2 Teile, Bern 1858, 1861. 
-
-Joh. Huber	=	Johannes Huber, Geschichte des Stiftes Zurzach, Ein Beitrag zur schweizerischen Kirchengeschichte. Klingnau 1869, 
-Marxer =	Otto Marxer, Zur spätmittelalterlichen Choralgeschichte St. Gallens, Der Codex 546 der St. Galler Stiftsbibliothek. Diss, Freiburg (Schweiz), St. Gallen 1908. 
-SMuzSMZ	SMZ	=	Schweizerische Musikzeitung. Zürich. 
-Cuor ■	Tuor	=	Tuor im Jahresbericht der Historisch-antiquarischen Gesellschaft von Graubünden 1905. Reihenfolge der Domherren. 
-Waeber	=	L. Waeber, La chantrerle de Saint-Ricolas. in: Quelques notes d’histoire publiées par le ohoeur mixte de St. îlicolas à l’occasion de son £5e anniversaire. Fribourg 1928. 
-Weber	=	P. X. Weber, Musiker und Sänger im alten Luzern. S. -A. aus Geschichtsfreund, Stans, Bd. 93 1939. 
-
-Die übrigen Quellen sind mit vollem Titel angeführt. 
-</DATA>
-      </COL>
-      <COL>
-        <DATA>Refardt 1941</DATA>
-      </COL>
-      <COL>
-        <DATA>CUS</DATA>
-      </COL>
-      <COL>
-        <DATA>fertig</DATA>
-      </COL>
-      <COL>
-        <DATA>20</DATA>
-      </COL>
-      <COL>
-        <DATA>NB</DATA>
-      </COL>
-      <COL>
-        <DATA>fertig</DATA>
-      </COL>
-    </ROW>
-    <ROW MODID="5" RECORDID="12760">
-      <COL>
-        <DATA>Schuh, Willi und Refradt, Edgar: Musikerlexikon. Zürich [Atlantis]1939 (=  Schweizer Musikbuch, Bd. 2, anlässilich der Schweizerischen Landsausstellung 1939)
-</DATA>
-      </COL>
-      <COL>
-        <DATA>20.08.2019 11:06:10</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>17.02.2019 14:31:27</DATA>
-      </COL>
-      <COL>
-        <DATA>1939</DATA>
-      </COL>
-      <COL>
-        <DATA>SCHWEIZER MUSIKERLEXIKON
-Bearbeitet von
-EDGARD REFARDT (Verstorbene)
-WILLI SCHUH (Lebende)
-unter Mitarbeit von Hans Ehinger
-VORBEMERKUNG
-Die schweizerische Musikforschung besitzt in Edgar Refardts 1928 im Verlag Hug &amp;c Co. erschienenem „Historisch-Biographischem Musiker- Lexikon der Schweiz” ein grundlegendes Werk, ohne welches auch das nachfolgende Verzeichnis undenkbar ist. Es wurde nun versucht, jenem eine Arbeit beizugesellen, die ebenso als Ergänzung wie als selbständiges Unternehmen zu bestehen vermag. — Refardts Lexikon bietet für die Zeit vom frühen Mittelalter bis zum Ende des 16. Jahrhunderts „jeden Namen, der mit Musik in Verbindung gebracht wird”, für das 17. und 18. Jahrhundert alle Namen von Musikern und Instrumentenmachern (einschliesslich Stadtmusikanten und Orchestermusiker), für das 19. und 20. Jahrhundert schliesslich diejenigen der Musiker und Musikforscher, von denen gedruckte oder handschriftliche Kompositionen und Publikationen vorliegcn oder die „im lokalen Musikleben bedeutsame leitende Stellungen innehatten”. Es hält sich demnach an einen Plan mit klar vorgezeichneten Grenzen. Unser neues Verzeichnis dagegen rückt bewusst das Lebendige in den Mittelpunkt. Um sowohl Doppelspurigkeit zu vermeiden als auch Aufgaben erfüllen zu können, die ausserhalb des Re- fardt’schen Lexikonplanes liegen, suchten wir bei der Auswahl der Namen von den vermutlichen Bedürfnissen des Benützers auszugehen, d. h. weniger ein wissenschaftliches als ein praktisches Nachschlagewerk zu schaffen.
-
-
-Es wurden deshalb von den Verstorbenen nur diejenigen aufgenommen, die aus irgend einem Grunde unmittelbar oder mittelbar für die Gegenwart noch von Bedeutung sind. Die Angaben über sic sind ganz knapp gehalten, für Einzelheiten kann auf Refardts Lexikon verwiesen werden. Doch sind die Neuausgaben möglichst lückenlos genannt. Bei einigen der wichtigsten Namen (Ludwig Senfl, H. G. Nägeli, Theodor Fröhlich, Xaver Schnyder von Wartensce, Friedrich Hegar, Hans Huber, Hermann Suter, Walter Courvoisier) werden aber, zum Teil erstmals, vollständige und ins Einzelne gehende Werkverzeichnisse gegeben. 
-Auch bei den Lebenden ist kein fester Rahmen gezogen worden, weder das Vorhandensein gedruckter Werke noch die Aufführung von Kompositionen war massgebend für die Aufnahme, sondern nur die Auswirkung der Persönlichkeit, sei es durch Werke oder praktische und pädagogische Tätigkeit. Bei den Komponisten war einigermassen bestimmend die Zugehörigkeit zum Schweizerischen Tonkünstlerverein und die Berücksichtigung in seinen Festprogrammen; bei den Musikschriftstellern wurden die Grenzen ziemlich eng gezogen, d. h. nicht jeder Verfasser vereinzelter Aufsätze oder einer einzigen Publikation (z. B. der Dissertation) und nicht jeder Musikkritiker — diese erscheinen im zweiten Teil in einer eigenen Aufstellung — fand Aufnahme. Umso grösserer Wert wurde überall auf vollständige oder doch möglichst reichhaltige Werkverzeichnisse gelegt&gt; wobei auch Ungedrucktes weitgehend Berücksichtigung fand. Dass aber gelegentlich Unwichtiges unterdrückt wurde, namentlich wenn die Autoren selber (z. B. bei Jugendarbeiten) keinen Wert auf die Mitteilung legten, bedarf bei einem Lexikon, das in erster Linie der musikalischen Praxis dienen will, wohl kaum einer Rechtfertigung. Von wenigen Ausnahmen abgesehen, hat den Autoren der sie betreffende Artikel zur Einsicht und Korrektur Vorgelegen.
-Audi Dirigenten und Solisten sind aufgenommen worden. Dass die Auswahl ihrer Namen eine besonders heikle und verantwortungsvolle Aufgabe darstellte, die vom Herausgeber in engster Zusammenarbeit mit Herrn Dr. Hans Ehinger, dem Verfasser des Beitrages „Dirigenten und Solisten” zu lösen versucht wurde, versteht sich von selbst. Es handelt sidi dabei um einen ersten Versuch, der umso nachsiditiger beurteilt werden mag, als von zahlreidien Solisten (besonders aus der welschen Schweiz) trotz aller über einen grossem Zeitraum sich erstreckenden Bemühungen keine oder nur ungenügende Angaben zu erhalten waren. Es war übrigens unser Bestreben, den Kreis auch hier lieber zu eng als zu weit zu ziehen, um dadurch Raum für die Behandlung der wichtigsten Namen zu gewinnen. Eine Anzahl von Musikernamen, die ins Lexikon nicht aufgenommen werden konnten, findet der Leser überdies in den entsprechenden Kapiteln des dem „Musikleben in der Schweiz” gewidmeten zweiten Teiles des „Schweizer Musikbuches” verzeichnet.
-Verschiedene Umstände haben das Erscheinen des Schweizer Musikbuches und damit auch des vorliegenden Musiker-Verzeichnisses stark verzögert. Wenn deshalb in einzelnen Fällen Biographien und Werkverzeichnisse nicht dem allerneuesten Stand entsprechen sollten, so mag dies nachgesehen werden. — Bei der über fast zwei Jahre sich hinziehenden und mancherlei Schwierigkeiten bietenden Arbeit hat der Herausgeber in Herrn Dr. Edgar R e f a r d t (Basel) einen ebenso unermüdlichen als erfahrenen Helfer zur Seite gehabt, ohne dessen freundschaftlichen Rat und tätige 
-Mitarbeit dieses Verzeichnis kaum zustande gekommen wäre. Neben dem Genannten war es vor allem Herr Dr. Hans Ehinger (Basel), der bei dem den Lebenden gewidmeten Teil die Verantwortung mittragen half und an der Beschaffung des Materials (insbesondere des baslerischen) regen Anteil nahm. Den beiden Freunden und Kollegen sei für ihren selbstlosen, aus wahrer Liebe zur Sache geleisteten Beistand auch an dieser Stelle herz- lichst gedankt. Herrn Dr. Georg Walter (Zürich) danke ich für die liebenswürdige Ueberlassung des Verzeichnisses von Hans Georg Nägelis Nachlasswerken, Fräulein Dr. Nelly Dient (Zürich) für ihre zeitweilige Mithilfe bei der Materialverarbeitung. Schliesslich sei dem Verleger, Herrn Dr. Martin Hürlimann, für sein immerfort bereitwilliges Eingehen auf die über den ursprünglichen Plan weit hinausführenden Wünsche des Herausgebers der Dank ausgesprochen.
-Cadentario, den 1. September 1939.
-Dr. Willi Schuh. 
-
-
-Abkürzungen: M. = Manuskript / NZZ = Neue Zürcher Zeitung / SMZ = Schweizerische Musikzeitung / SMpBI = Schweizerische Musik- pädagogische Blätter / Br. &amp; H. = Breitkopf &amp; Härtel, Leipzig / U.-E. oder Univ.-Edit. = Universal Edition, Wien / Die übrigen Abkürzungen dürften ohne Schwierigkeiten aufzulösen sein.
-Jahrzahlen nach dem Werktitel beziehen sich auf die Entstehungszeit. Bei Opern wurde, soweit möglich, Ort und Jahr der Uraufführung mitangegeben. 
-
-</DATA>
-      </COL>
-      <COL>
-        <DATA>Refardt_Schuh 1939</DATA>
-      </COL>
-      <COL>
-        <DATA>CUS</DATA>
-      </COL>
-      <COL>
-        <DATA>fertig</DATA>
-      </COL>
-      <COL>
-        <DATA>28</DATA>
-      </COL>
-      <COL>
-        <DATA>CUS</DATA>
-      </COL>
-      <COL>
-        <DATA>fertig</DATA>
-      </COL>
-    </ROW>
-    <ROW MODID="7" RECORDID="12733">
+    <ROW MODID="13" RECORDID="12733">
       <COL>
         <DATA>Roth, Ernst: Lexikon der Schweizer Volksmusikanten. Aarau [AT Verlag] 1987.</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 10:06:52</DATA>
+        <DATA>15.10.2019 20:31:17</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -661,10 +367,10 @@ Jahrzahlen nach dem Werktitel beziehen sich auf die Entstehungszeit. Bei Opern w
         <DATA>1987</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Roth 1987</DATA>
+        <DATA>Roth 1987 /</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -682,12 +388,12 @@ Jahrzahlen nach dem Werktitel beziehen sich auf die Entstehungszeit. Bei Opern w
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="6" RECORDID="12734">
+    <ROW MODID="10" RECORDID="12734">
       <COL>
         <DATA>Roth, Ernst: Nachtrag zum Lexikon der Schweizer Volksmusikanten. Adliswil [E. Roth] 1994.</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 10:06:57</DATA>
+        <DATA>15.10.2019 20:31:19</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -702,10 +408,10 @@ Jahrzahlen nach dem Werktitel beziehen sich auf die Entstehungszeit. Bei Opern w
         <DATA>1994</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Roth 1994</DATA>
+        <DATA>Roth 1994 /</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -723,12 +429,12 @@ Jahrzahlen nach dem Werktitel beziehen sich auf die Entstehungszeit. Bei Opern w
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="12" RECORDID="12735">
+    <ROW MODID="14" RECORDID="12735">
       <COL>
         <DATA>Schuh Willi (Hrsg.): Schweizer Musiker-Lexikon / Dictionnaire des musiciens suisses. Im Auftrag des Schweizerischen Tonkünstlervereins. Zürich [Atlantis Verlag] 1964.</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 11:07:39</DATA>
+        <DATA>15.10.2019 20:31:25</DATA>
       </COL>
       <COL>
         <DATA>Ralli/Sonderegger</DATA>
@@ -743,10 +449,10 @@ Jahrzahlen nach dem Werktitel beziehen sich auf die Entstehungszeit. Bei Opern w
         <DATA>1964</DATA>
       </COL>
       <COL>
-        <DATA>30.3.2017: Artikel bis Boepple, Paul (Vater) von E. Ralli erschlossen; von V. Sonderegger abgeschlossen</DATA>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Schuh 1964</DATA>
+        <DATA>Schuh 1964 *</DATA>
       </COL>
       <COL>
         <DATA>Ralli</DATA>
@@ -764,12 +470,12 @@ Jahrzahlen nach dem Werktitel beziehen sich auf die Entstehungszeit. Bei Opern w
         <DATA>fertig</DATA>
       </COL>
     </ROW>
-    <ROW MODID="13" RECORDID="12736">
+    <ROW MODID="15" RECORDID="12736">
       <COL>
         <DATA>Schuh Willi, Ehinger, Hans, Meylan, Pierre und Schanzlin, Hans Peter (Hrsgg.): Schweizer Musiker-Lexikon. Im Auftrag des Schweizerischen Tonkünstlervereins. Nachtrag / Supplément. Zürich [Atlantis Verlag] 1965.</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 10:24:36</DATA>
+        <DATA>15.10.2019 20:31:27</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -784,10 +490,10 @@ Jahrzahlen nach dem Werktitel beziehen sich auf die Entstehungszeit. Bei Opern w
         <DATA>1965</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Schuh 1965</DATA>
+        <DATA>Schuh 1965 *</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -805,12 +511,12 @@ Jahrzahlen nach dem Werktitel beziehen sich auf die Entstehungszeit. Bei Opern w
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="10" RECORDID="12737">
+    <ROW MODID="13" RECORDID="12737">
       <COL>
         <DATA>Spoerri, Bruno: Jazz in der Schweiz. Zürich [Chronos-Verlag] 2006.</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 11:24:27</DATA>
+        <DATA>15.10.2019 20:31:31</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -825,12 +531,10 @@ Jahrzahlen nach dem Werktitel beziehen sich auf die Entstehungszeit. Bei Opern w
         <DATA>2006</DATA>
       </COL>
       <COL>
-        <DATA>Veränderte Fassung
-
-http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Spoerri 2006</DATA>
+        <DATA>Spoerri 2006 /</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -848,53 +552,12 @@ http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="20" RECORDID="12757">
-      <COL>
-        <DATA>Spoerri, Bruno: Jazz in der Schweiz. Zürich [Chronos-Verlag] 2017. Online [http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm]</DATA>
-      </COL>
-      <COL>
-        <DATA>20.08.2019 11:14:23</DATA>
-      </COL>
-      <COL>
-        <DATA>CUS</DATA>
-      </COL>
-      <COL>
-        <DATA>fertig Links</DATA>
-      </COL>
-      <COL>
-        <DATA>23.05.2017 15:12:19</DATA>
-      </COL>
-      <COL>
-        <DATA>Online</DATA>
-      </COL>
-      <COL>
-        <DATA>http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
-      </COL>
-      <COL>
-        <DATA>Spoerri Online</DATA>
-      </COL>
-      <COL>
-        <DATA>Online</DATA>
-      </COL>
-      <COL>
-        <DATA>fertig</DATA>
-      </COL>
-      <COL>
-        <DATA>25</DATA>
-      </COL>
-      <COL>
-        <DATA>Online</DATA>
-      </COL>
-      <COL>
-        <DATA>fertig</DATA>
-      </COL>
-    </ROW>
-    <ROW MODID="7" RECORDID="12738">
+    <ROW MODID="11" RECORDID="12738">
       <COL>
         <DATA>Mathes Seidl, Hans Steinbeck (Hrsg.): Schweizer Komponisten unserer Zeit. Biographien, Werkverzeichnisse mit Diskographie und Bibliographie. Winterthur [Amadeus] 1975. </DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 11:09:12</DATA>
+        <DATA>15.10.2019 20:31:37</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -909,10 +572,10 @@ http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
         <DATA>1975</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Steinbeck 1975</DATA>
+        <DATA>Steinbeck 1975 /</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -930,12 +593,12 @@ http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="8" RECORDID="12739">
+    <ROW MODID="11" RECORDID="12739">
       <COL>
         <DATA>Mathes Seidl, Hans Steinbeck (Hrsg.): Schweizer Komponisten unserer Zeit. Biographien, Werkverzeichnisse mit Diskographie und Bibliographie. Winterthur [Amadeus] 19832.</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 11:09:26</DATA>
+        <DATA>15.10.2019 20:31:39</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -950,10 +613,10 @@ http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
         <DATA>1983</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Steinbeck 1983</DATA>
+        <DATA>Steinbeck 1983 /</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -971,12 +634,12 @@ http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="6" RECORDID="12740">
+    <ROW MODID="9" RECORDID="12740">
       <COL>
         <DATA>SUISA-Stiftung für Musik. Neuchâtel [SUISA] 1993.</DATA>
       </COL>
       <COL>
-        <DATA>21.02.2018 10:54:05</DATA>
+        <DATA>15.10.2019 20:31:41</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -991,10 +654,10 @@ http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
         <DATA>1993</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>SUISA 1993</DATA>
+        <DATA>SUISA 1993 /</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -1012,12 +675,12 @@ http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="6" RECORDID="12741">
+    <ROW MODID="9" RECORDID="12741">
       <COL>
         <DATA>SUISA-Stiftung für Musik. Neuchâtel [SUISA] 1999.</DATA>
       </COL>
       <COL>
-        <DATA>21.02.2018 11:09:57</DATA>
+        <DATA>15.10.2019 20:31:43</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -1032,10 +695,10 @@ http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
         <DATA>1999</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>SUISA 1999</DATA>
+        <DATA>SUISA 1999 /</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -1053,12 +716,94 @@ http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="8" RECORDID="12754">
+    <ROW MODID="17" RECORDID="12752">
+      <COL>
+        <DATA>Refardt, Edgar: Ergänzungen und Berichtigungen zum Historisch-Biographischen Musikerlexikon der Schweiz 1928. Basel [Maschr.] 1941. Standort: „Standort Nationalbibliothek Bern: Signatur NGq744.</DATA>
+      </COL>
+      <COL>
+        <DATA>15.10.2019 20:31:11</DATA>
+      </COL>
+      <COL>
+        <DATA>CUS</DATA>
+      </COL>
+      <COL>
+        <DATA>mit 1. Korrektur</DATA>
+      </COL>
+      <COL>
+        <DATA>30.03.2017 13:56:25</DATA>
+      </COL>
+      <COL>
+        <DATA>1941</DATA>
+      </COL>
+      <COL>
+        <DATA>2</DATA>
+      </COL>
+      <COL>
+        <DATA>Refardt 1941 *</DATA>
+      </COL>
+      <COL>
+        <DATA>CUS</DATA>
+      </COL>
+      <COL>
+        <DATA>fertig</DATA>
+      </COL>
+      <COL>
+        <DATA>20</DATA>
+      </COL>
+      <COL>
+        <DATA>NB</DATA>
+      </COL>
+      <COL>
+        <DATA>fertig</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="14" RECORDID="12753">
+      <COL>
+        <DATA>Dizionario dei musicisti della Svizzera italiana. Online [http://www.ricercamusica.ch/dizionario/index.html]</DATA>
+      </COL>
+      <COL>
+        <DATA>15.10.2019 20:30:40</DATA>
+      </COL>
+      <COL>
+        <DATA>CUS</DATA>
+      </COL>
+      <COL>
+        <DATA>fertig Links</DATA>
+      </COL>
+      <COL>
+        <DATA>02.04.2017 12:11:46</DATA>
+      </COL>
+      <COL>
+        <DATA>Online</DATA>
+      </COL>
+      <COL>
+        <DATA>2</DATA>
+      </COL>
+      <COL>
+        <DATA>DT Online °</DATA>
+      </COL>
+      <COL>
+        <DATA>online</DATA>
+      </COL>
+      <COL>
+        <DATA>fertig</DATA>
+      </COL>
+      <COL>
+        <DATA>21</DATA>
+      </COL>
+      <COL>
+        <DATA>online</DATA>
+      </COL>
+      <COL>
+        <DATA>fertig</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="12" RECORDID="12754">
       <COL>
         <DATA>Theaterlexikon der Schweiz, Chronos Verlag Zürich 2005. Online [http://tls.theaterwissenschaft.ch/wiki/Kategorie:A-Z]</DATA>
       </COL>
       <COL>
-        <DATA>20.08.2019 11:14:34</DATA>
+        <DATA>15.10.2019 20:31:48</DATA>
       </COL>
       <COL>
         <DATA>CUS</DATA>
@@ -1070,13 +815,13 @@ http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
         <DATA>21.04.2017 00:36:09</DATA>
       </COL>
       <COL>
-        <DATA>Online</DATA>
+        <DATA>2005</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>2</DATA>
       </COL>
       <COL>
-        <DATA>Theater Lexikon Online</DATA>
+        <DATA>Theater Lexikon Online 2005 °</DATA>
       </COL>
       <COL>
         <DATA>Online</DATA>
@@ -1092,6 +837,212 @@ http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm</DATA>
       </COL>
       <COL>
         <DATA>fertig</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="23" RECORDID="12757">
+      <COL>
+        <DATA>Spoerri, Bruno: Jazz in der Schweiz. Zürich [Chronos-Verlag] 2017. Online [http://www.fonoteca.ch/gallery/jazzBiographies/jazzBiographies_de.htm]</DATA>
+      </COL>
+      <COL>
+        <DATA>15.10.2019 20:31:35</DATA>
+      </COL>
+      <COL>
+        <DATA>CUS</DATA>
+      </COL>
+      <COL>
+        <DATA>fertig Links</DATA>
+      </COL>
+      <COL>
+        <DATA>23.05.2017 15:12:19</DATA>
+      </COL>
+      <COL>
+        <DATA>2017</DATA>
+      </COL>
+      <COL>
+        <DATA>2</DATA>
+      </COL>
+      <COL>
+        <DATA>Spoerri Online 2017 °</DATA>
+      </COL>
+      <COL>
+        <DATA>Online</DATA>
+      </COL>
+      <COL>
+        <DATA>fertig</DATA>
+      </COL>
+      <COL>
+        <DATA>25</DATA>
+      </COL>
+      <COL>
+        <DATA>Online</DATA>
+      </COL>
+      <COL>
+        <DATA>fertig</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="7" RECORDID="12759">
+      <COL>
+        <DATA>Österreichisches Musiklexikon. Österreichische Akademie der Wissenschaften Online [http://www.oeaw.ac.at]</DATA>
+      </COL>
+      <COL>
+        <DATA>15.10.2019 20:31:02</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>23.11.2017 11:48:11</DATA>
+      </COL>
+      <COL>
+        <DATA>2013</DATA>
+      </COL>
+      <COL>
+        <DATA>2</DATA>
+      </COL>
+      <COL>
+        <DATA>OEML Online 2013 °</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>27</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="9" RECORDID="12760">
+      <COL>
+        <DATA>Schuh, Willi und Refardt, Edgar: Musikerlexikon. Zürich [Atlantis]1939 (=  Schweizer Musikbuch, Bd. 2, anlässilich der Schweizerischen Landesausstellung 1939).
+</DATA>
+      </COL>
+      <COL>
+        <DATA>15.10.2019 20:31:15</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>17.02.2019 14:31:27</DATA>
+      </COL>
+      <COL>
+        <DATA>1939</DATA>
+      </COL>
+      <COL>
+        <DATA>2</DATA>
+      </COL>
+      <COL>
+        <DATA>Refardt_Schuh 1939 *</DATA>
+      </COL>
+      <COL>
+        <DATA>CUS</DATA>
+      </COL>
+      <COL>
+        <DATA>fertig</DATA>
+      </COL>
+      <COL>
+        <DATA>28</DATA>
+      </COL>
+      <COL>
+        <DATA>CUS</DATA>
+      </COL>
+      <COL>
+        <DATA>fertig</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="9" RECORDID="12761">
+      <COL>
+        <DATA>Musiklexikon der Schweiz / Dictinonnaire de la musique en Suisse / Dizionario della musica in Svizzera / Dictionary of Music in Switzerland. Hrsg. von der Schweizerischen Musikforschenden Gesellschaft im Auftrag des Schweizer Musikrats. Online [https://mls.0807.dasch.swiss/]</DATA>
+      </COL>
+      <COL>
+        <DATA>15.10.2019 20:30:56</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>20.08.2019 10:45:02</DATA>
+      </COL>
+      <COL>
+        <DATA>2019</DATA>
+      </COL>
+      <COL>
+        <DATA>1</DATA>
+      </COL>
+      <COL>
+        <DATA>MLS Online 2019 *</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>29</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="12762">
+      <COL>
+        <DATA>Répertoire Internationale des sources musicales. Online [http://www.rism.info/de/startseite.html]</DATA>
+      </COL>
+      <COL>
+        <DATA>20.10.2019 16:00:59</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>20.10.2019 14:38:32</DATA>
+      </COL>
+      <COL>
+        <DATA>2019</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>RISM Online 2019 °</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>30</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
       </COL>
     </ROW>
   </RESULTSET>
