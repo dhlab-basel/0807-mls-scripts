@@ -15,7 +15,8 @@ article_type_lut = {
         'Sache': 'thing',
         'Ort': 'location',
         'Institution': 'institution',
-        'Liste': 'List'
+        'Liste': 'List',
+        'Verweis': 'person'  # quick fix for error in the data. Verweis is not a valid value for article type!
 }
 
 sex_lut = {
@@ -672,6 +673,7 @@ def create_article_resources(
 
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
+
 def create_exemplar_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: IrisLookup, library_iris_lookup: IrisLookup, debug: bool = False):
     """Creates mls:Exemplar resources"""
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
@@ -718,6 +720,7 @@ def create_exemplar_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: Ir
 
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
+
 def create_lexicon_lexicon_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: IrisLookup, debug: bool = False):
     """Creates mls:LexiconLexicon resources"""
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
@@ -759,6 +762,7 @@ def create_lexicon_lexicon_resources(xmlfile, bulk: BulkImport, lexicon_iris_loo
                 'LXLX_' + str(rec_id), rec_id, record)
 
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
+
 
 def main():
     parser = argparse.ArgumentParser()
