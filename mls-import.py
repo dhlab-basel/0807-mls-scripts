@@ -11,18 +11,18 @@ import sys
 import inspect
 
 article_type_lut = {
-        'Person': 'person',
-        'Sache': 'thing',
-        'Ort': 'location',
-        'Institution': 'institution',
-        'Liste': 'List',
-        'Verweis': 'person'  # quick fix for error in the data. Verweis is not a valid value for article type!
+    'Person': 'person',
+    'Sache': 'thing',
+    'Ort': 'location',
+    'Institution': 'institution',
+    'Liste': 'List',
+    'Verweis': 'person'  # quick fix for error in the data. Verweis is not a valid value for article type!
 }
 
 sex_lut = {
-        'männlich': 'male',
-        'weiblich': 'female',
-        'weiblich & männliche Gruppe': 'male+female'
+    'männlich': 'male',
+    'weiblich': 'female',
+    'weiblich & männliche Gruppe': 'male+female'
 }
 
 
@@ -102,7 +102,6 @@ def convert_relevance_key(key):
 
 
 def convert_to_julian_day_count(datestring):
-
     # data cleaning
     if "." not in datestring:
         fmt = "%Y"
@@ -145,7 +144,7 @@ def get_rows(xmlfile):
 
 def create_library_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     """Creates mls:Library resources"""
-    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -186,7 +185,7 @@ def create_library_resources(xmlfile, bulk: BulkImport, debug: bool = False):
 
 def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = False):
     """Creates mls:Lemma resources"""
-    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -244,14 +243,16 @@ def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = Fal
 
                     if valpos[i] == "Relevantes Lemma":
                         record["hasRelevanceValue"] = ll.get_list_node_iri("relevance",
-                                                                           convert_relevance_key(data.firstChild.nodeValue))
+                                                                           convert_relevance_key(
+                                                                               data.firstChild.nodeValue))
 
                     if valpos[i] == "Varianten":
                         record["hasVariants"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Verstorben":
                         record["hasDeceasedValue"] = ll.get_list_node_iri("deceased",
-                                                                          convert_deceased_key(data.firstChild.nodeValue))
+                                                                          convert_deceased_key(
+                                                                              data.firstChild.nodeValue))
 
                     if valpos[i] == "VIAF":
                         record["hasViaf"] = data.firstChild.nodeValue
@@ -274,15 +275,15 @@ def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = Fal
             print("------------------------------------------")
 
         bulk.add_resource(
-             'Lemma',
-             'LM_' + str(rec_id), record["hasLemmaText"], record)
+            'Lemma',
+            'LM_' + str(rec_id), record["hasLemmaText"], record)
 
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
 def create_occupation_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     """Creates mls:Occupation resources"""
-    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -319,9 +320,10 @@ def create_occupation_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
-def create_lemma_occupation_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisLookup, occupation_iris_lookup: IrisLookup, debug:bool = False):
+def create_lemma_occupation_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisLookup,
+                                      occupation_iris_lookup: IrisLookup, debug: bool = False):
     """Creates mls:LemmaOccupation resources"""
-    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -338,7 +340,8 @@ def create_lemma_occupation_resources(xmlfile, bulk: BulkImport, lemma_iris_look
                 if valpos[i] == "PKF_Lemma":
                     record["hasLOLinkToLemma"] = lemma_iris_lookup.get_resource_iri('LM_' + data.firstChild.nodeValue)
                 if valpos[i] == "PKF_Wert":
-                    record["hasLOLinkToOccupation"] = occupation_iris_lookup.get_resource_iri('OCC_' + data.firstChild.nodeValue)
+                    record["hasLOLinkToOccupation"] = occupation_iris_lookup.get_resource_iri(
+                        'OCC_' + data.firstChild.nodeValue)
                 if valpos[i] == "Kommentar":
                     record["hasLOComment"] = data.firstChild.nodeValue
             i += 1
@@ -363,7 +366,7 @@ def create_lemma_occupation_resources(xmlfile, bulk: BulkImport, lemma_iris_look
 
 def create_location_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     """Creates mls:Location resources"""
-    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -406,9 +409,10 @@ def create_location_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
-def create_lemma_location_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisLookup, location_iris_lookup: IrisLookup, debug: bool = False):
+def create_lemma_location_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisLookup,
+                                    location_iris_lookup: IrisLookup, debug: bool = False):
     """Creates mls:LemmaLocation resources"""
-    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -425,7 +429,8 @@ def create_lemma_location_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup
                 if valpos[i] == "PKF_Lemma":
                     record["hasLLLinkToLemma"] = lemma_iris_lookup.get_resource_iri('LM_' + data.firstChild.nodeValue)
                 if valpos[i] == "PKF_Wert":
-                    record["hasLLLinkToLocation"] = location_iris_lookup.get_resource_iri('LOC_' + data.firstChild.nodeValue)
+                    record["hasLLLinkToLocation"] = location_iris_lookup.get_resource_iri(
+                        'LOC_' + data.firstChild.nodeValue)
                 if valpos[i] == "Bezug zum Ort":
                     record["hasLLRelation"] = data.firstChild.nodeValue
                 if valpos[i] == "Kommentar":
@@ -453,7 +458,7 @@ def create_lemma_location_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup
 
 def create_lexicon_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     """Creates mls:Lexicon resources"""
-    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -525,9 +530,8 @@ def create_article_resources(
         lexicon_iris_lookup: IrisLookup,
         part: int,
         debug: bool = False):
-
     """Creates mls:Article resources"""
-    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -548,10 +552,12 @@ def create_article_resources(
                         rec_id = data.firstChild.nodeValue
 
                     if valpos[i] == "PKF_Lemma":
-                        record["hasALinkToLemma"] = lemma_iris_lookup.get_resource_iri('LM_' + data.firstChild.nodeValue)
+                        record["hasALinkToLemma"] = lemma_iris_lookup.get_resource_iri(
+                            'LM_' + data.firstChild.nodeValue)
 
                     if valpos[i] == "PKF_Lexikon":
-                        record["hasALinkToLexicon"] = lexicon_iris_lookup.get_resource_iri('LX_' + data.firstChild.nodeValue)
+                        record["hasALinkToLexicon"] = lexicon_iris_lookup.get_resource_iri(
+                            'LX_' + data.firstChild.nodeValue)
 
                     if valpos[i] == "Seite":
                         record["hasPages"] = data.firstChild.nodeValue
@@ -674,9 +680,10 @@ def create_article_resources(
     print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
 
 
-def create_exemplar_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: IrisLookup, library_iris_lookup: IrisLookup, debug: bool = False):
+def create_exemplar_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: IrisLookup,
+                              library_iris_lookup: IrisLookup, debug: bool = False):
     """Creates mls:Exemplar resources"""
-    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -691,9 +698,11 @@ def create_exemplar_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: Ir
                 if valpos[i] == "PK_Exe":
                     rec_id = data.firstChild.nodeValue
                 if valpos[i] == "PKF_Bibl":
-                    record["hasExamplarLinkToLibrary"] = library_iris_lookup.get_resource_iri('LIB_' + data.firstChild.nodeValue)
+                    record["hasExamplarLinkToLibrary"] = library_iris_lookup.get_resource_iri(
+                        'LIB_' + data.firstChild.nodeValue)
                 if valpos[i] == "PKF_Titel":
-                    record["hasExemplarLinkToLexicon"] = lexicon_iris_lookup.get_resource_iri('LX_' + data.firstChild.nodeValue)
+                    record["hasExemplarLinkToLexicon"] = lexicon_iris_lookup.get_resource_iri(
+                        'LX_' + data.firstChild.nodeValue)
                 if valpos[i] == "Exemplarnr":
                     record["hasExamplarNumber"] = data.firstChild.nodeValue
                 if valpos[i] == "Signatur":
@@ -723,7 +732,7 @@ def create_exemplar_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: Ir
 
 def create_lexicon_lexicon_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: IrisLookup, debug: bool = False):
     """Creates mls:LexiconLexicon resources"""
-    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name ))
+    print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -736,10 +745,12 @@ def create_lexicon_lexicon_resources(xmlfile, bulk: BulkImport, lexicon_iris_loo
         for data in datas:
             if data.firstChild is not None:
                 if valpos[i] == "PKF_TitelA":
-                    record["hasLexiconLinkToParent"] = lexicon_iris_lookup.get_resource_iri('LX_' + data.firstChild.nodeValue)
+                    record["hasLexiconLinkToParent"] = lexicon_iris_lookup.get_resource_iri(
+                        'LX_' + data.firstChild.nodeValue)
                     rec_id += data.firstChild.nodeValue
                 if valpos[i] == "PKF_TitelB":
-                    record["hasLexiconLinkToChild"] = lexicon_iris_lookup.get_resource_iri('LX_' + data.firstChild.nodeValue)
+                    record["hasLexiconLinkToChild"] = lexicon_iris_lookup.get_resource_iri(
+                        'LX_' + data.firstChild.nodeValue)
                     rec_id += '-' + data.firstChild.nodeValue
                 if valpos[i] == "Kommentar":
                     record["hasLexiconLexiconComment"] = data.firstChild.nodeValue
@@ -1031,9 +1042,9 @@ def main():
     exemplar_data_xml = './data/exemplar.xml'
     exemplar_bulk_object = BulkImport(schema)
     create_exemplar_resources(exemplar_data_xml,
-                             exemplar_bulk_object,
-                             lexicon_iris_lookup,
-                             library_iris_lookup)
+                              exemplar_bulk_object,
+                              lexicon_iris_lookup,
+                              library_iris_lookup)
     print("==> Exemplar upload start ...")
     r = exemplar_bulk_object.upload(args.user, args.password, "localhost", "3333")
     exemplar_iris_lookup = IrisLookup(r)
