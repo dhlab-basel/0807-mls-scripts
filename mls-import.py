@@ -260,7 +260,7 @@ def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = Fal
                     # try to find sublemmata for current lemma
                     try:
                         l2s = l2l_lut[rec_id]
-                        record["hasSubLema"] = l2s
+                        record["hasSubLemma"] = l2s
                     except KeyError:
                         pass
             i += 1
