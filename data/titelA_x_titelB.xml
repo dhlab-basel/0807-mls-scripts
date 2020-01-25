@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
   <ERRORCODE>0</ERRORCODE>
-  <PRODUCT BUILD="12-18-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.4"/>
-  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2018_12_13 neu.fmp12" RECORDS="74" TIMEFORMAT="k:mm:ss "/>
+  <PRODUCT BUILD="04-12-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.1"/>
+  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2019_10_12.fmp12" RECORDS="74" TIMEFORMAT="k:mm:ss "/>
   <METADATA>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="SingleCode" TYPE="TEXT"/>
     <FIELD EMPTYOK="NO" MAXREPEAT="1" NAME="PKF_TitelA" TYPE="NUMBER"/>
@@ -14,7 +14,6 @@
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Liste" TYPE="NUMBER"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="TitelA_Formel" TYPE="TEXT"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="TitelB_Formel" TYPE="TEXT"/>
-    <FIELD EMPTYOK="NO" MAXREPEAT="1" NAME="Artikel::PK_Artikel" TYPE="NUMBER"/>
   </METADATA>
   <RESULTSET FOUND="74">
     <ROW MODID="1" RECORDID="15">
@@ -49,7 +48,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="16">
       <COL>
@@ -82,7 +80,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="1" RECORDID="23">
       <COL>
@@ -115,7 +112,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="24">
       <COL>
@@ -148,7 +144,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="25">
       <COL>
@@ -181,7 +176,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="26">
       <COL>
@@ -214,7 +208,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="27">
       <COL>
@@ -247,7 +240,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="28">
       <COL>
@@ -280,7 +272,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="29">
       <COL>
@@ -313,7 +304,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="1" RECORDID="30">
       <COL>
@@ -346,7 +336,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="31">
       <COL>
@@ -379,7 +368,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="32">
       <COL>
@@ -412,7 +400,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="33">
       <COL>
@@ -445,7 +432,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="34">
       <COL>
@@ -478,7 +464,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="37">
       <COL>
@@ -511,7 +496,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="38">
       <COL>
@@ -544,7 +528,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="1" RECORDID="39">
       <COL>
@@ -577,7 +560,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="40">
       <COL>
@@ -610,7 +592,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="41">
       <COL>
@@ -643,7 +624,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="42">
       <COL>
@@ -676,7 +656,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="43">
       <COL>
@@ -709,7 +688,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="44">
       <COL>
@@ -742,7 +720,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="45">
       <COL>
@@ -775,7 +752,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="46">
       <COL>
@@ -808,7 +784,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="47">
       <COL>
@@ -841,7 +816,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="48">
       <COL>
@@ -874,7 +848,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="1" RECORDID="49">
       <COL>
@@ -907,7 +880,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="50">
       <COL>
@@ -940,7 +912,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="51">
       <COL>
@@ -973,7 +944,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="1" RECORDID="52">
       <COL>
@@ -1006,7 +976,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="53">
       <COL>
@@ -1039,7 +1008,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="54">
       <COL>
@@ -1072,7 +1040,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="55">
       <COL>
@@ -1105,7 +1072,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="56">
       <COL>
@@ -1138,7 +1104,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="57">
       <COL>
@@ -1171,7 +1136,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="58">
       <COL>
@@ -1204,7 +1168,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="59">
       <COL>
@@ -1237,7 +1200,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="60">
       <COL>
@@ -1270,7 +1232,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="62">
       <COL>
@@ -1303,7 +1264,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="63">
       <COL>
@@ -1336,7 +1296,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="64">
       <COL>
@@ -1369,7 +1328,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="65">
       <COL>
@@ -1402,7 +1360,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="66">
       <COL>
@@ -1435,7 +1392,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="1" RECORDID="67">
       <COL>
@@ -1468,7 +1424,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="2" RECORDID="68">
       <COL>
@@ -1501,7 +1456,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="69">
       <COL>
@@ -1534,7 +1488,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="3" RECORDID="70">
       <COL>
@@ -1567,7 +1520,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="71">
       <COL>
@@ -1600,7 +1552,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="72">
       <COL>
@@ -1633,7 +1584,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="73">
       <COL>
@@ -1666,7 +1616,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="74">
       <COL>
@@ -1699,7 +1648,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="75">
       <COL>
@@ -1732,7 +1680,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="76">
       <COL>
@@ -1765,7 +1712,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="77">
       <COL>
@@ -1798,7 +1744,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="78">
       <COL>
@@ -1831,7 +1776,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="79">
       <COL>
@@ -1864,7 +1808,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="80">
       <COL>
@@ -1897,7 +1840,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="1" RECORDID="81">
       <COL>
@@ -1930,7 +1872,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="82">
       <COL>
@@ -1963,7 +1904,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="2" RECORDID="83">
       <COL>
@@ -1996,7 +1936,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="84">
       <COL>
@@ -2029,7 +1968,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="2" RECORDID="85">
       <COL>
@@ -2062,7 +2000,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="87">
       <COL>
@@ -2095,7 +2032,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="89">
       <COL>
@@ -2128,7 +2064,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="90">
       <COL>
@@ -2161,7 +2096,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="1" RECORDID="91">
       <COL>
@@ -2194,7 +2128,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="1" RECORDID="92">
       <COL>
@@ -2227,7 +2160,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="93">
       <COL>
@@ -2260,7 +2192,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="94">
       <COL>
@@ -2293,7 +2224,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="95">
       <COL>
@@ -2326,7 +2256,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="96">
       <COL>
@@ -2359,7 +2288,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="97">
       <COL>
@@ -2392,7 +2320,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="98">
       <COL>
@@ -2425,7 +2352,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
     <ROW MODID="0" RECORDID="99">
       <COL>
@@ -2458,7 +2384,6 @@ zitiert aus: Kramer 1992: The Future of Musicology, S, 7</DATA>
       <COL>
         <DATA/>
       </COL>
-      <COL/>
     </ROW>
   </RESULTSET>
 </FMPXMLRESULT>

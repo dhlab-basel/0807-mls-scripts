@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
   <ERRORCODE>0</ERRORCODE>
-  <PRODUCT BUILD="12-18-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.4"/>
-  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2018_12_13 neu.fmp12" RECORDS="1950" TIMEFORMAT="k:mm:ss "/>
+  <PRODUCT BUILD="04-12-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.1"/>
+  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2019_10_12.fmp12" RECORDS="1954" TIMEFORMAT="k:mm:ss "/>
   <METADATA>
     <FIELD EMPTYOK="NO" MAXREPEAT="1" NAME="PK_Lemma_x_Ort" TYPE="NUMBER"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="SingleCode" TYPE="TEXT"/>
@@ -12,7 +12,283 @@
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Fehler" TYPE="TEXT"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Kommentar" TYPE="NUMBER"/>
   </METADATA>
-  <RESULTSET FOUND="1950">
+  <RESULTSET FOUND="1954">
+    <ROW MODID="0" RECORDID="578">
+      <COL>
+        <DATA>125</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="913">
+      <COL>
+        <DATA>444</DATA>
+      </COL>
+      <COL>
+        <DATA>310|4764|</DATA>
+      </COL>
+      <COL>
+        <DATA>4764</DATA>
+      </COL>
+      <COL>
+        <DATA>310</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="952">
+      <COL>
+        <DATA>483</DATA>
+      </COL>
+      <COL>
+        <DATA>5427|568|</DATA>
+      </COL>
+      <COL>
+        <DATA>568</DATA>
+      </COL>
+      <COL>
+        <DATA>5427</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1992">
+      <COL>
+        <DATA>1523</DATA>
+      </COL>
+      <COL>
+        <DATA>5786|1760|</DATA>
+      </COL>
+      <COL>
+        <DATA>1760</DATA>
+      </COL>
+      <COL>
+        <DATA>5786</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1993">
+      <COL>
+        <DATA>1524</DATA>
+      </COL>
+      <COL>
+        <DATA>5428|1760|</DATA>
+      </COL>
+      <COL>
+        <DATA>1760</DATA>
+      </COL>
+      <COL>
+        <DATA>5428</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1994">
+      <COL>
+        <DATA>1525</DATA>
+      </COL>
+      <COL>
+        <DATA>5403|1760|</DATA>
+      </COL>
+      <COL>
+        <DATA>1760</DATA>
+      </COL>
+      <COL>
+        <DATA>5403</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1995">
+      <COL>
+        <DATA>1526</DATA>
+      </COL>
+      <COL>
+        <DATA>5345|1920|</DATA>
+      </COL>
+      <COL>
+        <DATA>1920</DATA>
+      </COL>
+      <COL>
+        <DATA>5345</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1996">
+      <COL>
+        <DATA>1527</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|6724|</DATA>
+      </COL>
+      <COL>
+        <DATA>6724</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1997">
+      <COL>
+        <DATA>1528</DATA>
+      </COL>
+      <COL>
+        <DATA>3758|3116|</DATA>
+      </COL>
+      <COL>
+        <DATA>3116</DATA>
+      </COL>
+      <COL>
+        <DATA>3758</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1998">
+      <COL>
+        <DATA>1529</DATA>
+      </COL>
+      <COL>
+        <DATA>5576|3957|</DATA>
+      </COL>
+      <COL>
+        <DATA>3957</DATA>
+      </COL>
+      <COL>
+        <DATA>5576</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="2013">
+      <COL>
+        <DATA>1544</DATA>
+      </COL>
+      <COL>
+        <DATA>5859|150|</DATA>
+      </COL>
+      <COL>
+        <DATA>150</DATA>
+      </COL>
+      <COL>
+        <DATA>5859</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="2727">
+      <COL>
+        <DATA>2258</DATA>
+      </COL>
+      <COL>
+        <DATA>502|1588|</DATA>
+      </COL>
+      <COL>
+        <DATA>1588</DATA>
+      </COL>
+      <COL>
+        <DATA>502</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
     <ROW MODID="0" RECORDID="456">
       <COL>
         <DATA>3</DATA>
@@ -97,29 +373,6 @@
       </COL>
       <COL>
         <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="461">
-      <COL>
-        <DATA>8</DATA>
-      </COL>
-      <COL>
-        <DATA>5403|139|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>139</DATA>
-      </COL>
-      <COL>
-        <DATA>5403</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -450,52 +703,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="477">
-      <COL>
-        <DATA>24</DATA>
-      </COL>
-      <COL>
-        <DATA>1292|2029|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>2029</DATA>
-      </COL>
-      <COL>
-        <DATA>1292</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="479">
-      <COL>
-        <DATA>26</DATA>
-      </COL>
-      <COL>
-        <DATA>4097|2056|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>2056</DATA>
-      </COL>
-      <COL>
-        <DATA>4097</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="480">
       <COL>
         <DATA>27</DATA>
@@ -519,29 +726,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="482">
-      <COL>
-        <DATA>29</DATA>
-      </COL>
-      <COL>
-        <DATA>972|2251|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>2251</DATA>
-      </COL>
-      <COL>
-        <DATA>972</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="483">
       <COL>
         <DATA>30</DATA>
@@ -557,29 +741,6 @@
       </COL>
       <COL>
         <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="2" RECORDID="487">
-      <COL>
-        <DATA>34</DATA>
-      </COL>
-      <COL>
-        <DATA>5403|3352|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3352</DATA>
-      </COL>
-      <COL>
-        <DATA>5403</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -841,52 +1002,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="504">
-      <COL>
-        <DATA>51</DATA>
-      </COL>
-      <COL>
-        <DATA>6003|3492|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3492</DATA>
-      </COL>
-      <COL>
-        <DATA>6003</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="505">
-      <COL>
-        <DATA>52</DATA>
-      </COL>
-      <COL>
-        <DATA>1817|3498|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3498</DATA>
-      </COL>
-      <COL>
-        <DATA>1817</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="506">
       <COL>
         <DATA>53</DATA>
@@ -902,29 +1017,6 @@
       </COL>
       <COL>
         <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="512">
-      <COL>
-        <DATA>59</DATA>
-      </COL>
-      <COL>
-        <DATA>5461|3532|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3532</DATA>
-      </COL>
-      <COL>
-        <DATA>5461</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -1048,29 +1140,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="519">
-      <COL>
-        <DATA>66</DATA>
-      </COL>
-      <COL>
-        <DATA>2165|3585|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3585</DATA>
-      </COL>
-      <COL>
-        <DATA>2165</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="520">
       <COL>
         <DATA>67</DATA>
@@ -1117,29 +1186,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="522">
-      <COL>
-        <DATA>69</DATA>
-      </COL>
-      <COL>
-        <DATA>5403|3592|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3592</DATA>
-      </COL>
-      <COL>
-        <DATA>5403</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="523">
       <COL>
         <DATA>70</DATA>
@@ -1178,29 +1224,6 @@
       </COL>
       <COL>
         <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="525">
-      <COL>
-        <DATA>72</DATA>
-      </COL>
-      <COL>
-        <DATA>2464|3600|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3600</DATA>
-      </COL>
-      <COL>
-        <DATA>2464</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -1393,75 +1416,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="534">
-      <COL>
-        <DATA>81</DATA>
-      </COL>
-      <COL>
-        <DATA>1292|3676|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3676</DATA>
-      </COL>
-      <COL>
-        <DATA>1292</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="535">
-      <COL>
-        <DATA>82</DATA>
-      </COL>
-      <COL>
-        <DATA>348|3681|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3681</DATA>
-      </COL>
-      <COL>
-        <DATA>348</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="536">
-      <COL>
-        <DATA>83</DATA>
-      </COL>
-      <COL>
-        <DATA>1817|3687|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3687</DATA>
-      </COL>
-      <COL>
-        <DATA>1817</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="537">
       <COL>
         <DATA>84</DATA>
@@ -1646,29 +1600,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="547">
-      <COL>
-        <DATA>94</DATA>
-      </COL>
-      <COL>
-        <DATA>3227|3834|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3834</DATA>
-      </COL>
-      <COL>
-        <DATA>3227</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="548">
       <COL>
         <DATA>95</DATA>
@@ -1738,29 +1669,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="553">
-      <COL>
-        <DATA>100</DATA>
-      </COL>
-      <COL>
-        <DATA>303|3871|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3871</DATA>
-      </COL>
-      <COL>
-        <DATA>303</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="554">
       <COL>
         <DATA>101</DATA>
@@ -1799,29 +1707,6 @@
       </COL>
       <COL>
         <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="556">
-      <COL>
-        <DATA>103</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|3933|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3933</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -1937,29 +1822,6 @@
       </COL>
       <COL>
         <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="563">
-      <COL>
-        <DATA>110</DATA>
-      </COL>
-      <COL>
-        <DATA>169|3973|Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3973</DATA>
-      </COL>
-      <COL>
-        <DATA>169</DATA>
-      </COL>
-      <COL>
-        <DATA>Tätigkeitsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -2267,12 +2129,412 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="578">
+    <ROW MODID="2" RECORDID="905">
+      <COL>
+        <DATA>436</DATA>
+      </COL>
+      <COL>
+        <DATA>1907|1205|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1205</DATA>
+      </COL>
+      <COL>
+        <DATA>1907</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="962">
+      <COL>
+        <DATA>493</DATA>
+      </COL>
+      <COL>
+        <DATA>1727|753|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>753</DATA>
+      </COL>
+      <COL>
+        <DATA>1727</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="967">
+      <COL>
+        <DATA>498</DATA>
+      </COL>
+      <COL>
+        <DATA>4097|822|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>822</DATA>
+      </COL>
+      <COL>
+        <DATA>4097</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="970">
+      <COL>
+        <DATA>501</DATA>
+      </COL>
+      <COL>
+        <DATA>1082|884|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>884</DATA>
+      </COL>
+      <COL>
+        <DATA>1082</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="971">
+      <COL>
+        <DATA>502</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|946|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>946</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="985">
+      <COL>
+        <DATA>516</DATA>
+      </COL>
+      <COL>
+        <DATA>5442|1002|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1002</DATA>
+      </COL>
+      <COL>
+        <DATA>5442</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="988">
+      <COL>
+        <DATA>519</DATA>
+      </COL>
+      <COL>
+        <DATA>5444|1028|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1028</DATA>
+      </COL>
+      <COL>
+        <DATA>5444</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="994">
+      <COL>
+        <DATA>525</DATA>
+      </COL>
+      <COL>
+        <DATA>5447|1041|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1041</DATA>
+      </COL>
+      <COL>
+        <DATA>5447</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="995">
+      <COL>
+        <DATA>526</DATA>
+      </COL>
+      <COL>
+        <DATA>972|1069|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1069</DATA>
+      </COL>
+      <COL>
+        <DATA>972</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="996">
+      <COL>
+        <DATA>527</DATA>
+      </COL>
+      <COL>
+        <DATA>2236|1070|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1070</DATA>
+      </COL>
+      <COL>
+        <DATA>2236</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1001">
+      <COL>
+        <DATA>532</DATA>
+      </COL>
+      <COL>
+        <DATA>2145|1124|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1124</DATA>
+      </COL>
+      <COL>
+        <DATA>2145</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1012">
+      <COL>
+        <DATA>543</DATA>
+      </COL>
+      <COL>
+        <DATA>5453|1187|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1187</DATA>
+      </COL>
+      <COL>
+        <DATA>5453</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1015">
+      <COL>
+        <DATA>546</DATA>
+      </COL>
+      <COL>
+        <DATA>1492|1150|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1150</DATA>
+      </COL>
+      <COL>
+        <DATA>1492</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="1021">
+      <COL>
+        <DATA>552</DATA>
+      </COL>
+      <COL>
+        <DATA>5456|1246|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1246</DATA>
+      </COL>
+      <COL>
+        <DATA>5456</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1023">
+      <COL>
+        <DATA>554</DATA>
+      </COL>
+      <COL>
+        <DATA>1292|1282|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1282</DATA>
+      </COL>
+      <COL>
+        <DATA>1292</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1031">
+      <COL>
+        <DATA>562</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|1370|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1370</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1037">
+      <COL>
+        <DATA>568</DATA>
+      </COL>
+      <COL>
+        <DATA>348|1378|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1378</DATA>
+      </COL>
+      <COL>
+        <DATA>348</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1043">
+      <COL>
+        <DATA>574</DATA>
+      </COL>
+      <COL>
+        <DATA>125|1384|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1384</DATA>
+      </COL>
       <COL>
         <DATA>125</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Geburtsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -2280,8 +2542,1264 @@
       <COL>
         <DATA/>
       </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1048">
+      <COL>
+        <DATA>579</DATA>
+      </COL>
+      <COL>
+        <DATA>348|1404|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1404</DATA>
+      </COL>
+      <COL>
+        <DATA>348</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
       <COL>
         <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1049">
+      <COL>
+        <DATA>580</DATA>
+      </COL>
+      <COL>
+        <DATA>3794|1406|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1406</DATA>
+      </COL>
+      <COL>
+        <DATA>3794</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1056">
+      <COL>
+        <DATA>587</DATA>
+      </COL>
+      <COL>
+        <DATA>5466|1466|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1466</DATA>
+      </COL>
+      <COL>
+        <DATA>5466</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1058">
+      <COL>
+        <DATA>589</DATA>
+      </COL>
+      <COL>
+        <DATA>1817|1506|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1506</DATA>
+      </COL>
+      <COL>
+        <DATA>1817</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1067">
+      <COL>
+        <DATA>598</DATA>
+      </COL>
+      <COL>
+        <DATA>5473|1509|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1509</DATA>
+      </COL>
+      <COL>
+        <DATA>5473</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1069">
+      <COL>
+        <DATA>600</DATA>
+      </COL>
+      <COL>
+        <DATA>4097|1534|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1534</DATA>
+      </COL>
+      <COL>
+        <DATA>4097</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1071">
+      <COL>
+        <DATA>602</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|1575|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1575</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1074">
+      <COL>
+        <DATA>605</DATA>
+      </COL>
+      <COL>
+        <DATA>5475|1588|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1588</DATA>
+      </COL>
+      <COL>
+        <DATA>5475</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1076">
+      <COL>
+        <DATA>607</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|1618|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1618</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1085">
+      <COL>
+        <DATA>616</DATA>
+      </COL>
+      <COL>
+        <DATA>5382|1683|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1683</DATA>
+      </COL>
+      <COL>
+        <DATA>5382</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="1088">
+      <COL>
+        <DATA>619</DATA>
+      </COL>
+      <COL>
+        <DATA>3298|1700|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1700</DATA>
+      </COL>
+      <COL>
+        <DATA>3298</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1094">
+      <COL>
+        <DATA>625</DATA>
+      </COL>
+      <COL>
+        <DATA>2184|1728|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1728</DATA>
+      </COL>
+      <COL>
+        <DATA>2184</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1099">
+      <COL>
+        <DATA>630</DATA>
+      </COL>
+      <COL>
+        <DATA>972|1754|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1754</DATA>
+      </COL>
+      <COL>
+        <DATA>972</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1106">
+      <COL>
+        <DATA>637</DATA>
+      </COL>
+      <COL>
+        <DATA>2601|1766|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1766</DATA>
+      </COL>
+      <COL>
+        <DATA>2601</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1107">
+      <COL>
+        <DATA>638</DATA>
+      </COL>
+      <COL>
+        <DATA>5400|1774|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1774</DATA>
+      </COL>
+      <COL>
+        <DATA>5400</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1110">
+      <COL>
+        <DATA>641</DATA>
+      </COL>
+      <COL>
+        <DATA>2145|1785|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1785</DATA>
+      </COL>
+      <COL>
+        <DATA>2145</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1114">
+      <COL>
+        <DATA>645</DATA>
+      </COL>
+      <COL>
+        <DATA>2391|1835|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1835</DATA>
+      </COL>
+      <COL>
+        <DATA>2391</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1119">
+      <COL>
+        <DATA>650</DATA>
+      </COL>
+      <COL>
+        <DATA>208|1912|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1912</DATA>
+      </COL>
+      <COL>
+        <DATA>208</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1120">
+      <COL>
+        <DATA>651</DATA>
+      </COL>
+      <COL>
+        <DATA>2590|1919|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1919</DATA>
+      </COL>
+      <COL>
+        <DATA>2590</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1122">
+      <COL>
+        <DATA>653</DATA>
+      </COL>
+      <COL>
+        <DATA>1292|1953|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1953</DATA>
+      </COL>
+      <COL>
+        <DATA>1292</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1125">
+      <COL>
+        <DATA>656</DATA>
+      </COL>
+      <COL>
+        <DATA>972|1967|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1967</DATA>
+      </COL>
+      <COL>
+        <DATA>972</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1130">
+      <COL>
+        <DATA>661</DATA>
+      </COL>
+      <COL>
+        <DATA>272|2022|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>2022</DATA>
+      </COL>
+      <COL>
+        <DATA>272</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1136">
+      <COL>
+        <DATA>667</DATA>
+      </COL>
+      <COL>
+        <DATA>3867|2033|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>2033</DATA>
+      </COL>
+      <COL>
+        <DATA>3867</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1978">
+      <COL>
+        <DATA>1509</DATA>
+      </COL>
+      <COL>
+        <DATA>5756|361|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>361</DATA>
+      </COL>
+      <COL>
+        <DATA>5756</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="1979">
+      <COL>
+        <DATA>1510</DATA>
+      </COL>
+      <COL>
+        <DATA>46|832|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>832</DATA>
+      </COL>
+      <COL>
+        <DATA>46</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1983">
+      <COL>
+        <DATA>1514</DATA>
+      </COL>
+      <COL>
+        <DATA>2822|3259|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3259</DATA>
+      </COL>
+      <COL>
+        <DATA>2822</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1985">
+      <COL>
+        <DATA>1516</DATA>
+      </COL>
+      <COL>
+        <DATA>2822|3116|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3116</DATA>
+      </COL>
+      <COL>
+        <DATA>2822</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1987">
+      <COL>
+        <DATA>1518</DATA>
+      </COL>
+      <COL>
+        <DATA>1817|6724|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>6724</DATA>
+      </COL>
+      <COL>
+        <DATA>1817</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1988">
+      <COL>
+        <DATA>1519</DATA>
+      </COL>
+      <COL>
+        <DATA>5856|2184|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>2184</DATA>
+      </COL>
+      <COL>
+        <DATA>5856</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="1991">
+      <COL>
+        <DATA>1522</DATA>
+      </COL>
+      <COL>
+        <DATA>5788|1761|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1761</DATA>
+      </COL>
+      <COL>
+        <DATA>5788</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="2004">
+      <COL>
+        <DATA>1535</DATA>
+      </COL>
+      <COL>
+        <DATA>3227|1704|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1704</DATA>
+      </COL>
+      <COL>
+        <DATA>3227</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="2007">
+      <COL>
+        <DATA>1538</DATA>
+      </COL>
+      <COL>
+        <DATA>5774|1015|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>1015</DATA>
+      </COL>
+      <COL>
+        <DATA>5774</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="2009">
+      <COL>
+        <DATA>1540</DATA>
+      </COL>
+      <COL>
+        <DATA>1607|6388|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>6388</DATA>
+      </COL>
+      <COL>
+        <DATA>1607</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="2014">
+      <COL>
+        <DATA>1545</DATA>
+      </COL>
+      <COL>
+        <DATA>5761|540|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>540</DATA>
+      </COL>
+      <COL>
+        <DATA>5761</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="2722">
+      <COL>
+        <DATA>2253</DATA>
+      </COL>
+      <COL>
+        <DATA>3481|7208|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>7208</DATA>
+      </COL>
+      <COL>
+        <DATA>3481</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="2728">
+      <COL>
+        <DATA>2259</DATA>
+      </COL>
+      <COL>
+        <DATA>5362|7137|Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA>7137</DATA>
+      </COL>
+      <COL>
+        <DATA>5362</DATA>
+      </COL>
+      <COL>
+        <DATA>Geburtsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="2726">
+      <COL>
+        <DATA>2257</DATA>
+      </COL>
+      <COL>
+        <DATA>972|7255|Gründung</DATA>
+      </COL>
+      <COL>
+        <DATA>7255</DATA>
+      </COL>
+      <COL>
+        <DATA>972</DATA>
+      </COL>
+      <COL>
+        <DATA>Gründung</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="461">
+      <COL>
+        <DATA>8</DATA>
+      </COL>
+      <COL>
+        <DATA>5403|139|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>139</DATA>
+      </COL>
+      <COL>
+        <DATA>5403</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="477">
+      <COL>
+        <DATA>24</DATA>
+      </COL>
+      <COL>
+        <DATA>1292|2029|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>2029</DATA>
+      </COL>
+      <COL>
+        <DATA>1292</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="479">
+      <COL>
+        <DATA>26</DATA>
+      </COL>
+      <COL>
+        <DATA>4097|2056|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>2056</DATA>
+      </COL>
+      <COL>
+        <DATA>4097</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="482">
+      <COL>
+        <DATA>29</DATA>
+      </COL>
+      <COL>
+        <DATA>972|2251|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>2251</DATA>
+      </COL>
+      <COL>
+        <DATA>972</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="487">
+      <COL>
+        <DATA>34</DATA>
+      </COL>
+      <COL>
+        <DATA>5403|3352|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3352</DATA>
+      </COL>
+      <COL>
+        <DATA>5403</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="504">
+      <COL>
+        <DATA>51</DATA>
+      </COL>
+      <COL>
+        <DATA>6003|3492|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3492</DATA>
+      </COL>
+      <COL>
+        <DATA>6003</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="505">
+      <COL>
+        <DATA>52</DATA>
+      </COL>
+      <COL>
+        <DATA>1817|3498|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3498</DATA>
+      </COL>
+      <COL>
+        <DATA>1817</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="512">
+      <COL>
+        <DATA>59</DATA>
+      </COL>
+      <COL>
+        <DATA>5461|3532|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3532</DATA>
+      </COL>
+      <COL>
+        <DATA>5461</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="519">
+      <COL>
+        <DATA>66</DATA>
+      </COL>
+      <COL>
+        <DATA>2165|3585|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3585</DATA>
+      </COL>
+      <COL>
+        <DATA>2165</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="522">
+      <COL>
+        <DATA>69</DATA>
+      </COL>
+      <COL>
+        <DATA>5403|3592|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3592</DATA>
+      </COL>
+      <COL>
+        <DATA>5403</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="525">
+      <COL>
+        <DATA>72</DATA>
+      </COL>
+      <COL>
+        <DATA>2464|3600|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3600</DATA>
+      </COL>
+      <COL>
+        <DATA>2464</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="534">
+      <COL>
+        <DATA>81</DATA>
+      </COL>
+      <COL>
+        <DATA>1292|3676|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3676</DATA>
+      </COL>
+      <COL>
+        <DATA>1292</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="535">
+      <COL>
+        <DATA>82</DATA>
+      </COL>
+      <COL>
+        <DATA>348|3681|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3681</DATA>
+      </COL>
+      <COL>
+        <DATA>348</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="536">
+      <COL>
+        <DATA>83</DATA>
+      </COL>
+      <COL>
+        <DATA>1817|3687|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3687</DATA>
+      </COL>
+      <COL>
+        <DATA>1817</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="547">
+      <COL>
+        <DATA>94</DATA>
+      </COL>
+      <COL>
+        <DATA>3227|3834|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3834</DATA>
+      </COL>
+      <COL>
+        <DATA>3227</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="553">
+      <COL>
+        <DATA>100</DATA>
+      </COL>
+      <COL>
+        <DATA>303|3871|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3871</DATA>
+      </COL>
+      <COL>
+        <DATA>303</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="556">
+      <COL>
+        <DATA>103</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|3933|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3933</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="563">
+      <COL>
+        <DATA>110</DATA>
+      </COL>
+      <COL>
+        <DATA>169|3973|Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA>3973</DATA>
+      </COL>
+      <COL>
+        <DATA>169</DATA>
+      </COL>
+      <COL>
+        <DATA>Tätigkeitsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -8224,29 +9742,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="838">
-      <COL>
-        <DATA>385</DATA>
-      </COL>
-      <COL>
-        <DATA>2376|22|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>22</DATA>
-      </COL>
-      <COL>
-        <DATA>2376</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="1" RECORDID="840">
       <COL>
         <DATA>387</DATA>
@@ -8262,144 +9757,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="2" RECORDID="842">
-      <COL>
-        <DATA>389</DATA>
-      </COL>
-      <COL>
-        <DATA>3356|201|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>201</DATA>
-      </COL>
-      <COL>
-        <DATA>3356</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="843">
-      <COL>
-        <DATA>390</DATA>
-      </COL>
-      <COL>
-        <DATA>2395|250|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>250</DATA>
-      </COL>
-      <COL>
-        <DATA>2395</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="844">
-      <COL>
-        <DATA>391</DATA>
-      </COL>
-      <COL>
-        <DATA>972|339|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>339</DATA>
-      </COL>
-      <COL>
-        <DATA>972</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="845">
-      <COL>
-        <DATA>392</DATA>
-      </COL>
-      <COL>
-        <DATA>1817|369|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>369</DATA>
-      </COL>
-      <COL>
-        <DATA>1817</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="846">
-      <COL>
-        <DATA>393</DATA>
-      </COL>
-      <COL>
-        <DATA>3359|482|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>482</DATA>
-      </COL>
-      <COL>
-        <DATA>3359</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="847">
-      <COL>
-        <DATA>394</DATA>
-      </COL>
-      <COL>
-        <DATA>972|519|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>519</DATA>
-      </COL>
-      <COL>
-        <DATA>972</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -8431,75 +9788,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="849">
-      <COL>
-        <DATA>396</DATA>
-      </COL>
-      <COL>
-        <DATA>1292|628|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>628</DATA>
-      </COL>
-      <COL>
-        <DATA>1292</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="850">
-      <COL>
-        <DATA>397</DATA>
-      </COL>
-      <COL>
-        <DATA>1880|1209|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1209</DATA>
-      </COL>
-      <COL>
-        <DATA>1880</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="851">
-      <COL>
-        <DATA>398</DATA>
-      </COL>
-      <COL>
-        <DATA>1817|1210|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1210</DATA>
-      </COL>
-      <COL>
-        <DATA>1817</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="2" RECORDID="855">
       <COL>
         <DATA>402</DATA>
@@ -8515,75 +9803,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="856">
-      <COL>
-        <DATA>403</DATA>
-      </COL>
-      <COL>
-        <DATA>5364|2428|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>2428</DATA>
-      </COL>
-      <COL>
-        <DATA>5364</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="858">
-      <COL>
-        <DATA>405</DATA>
-      </COL>
-      <COL>
-        <DATA>3227|3355|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3355</DATA>
-      </COL>
-      <COL>
-        <DATA>3227</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="859">
-      <COL>
-        <DATA>406</DATA>
-      </COL>
-      <COL>
-        <DATA>2165|3404|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3404</DATA>
-      </COL>
-      <COL>
-        <DATA>2165</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -8661,75 +9880,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="864">
-      <COL>
-        <DATA>411</DATA>
-      </COL>
-      <COL>
-        <DATA>5372|3566|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3566</DATA>
-      </COL>
-      <COL>
-        <DATA>5372</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="865">
-      <COL>
-        <DATA>412</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|3575|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3575</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="866">
-      <COL>
-        <DATA>413</DATA>
-      </COL>
-      <COL>
-        <DATA>5380|3584|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3584</DATA>
-      </COL>
-      <COL>
-        <DATA>5380</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="1" RECORDID="867">
       <COL>
         <DATA>414</DATA>
@@ -8745,52 +9895,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="868">
-      <COL>
-        <DATA>415</DATA>
-      </COL>
-      <COL>
-        <DATA>3298|3588|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3588</DATA>
-      </COL>
-      <COL>
-        <DATA>3298</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="870">
-      <COL>
-        <DATA>417</DATA>
-      </COL>
-      <COL>
-        <DATA>1403|3599|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3599</DATA>
-      </COL>
-      <COL>
-        <DATA>1403</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -8845,98 +9949,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="874">
-      <COL>
-        <DATA>421</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|3718|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3718</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="875">
-      <COL>
-        <DATA>422</DATA>
-      </COL>
-      <COL>
-        <DATA>3227|3731|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3731</DATA>
-      </COL>
-      <COL>
-        <DATA>3227</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="878">
-      <COL>
-        <DATA>425</DATA>
-      </COL>
-      <COL>
-        <DATA>3227|3890|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3890</DATA>
-      </COL>
-      <COL>
-        <DATA>3227</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="879">
-      <COL>
-        <DATA>426</DATA>
-      </COL>
-      <COL>
-        <DATA>3227|3891|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3891</DATA>
-      </COL>
-      <COL>
-        <DATA>3227</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="1" RECORDID="880">
       <COL>
         <DATA>427</DATA>
@@ -8960,121 +9972,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="881">
-      <COL>
-        <DATA>428</DATA>
-      </COL>
-      <COL>
-        <DATA>972|3984|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3984</DATA>
-      </COL>
-      <COL>
-        <DATA>972</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="882">
-      <COL>
-        <DATA>429</DATA>
-      </COL>
-      <COL>
-        <DATA>972|4632|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>4632</DATA>
-      </COL>
-      <COL>
-        <DATA>972</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="883">
-      <COL>
-        <DATA>430</DATA>
-      </COL>
-      <COL>
-        <DATA>382|4747|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>4747</DATA>
-      </COL>
-      <COL>
-        <DATA>382</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="884">
-      <COL>
-        <DATA>431</DATA>
-      </COL>
-      <COL>
-        <DATA>1960|5693|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>5693</DATA>
-      </COL>
-      <COL>
-        <DATA>1960</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="885">
-      <COL>
-        <DATA>432</DATA>
-      </COL>
-      <COL>
-        <DATA>972|6636|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>6636</DATA>
-      </COL>
-      <COL>
-        <DATA>972</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="1" RECORDID="886">
       <COL>
         <DATA>433</DATA>
@@ -9090,75 +9987,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="887">
-      <COL>
-        <DATA>434</DATA>
-      </COL>
-      <COL>
-        <DATA>477|6985|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>6985</DATA>
-      </COL>
-      <COL>
-        <DATA>477</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="888">
-      <COL>
-        <DATA>435</DATA>
-      </COL>
-      <COL>
-        <DATA>661|7051|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>7051</DATA>
-      </COL>
-      <COL>
-        <DATA>661</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="2" RECORDID="905">
-      <COL>
-        <DATA>436</DATA>
-      </COL>
-      <COL>
-        <DATA>1907|1205|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1205</DATA>
-      </COL>
-      <COL>
-        <DATA>1907</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -9205,29 +10033,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="913">
-      <COL>
-        <DATA>444</DATA>
-      </COL>
-      <COL>
-        <DATA>310|4764|</DATA>
-      </COL>
-      <COL>
-        <DATA>4764</DATA>
-      </COL>
-      <COL>
-        <DATA>310</DATA>
-      </COL>
-      <COL>
-        <DATA/>
       </COL>
       <COL>
         <DATA/>
@@ -9320,29 +10125,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="922">
-      <COL>
-        <DATA>453</DATA>
-      </COL>
-      <COL>
-        <DATA>5372|182|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>182</DATA>
-      </COL>
-      <COL>
-        <DATA>5372</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -9742,29 +10524,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="948">
-      <COL>
-        <DATA>479</DATA>
-      </COL>
-      <COL>
-        <DATA>342|568|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>568</DATA>
-      </COL>
-      <COL>
-        <DATA>342</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="949">
       <COL>
         <DATA>480</DATA>
@@ -9826,29 +10585,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="952">
-      <COL>
-        <DATA>483</DATA>
-      </COL>
-      <COL>
-        <DATA>5427|568|</DATA>
-      </COL>
-      <COL>
-        <DATA>568</DATA>
-      </COL>
-      <COL>
-        <DATA>5427</DATA>
-      </COL>
-      <COL>
-        <DATA/>
       </COL>
       <COL>
         <DATA/>
@@ -9926,52 +10662,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="961">
-      <COL>
-        <DATA>492</DATA>
-      </COL>
-      <COL>
-        <DATA>3227|753|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>753</DATA>
-      </COL>
-      <COL>
-        <DATA>3227</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="962">
-      <COL>
-        <DATA>493</DATA>
-      </COL>
-      <COL>
-        <DATA>1727|753|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>753</DATA>
-      </COL>
-      <COL>
-        <DATA>1727</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="963">
       <COL>
         <DATA>494</DATA>
@@ -10018,52 +10708,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="966">
-      <COL>
-        <DATA>497</DATA>
-      </COL>
-      <COL>
-        <DATA>1403|822|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>822</DATA>
-      </COL>
-      <COL>
-        <DATA>1403</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="967">
-      <COL>
-        <DATA>498</DATA>
-      </COL>
-      <COL>
-        <DATA>4097|822|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>822</DATA>
-      </COL>
-      <COL>
-        <DATA>4097</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="968">
       <COL>
         <DATA>499</DATA>
@@ -10102,75 +10746,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="970">
-      <COL>
-        <DATA>501</DATA>
-      </COL>
-      <COL>
-        <DATA>1082|884|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>884</DATA>
-      </COL>
-      <COL>
-        <DATA>1082</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="971">
-      <COL>
-        <DATA>502</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|946|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>946</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="972">
-      <COL>
-        <DATA>503</DATA>
-      </COL>
-      <COL>
-        <DATA>5364|946|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>946</DATA>
-      </COL>
-      <COL>
-        <DATA>5364</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -10317,52 +10892,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="985">
-      <COL>
-        <DATA>516</DATA>
-      </COL>
-      <COL>
-        <DATA>5442|1002|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1002</DATA>
-      </COL>
-      <COL>
-        <DATA>5442</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="986">
-      <COL>
-        <DATA>517</DATA>
-      </COL>
-      <COL>
-        <DATA>5443|1002|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1002</DATA>
-      </COL>
-      <COL>
-        <DATA>5443</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="987">
       <COL>
         <DATA>518</DATA>
@@ -10378,52 +10907,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="988">
-      <COL>
-        <DATA>519</DATA>
-      </COL>
-      <COL>
-        <DATA>5444|1028|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1028</DATA>
-      </COL>
-      <COL>
-        <DATA>5444</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="989">
-      <COL>
-        <DATA>520</DATA>
-      </COL>
-      <COL>
-        <DATA>4008|1028|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1028</DATA>
-      </COL>
-      <COL>
-        <DATA>4008</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -10478,98 +10961,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="993">
-      <COL>
-        <DATA>524</DATA>
-      </COL>
-      <COL>
-        <DATA>1292|1041|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1041</DATA>
-      </COL>
-      <COL>
-        <DATA>1292</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="994">
-      <COL>
-        <DATA>525</DATA>
-      </COL>
-      <COL>
-        <DATA>5447|1041|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1041</DATA>
-      </COL>
-      <COL>
-        <DATA>5447</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="995">
-      <COL>
-        <DATA>526</DATA>
-      </COL>
-      <COL>
-        <DATA>972|1069|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1069</DATA>
-      </COL>
-      <COL>
-        <DATA>972</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="996">
-      <COL>
-        <DATA>527</DATA>
-      </COL>
-      <COL>
-        <DATA>2236|1070|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1070</DATA>
-      </COL>
-      <COL>
-        <DATA>2236</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="997">
       <COL>
         <DATA>528</DATA>
@@ -10585,29 +10976,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="998">
-      <COL>
-        <DATA>529</DATA>
-      </COL>
-      <COL>
-        <DATA>2236|1070|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1070</DATA>
-      </COL>
-      <COL>
-        <DATA>2236</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -10654,29 +11022,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1001">
-      <COL>
-        <DATA>532</DATA>
-      </COL>
-      <COL>
-        <DATA>2145|1124|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1124</DATA>
-      </COL>
-      <COL>
-        <DATA>2145</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -10846,52 +11191,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1012">
-      <COL>
-        <DATA>543</DATA>
-      </COL>
-      <COL>
-        <DATA>5453|1187|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1187</DATA>
-      </COL>
-      <COL>
-        <DATA>5453</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1013">
-      <COL>
-        <DATA>544</DATA>
-      </COL>
-      <COL>
-        <DATA>3150|1187|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1187</DATA>
-      </COL>
-      <COL>
-        <DATA>3150</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1014">
       <COL>
         <DATA>545</DATA>
@@ -10907,75 +11206,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1015">
-      <COL>
-        <DATA>546</DATA>
-      </COL>
-      <COL>
-        <DATA>1492|1150|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1150</DATA>
-      </COL>
-      <COL>
-        <DATA>1492</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1016">
-      <COL>
-        <DATA>547</DATA>
-      </COL>
-      <COL>
-        <DATA>1615|1150|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1150</DATA>
-      </COL>
-      <COL>
-        <DATA>1615</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1018">
-      <COL>
-        <DATA>549</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|1246|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1246</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -11007,29 +11237,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="1021">
-      <COL>
-        <DATA>552</DATA>
-      </COL>
-      <COL>
-        <DATA>5456|1246|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1246</DATA>
-      </COL>
-      <COL>
-        <DATA>5456</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1022">
       <COL>
         <DATA>553</DATA>
@@ -11045,29 +11252,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1023">
-      <COL>
-        <DATA>554</DATA>
-      </COL>
-      <COL>
-        <DATA>1292|1282|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1282</DATA>
-      </COL>
-      <COL>
-        <DATA>1292</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -11237,52 +11421,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1031">
-      <COL>
-        <DATA>562</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|1370|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1370</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1032">
-      <COL>
-        <DATA>563</DATA>
-      </COL>
-      <COL>
-        <DATA>5460|1370|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1370</DATA>
-      </COL>
-      <COL>
-        <DATA>5460</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1033">
       <COL>
         <DATA>564</DATA>
@@ -11375,29 +11513,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1037">
-      <COL>
-        <DATA>568</DATA>
-      </COL>
-      <COL>
-        <DATA>348|1378|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1378</DATA>
-      </COL>
-      <COL>
-        <DATA>348</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1038">
       <COL>
         <DATA>569</DATA>
@@ -11459,52 +11574,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1042">
-      <COL>
-        <DATA>573</DATA>
-      </COL>
-      <COL>
-        <DATA>5463|1384|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1384</DATA>
-      </COL>
-      <COL>
-        <DATA>5463</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1043">
-      <COL>
-        <DATA>574</DATA>
-      </COL>
-      <COL>
-        <DATA>125|1384|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1384</DATA>
-      </COL>
-      <COL>
-        <DATA>125</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -11582,98 +11651,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1047">
-      <COL>
-        <DATA>578</DATA>
-      </COL>
-      <COL>
-        <DATA>654|1404|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1404</DATA>
-      </COL>
-      <COL>
-        <DATA>654</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1048">
-      <COL>
-        <DATA>579</DATA>
-      </COL>
-      <COL>
-        <DATA>348|1404|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1404</DATA>
-      </COL>
-      <COL>
-        <DATA>348</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1049">
-      <COL>
-        <DATA>580</DATA>
-      </COL>
-      <COL>
-        <DATA>3794|1406|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1406</DATA>
-      </COL>
-      <COL>
-        <DATA>3794</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1050">
-      <COL>
-        <DATA>581</DATA>
-      </COL>
-      <COL>
-        <DATA>3794|1406|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1406</DATA>
-      </COL>
-      <COL>
-        <DATA>3794</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1051">
       <COL>
         <DATA>582</DATA>
@@ -11712,98 +11689,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="1055">
-      <COL>
-        <DATA>586</DATA>
-      </COL>
-      <COL>
-        <DATA>3354|1466|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1466</DATA>
-      </COL>
-      <COL>
-        <DATA>3354</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1056">
-      <COL>
-        <DATA>587</DATA>
-      </COL>
-      <COL>
-        <DATA>5466|1466|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1466</DATA>
-      </COL>
-      <COL>
-        <DATA>5466</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1057">
-      <COL>
-        <DATA>588</DATA>
-      </COL>
-      <COL>
-        <DATA>1868|1506|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1506</DATA>
-      </COL>
-      <COL>
-        <DATA>1868</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1058">
-      <COL>
-        <DATA>589</DATA>
-      </COL>
-      <COL>
-        <DATA>1817|1506|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1506</DATA>
-      </COL>
-      <COL>
-        <DATA>1817</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -11881,75 +11766,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1067">
-      <COL>
-        <DATA>598</DATA>
-      </COL>
-      <COL>
-        <DATA>5473|1509|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1509</DATA>
-      </COL>
-      <COL>
-        <DATA>5473</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1068">
-      <COL>
-        <DATA>599</DATA>
-      </COL>
-      <COL>
-        <DATA>5383|1509|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1509</DATA>
-      </COL>
-      <COL>
-        <DATA>5383</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1069">
-      <COL>
-        <DATA>600</DATA>
-      </COL>
-      <COL>
-        <DATA>4097|1534|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1534</DATA>
-      </COL>
-      <COL>
-        <DATA>4097</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="1" RECORDID="1070">
       <COL>
         <DATA>601</DATA>
@@ -11965,52 +11781,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1071">
-      <COL>
-        <DATA>602</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|1575|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1575</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1072">
-      <COL>
-        <DATA>603</DATA>
-      </COL>
-      <COL>
-        <DATA>3008|1575|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1575</DATA>
-      </COL>
-      <COL>
-        <DATA>3008</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12042,29 +11812,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1074">
-      <COL>
-        <DATA>605</DATA>
-      </COL>
-      <COL>
-        <DATA>5475|1588|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1588</DATA>
-      </COL>
-      <COL>
-        <DATA>5475</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1075">
       <COL>
         <DATA>606</DATA>
@@ -12080,29 +11827,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1076">
-      <COL>
-        <DATA>607</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|1618|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1618</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12295,52 +12019,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1085">
-      <COL>
-        <DATA>616</DATA>
-      </COL>
-      <COL>
-        <DATA>5382|1683|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1683</DATA>
-      </COL>
-      <COL>
-        <DATA>5382</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1086">
-      <COL>
-        <DATA>617</DATA>
-      </COL>
-      <COL>
-        <DATA>3227|1683|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1683</DATA>
-      </COL>
-      <COL>
-        <DATA>3227</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1087">
       <COL>
         <DATA>618</DATA>
@@ -12356,52 +12034,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="1088">
-      <COL>
-        <DATA>619</DATA>
-      </COL>
-      <COL>
-        <DATA>3298|1700|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1700</DATA>
-      </COL>
-      <COL>
-        <DATA>3298</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1090">
-      <COL>
-        <DATA>621</DATA>
-      </COL>
-      <COL>
-        <DATA>5484|1700|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1700</DATA>
-      </COL>
-      <COL>
-        <DATA>5484</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12479,52 +12111,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1094">
-      <COL>
-        <DATA>625</DATA>
-      </COL>
-      <COL>
-        <DATA>2184|1728|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1728</DATA>
-      </COL>
-      <COL>
-        <DATA>2184</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1095">
-      <COL>
-        <DATA>626</DATA>
-      </COL>
-      <COL>
-        <DATA>972|1728|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1728</DATA>
-      </COL>
-      <COL>
-        <DATA>972</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1097">
       <COL>
         <DATA>628</DATA>
@@ -12563,52 +12149,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1099">
-      <COL>
-        <DATA>630</DATA>
-      </COL>
-      <COL>
-        <DATA>972|1754|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1754</DATA>
-      </COL>
-      <COL>
-        <DATA>972</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1100">
-      <COL>
-        <DATA>631</DATA>
-      </COL>
-      <COL>
-        <DATA>5443|1754|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1754</DATA>
-      </COL>
-      <COL>
-        <DATA>5443</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12686,98 +12226,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1105">
-      <COL>
-        <DATA>636</DATA>
-      </COL>
-      <COL>
-        <DATA>348|1766|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1766</DATA>
-      </COL>
-      <COL>
-        <DATA>348</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1106">
-      <COL>
-        <DATA>637</DATA>
-      </COL>
-      <COL>
-        <DATA>2601|1766|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1766</DATA>
-      </COL>
-      <COL>
-        <DATA>2601</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1107">
-      <COL>
-        <DATA>638</DATA>
-      </COL>
-      <COL>
-        <DATA>5400|1774|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1774</DATA>
-      </COL>
-      <COL>
-        <DATA>5400</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="1108">
-      <COL>
-        <DATA>639</DATA>
-      </COL>
-      <COL>
-        <DATA>3227|1774|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1774</DATA>
-      </COL>
-      <COL>
-        <DATA>3227</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="1" RECORDID="1109">
       <COL>
         <DATA>640</DATA>
@@ -12793,52 +12241,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1110">
-      <COL>
-        <DATA>641</DATA>
-      </COL>
-      <COL>
-        <DATA>2145|1785|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1785</DATA>
-      </COL>
-      <COL>
-        <DATA>2145</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1111">
-      <COL>
-        <DATA>642</DATA>
-      </COL>
-      <COL>
-        <DATA>2165|1785|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1785</DATA>
-      </COL>
-      <COL>
-        <DATA>2165</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12893,29 +12295,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1114">
-      <COL>
-        <DATA>645</DATA>
-      </COL>
-      <COL>
-        <DATA>2391|1835|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1835</DATA>
-      </COL>
-      <COL>
-        <DATA>2391</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1115">
       <COL>
         <DATA>646</DATA>
@@ -12931,29 +12310,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1116">
-      <COL>
-        <DATA>647</DATA>
-      </COL>
-      <COL>
-        <DATA>2388|1835|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1835</DATA>
-      </COL>
-      <COL>
-        <DATA>2388</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12985,75 +12341,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1118">
-      <COL>
-        <DATA>649</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|1912|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1912</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1119">
-      <COL>
-        <DATA>650</DATA>
-      </COL>
-      <COL>
-        <DATA>208|1912|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1912</DATA>
-      </COL>
-      <COL>
-        <DATA>208</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1120">
-      <COL>
-        <DATA>651</DATA>
-      </COL>
-      <COL>
-        <DATA>2590|1919|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1919</DATA>
-      </COL>
-      <COL>
-        <DATA>2590</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1121">
       <COL>
         <DATA>652</DATA>
@@ -13077,52 +12364,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1122">
-      <COL>
-        <DATA>653</DATA>
-      </COL>
-      <COL>
-        <DATA>1292|1953|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1953</DATA>
-      </COL>
-      <COL>
-        <DATA>1292</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1123">
-      <COL>
-        <DATA>654</DATA>
-      </COL>
-      <COL>
-        <DATA>1292|1953|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1953</DATA>
-      </COL>
-      <COL>
-        <DATA>1292</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1124">
       <COL>
         <DATA>655</DATA>
@@ -13138,52 +12379,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1125">
-      <COL>
-        <DATA>656</DATA>
-      </COL>
-      <COL>
-        <DATA>972|1967|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1967</DATA>
-      </COL>
-      <COL>
-        <DATA>972</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1126">
-      <COL>
-        <DATA>657</DATA>
-      </COL>
-      <COL>
-        <DATA>348|1967|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1967</DATA>
-      </COL>
-      <COL>
-        <DATA>348</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -13253,52 +12448,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1130">
-      <COL>
-        <DATA>661</DATA>
-      </COL>
-      <COL>
-        <DATA>272|2022|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>2022</DATA>
-      </COL>
-      <COL>
-        <DATA>272</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1131">
-      <COL>
-        <DATA>662</DATA>
-      </COL>
-      <COL>
-        <DATA>1817|2022|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>2022</DATA>
-      </COL>
-      <COL>
-        <DATA>1817</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -13391,52 +12540,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1136">
-      <COL>
-        <DATA>667</DATA>
-      </COL>
-      <COL>
-        <DATA>3867|2033|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>2033</DATA>
-      </COL>
-      <COL>
-        <DATA>3867</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1137">
-      <COL>
-        <DATA>668</DATA>
-      </COL>
-      <COL>
-        <DATA>348|2033|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>2033</DATA>
-      </COL>
-      <COL>
-        <DATA>348</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -14848,29 +13951,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="1225">
-      <COL>
-        <DATA>756</DATA>
-      </COL>
-      <COL>
-        <DATA>5476|3653|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3653</DATA>
-      </COL>
-      <COL>
-        <DATA>5476</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1226">
       <COL>
         <DATA>757</DATA>
@@ -15185,29 +14265,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="1242">
-      <COL>
-        <DATA>773</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|5551|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>5551</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -22185,29 +21242,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1584">
-      <COL>
-        <DATA>1115</DATA>
-      </COL>
-      <COL>
-        <DATA>348|5177|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>5177</DATA>
-      </COL>
-      <COL>
-        <DATA>348</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="1585">
       <COL>
         <DATA>1116</DATA>
@@ -24109,29 +23143,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="1680">
-      <COL>
-        <DATA>1211</DATA>
-      </COL>
-      <COL>
-        <DATA>5762|540|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>540</DATA>
-      </COL>
-      <COL>
-        <DATA>5762</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -29660,29 +28671,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="1948">
-      <COL>
-        <DATA>1479</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|3971|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3971</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="1" RECORDID="1949">
       <COL>
         <DATA>1480</DATA>
@@ -29867,98 +28855,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="1977">
-      <COL>
-        <DATA>1508</DATA>
-      </COL>
-      <COL>
-        <DATA>154|361|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>361</DATA>
-      </COL>
-      <COL>
-        <DATA>154</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1978">
-      <COL>
-        <DATA>1509</DATA>
-      </COL>
-      <COL>
-        <DATA>5756|361|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>361</DATA>
-      </COL>
-      <COL>
-        <DATA>5756</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="2" RECORDID="1979">
-      <COL>
-        <DATA>1510</DATA>
-      </COL>
-      <COL>
-        <DATA>46|832|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>832</DATA>
-      </COL>
-      <COL>
-        <DATA>46</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="2" RECORDID="1980">
-      <COL>
-        <DATA>1511</DATA>
-      </COL>
-      <COL>
-        <DATA>2365|832|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>832</DATA>
-      </COL>
-      <COL>
-        <DATA>2365</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="1" RECORDID="1981">
       <COL>
         <DATA>1512</DATA>
@@ -29974,374 +28870,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1983">
-      <COL>
-        <DATA>1514</DATA>
-      </COL>
-      <COL>
-        <DATA>2822|3259|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3259</DATA>
-      </COL>
-      <COL>
-        <DATA>2822</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1984">
-      <COL>
-        <DATA>1515</DATA>
-      </COL>
-      <COL>
-        <DATA>2822|3259|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3259</DATA>
-      </COL>
-      <COL>
-        <DATA>2822</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1985">
-      <COL>
-        <DATA>1516</DATA>
-      </COL>
-      <COL>
-        <DATA>2822|3116|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>3116</DATA>
-      </COL>
-      <COL>
-        <DATA>2822</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1986">
-      <COL>
-        <DATA>1517</DATA>
-      </COL>
-      <COL>
-        <DATA>5380|3116|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>3116</DATA>
-      </COL>
-      <COL>
-        <DATA>5380</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1987">
-      <COL>
-        <DATA>1518</DATA>
-      </COL>
-      <COL>
-        <DATA>1817|6724|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>6724</DATA>
-      </COL>
-      <COL>
-        <DATA>1817</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1988">
-      <COL>
-        <DATA>1519</DATA>
-      </COL>
-      <COL>
-        <DATA>5856|2184|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>2184</DATA>
-      </COL>
-      <COL>
-        <DATA>5856</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1989">
-      <COL>
-        <DATA>1520</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|2184|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>2184</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1990">
-      <COL>
-        <DATA>1521</DATA>
-      </COL>
-      <COL>
-        <DATA>1292|1761|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1761</DATA>
-      </COL>
-      <COL>
-        <DATA>1292</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="1991">
-      <COL>
-        <DATA>1522</DATA>
-      </COL>
-      <COL>
-        <DATA>5788|1761|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1761</DATA>
-      </COL>
-      <COL>
-        <DATA>5788</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1992">
-      <COL>
-        <DATA>1523</DATA>
-      </COL>
-      <COL>
-        <DATA>5786|1760|</DATA>
-      </COL>
-      <COL>
-        <DATA>1760</DATA>
-      </COL>
-      <COL>
-        <DATA>5786</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1993">
-      <COL>
-        <DATA>1524</DATA>
-      </COL>
-      <COL>
-        <DATA>5428|1760|</DATA>
-      </COL>
-      <COL>
-        <DATA>1760</DATA>
-      </COL>
-      <COL>
-        <DATA>5428</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1994">
-      <COL>
-        <DATA>1525</DATA>
-      </COL>
-      <COL>
-        <DATA>5403|1760|</DATA>
-      </COL>
-      <COL>
-        <DATA>1760</DATA>
-      </COL>
-      <COL>
-        <DATA>5403</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1995">
-      <COL>
-        <DATA>1526</DATA>
-      </COL>
-      <COL>
-        <DATA>5345|1920|</DATA>
-      </COL>
-      <COL>
-        <DATA>1920</DATA>
-      </COL>
-      <COL>
-        <DATA>5345</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1996">
-      <COL>
-        <DATA>1527</DATA>
-      </COL>
-      <COL>
-        <DATA>4103|6724|</DATA>
-      </COL>
-      <COL>
-        <DATA>6724</DATA>
-      </COL>
-      <COL>
-        <DATA>4103</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1997">
-      <COL>
-        <DATA>1528</DATA>
-      </COL>
-      <COL>
-        <DATA>3758|3116|</DATA>
-      </COL>
-      <COL>
-        <DATA>3116</DATA>
-      </COL>
-      <COL>
-        <DATA>3758</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="1998">
-      <COL>
-        <DATA>1529</DATA>
-      </COL>
-      <COL>
-        <DATA>5576|3957|</DATA>
-      </COL>
-      <COL>
-        <DATA>3957</DATA>
-      </COL>
-      <COL>
-        <DATA>5576</DATA>
-      </COL>
-      <COL>
-        <DATA/>
       </COL>
       <COL>
         <DATA/>
@@ -30465,52 +28993,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="2004">
-      <COL>
-        <DATA>1535</DATA>
-      </COL>
-      <COL>
-        <DATA>3227|1704|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1704</DATA>
-      </COL>
-      <COL>
-        <DATA>3227</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="2005">
-      <COL>
-        <DATA>1536</DATA>
-      </COL>
-      <COL>
-        <DATA>3227|1704|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>1704</DATA>
-      </COL>
-      <COL>
-        <DATA>3227</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="2006">
       <COL>
         <DATA>1537</DATA>
@@ -30534,29 +29016,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="2007">
-      <COL>
-        <DATA>1538</DATA>
-      </COL>
-      <COL>
-        <DATA>5774|1015|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>1015</DATA>
-      </COL>
-      <COL>
-        <DATA>5774</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="2008">
       <COL>
         <DATA>1539</DATA>
@@ -30572,98 +29031,6 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="2009">
-      <COL>
-        <DATA>1540</DATA>
-      </COL>
-      <COL>
-        <DATA>1607|6388|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>6388</DATA>
-      </COL>
-      <COL>
-        <DATA>1607</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="2010">
-      <COL>
-        <DATA>1541</DATA>
-      </COL>
-      <COL>
-        <DATA>1626|6388|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>6388</DATA>
-      </COL>
-      <COL>
-        <DATA>1626</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="2013">
-      <COL>
-        <DATA>1544</DATA>
-      </COL>
-      <COL>
-        <DATA>5859|150|</DATA>
-      </COL>
-      <COL>
-        <DATA>150</DATA>
-      </COL>
-      <COL>
-        <DATA>5859</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="2014">
-      <COL>
-        <DATA>1545</DATA>
-      </COL>
-      <COL>
-        <DATA>5761|540|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>540</DATA>
-      </COL>
-      <COL>
-        <DATA>5761</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -44771,52 +43138,6 @@
         <DATA/>
       </COL>
     </ROW>
-    <ROW MODID="1" RECORDID="2722">
-      <COL>
-        <DATA>2253</DATA>
-      </COL>
-      <COL>
-        <DATA>3481|7208|Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA>7208</DATA>
-      </COL>
-      <COL>
-        <DATA>3481</DATA>
-      </COL>
-      <COL>
-        <DATA>Geburtsort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="1" RECORDID="2723">
-      <COL>
-        <DATA>2254</DATA>
-      </COL>
-      <COL>
-        <DATA>1817|7208|Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA>7208</DATA>
-      </COL>
-      <COL>
-        <DATA>1817</DATA>
-      </COL>
-      <COL>
-        <DATA>Todesort</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
     <ROW MODID="3" RECORDID="2724">
       <COL>
         <DATA>2255</DATA>
@@ -44855,6 +43176,1777 @@
       </COL>
       <COL>
         <DATA>Tätigkeitsort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="838">
+      <COL>
+        <DATA>385</DATA>
+      </COL>
+      <COL>
+        <DATA>2376|22|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>22</DATA>
+      </COL>
+      <COL>
+        <DATA>2376</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="842">
+      <COL>
+        <DATA>389</DATA>
+      </COL>
+      <COL>
+        <DATA>3356|201|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>201</DATA>
+      </COL>
+      <COL>
+        <DATA>3356</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="843">
+      <COL>
+        <DATA>390</DATA>
+      </COL>
+      <COL>
+        <DATA>2395|250|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>250</DATA>
+      </COL>
+      <COL>
+        <DATA>2395</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="844">
+      <COL>
+        <DATA>391</DATA>
+      </COL>
+      <COL>
+        <DATA>972|339|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>339</DATA>
+      </COL>
+      <COL>
+        <DATA>972</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="845">
+      <COL>
+        <DATA>392</DATA>
+      </COL>
+      <COL>
+        <DATA>1817|369|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>369</DATA>
+      </COL>
+      <COL>
+        <DATA>1817</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="846">
+      <COL>
+        <DATA>393</DATA>
+      </COL>
+      <COL>
+        <DATA>3359|482|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>482</DATA>
+      </COL>
+      <COL>
+        <DATA>3359</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="847">
+      <COL>
+        <DATA>394</DATA>
+      </COL>
+      <COL>
+        <DATA>972|519|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>519</DATA>
+      </COL>
+      <COL>
+        <DATA>972</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="849">
+      <COL>
+        <DATA>396</DATA>
+      </COL>
+      <COL>
+        <DATA>1292|628|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>628</DATA>
+      </COL>
+      <COL>
+        <DATA>1292</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="850">
+      <COL>
+        <DATA>397</DATA>
+      </COL>
+      <COL>
+        <DATA>1880|1209|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1209</DATA>
+      </COL>
+      <COL>
+        <DATA>1880</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="851">
+      <COL>
+        <DATA>398</DATA>
+      </COL>
+      <COL>
+        <DATA>1817|1210|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1210</DATA>
+      </COL>
+      <COL>
+        <DATA>1817</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="856">
+      <COL>
+        <DATA>403</DATA>
+      </COL>
+      <COL>
+        <DATA>5364|2428|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>2428</DATA>
+      </COL>
+      <COL>
+        <DATA>5364</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="858">
+      <COL>
+        <DATA>405</DATA>
+      </COL>
+      <COL>
+        <DATA>3227|3355|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3355</DATA>
+      </COL>
+      <COL>
+        <DATA>3227</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="859">
+      <COL>
+        <DATA>406</DATA>
+      </COL>
+      <COL>
+        <DATA>2165|3404|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3404</DATA>
+      </COL>
+      <COL>
+        <DATA>2165</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="864">
+      <COL>
+        <DATA>411</DATA>
+      </COL>
+      <COL>
+        <DATA>5372|3566|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3566</DATA>
+      </COL>
+      <COL>
+        <DATA>5372</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="865">
+      <COL>
+        <DATA>412</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|3575|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3575</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="866">
+      <COL>
+        <DATA>413</DATA>
+      </COL>
+      <COL>
+        <DATA>5380|3584|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3584</DATA>
+      </COL>
+      <COL>
+        <DATA>5380</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="868">
+      <COL>
+        <DATA>415</DATA>
+      </COL>
+      <COL>
+        <DATA>3298|3588|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3588</DATA>
+      </COL>
+      <COL>
+        <DATA>3298</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="870">
+      <COL>
+        <DATA>417</DATA>
+      </COL>
+      <COL>
+        <DATA>1403|3599|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3599</DATA>
+      </COL>
+      <COL>
+        <DATA>1403</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="874">
+      <COL>
+        <DATA>421</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|3718|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3718</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="875">
+      <COL>
+        <DATA>422</DATA>
+      </COL>
+      <COL>
+        <DATA>3227|3731|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3731</DATA>
+      </COL>
+      <COL>
+        <DATA>3227</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="878">
+      <COL>
+        <DATA>425</DATA>
+      </COL>
+      <COL>
+        <DATA>3227|3890|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3890</DATA>
+      </COL>
+      <COL>
+        <DATA>3227</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="879">
+      <COL>
+        <DATA>426</DATA>
+      </COL>
+      <COL>
+        <DATA>3227|3891|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3891</DATA>
+      </COL>
+      <COL>
+        <DATA>3227</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="881">
+      <COL>
+        <DATA>428</DATA>
+      </COL>
+      <COL>
+        <DATA>972|3984|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3984</DATA>
+      </COL>
+      <COL>
+        <DATA>972</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="882">
+      <COL>
+        <DATA>429</DATA>
+      </COL>
+      <COL>
+        <DATA>972|4632|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>4632</DATA>
+      </COL>
+      <COL>
+        <DATA>972</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="883">
+      <COL>
+        <DATA>430</DATA>
+      </COL>
+      <COL>
+        <DATA>382|4747|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>4747</DATA>
+      </COL>
+      <COL>
+        <DATA>382</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="884">
+      <COL>
+        <DATA>431</DATA>
+      </COL>
+      <COL>
+        <DATA>1960|5693|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>5693</DATA>
+      </COL>
+      <COL>
+        <DATA>1960</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="885">
+      <COL>
+        <DATA>432</DATA>
+      </COL>
+      <COL>
+        <DATA>972|6636|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>6636</DATA>
+      </COL>
+      <COL>
+        <DATA>972</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="887">
+      <COL>
+        <DATA>434</DATA>
+      </COL>
+      <COL>
+        <DATA>477|6985|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>6985</DATA>
+      </COL>
+      <COL>
+        <DATA>477</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="888">
+      <COL>
+        <DATA>435</DATA>
+      </COL>
+      <COL>
+        <DATA>661|7051|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>7051</DATA>
+      </COL>
+      <COL>
+        <DATA>661</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="922">
+      <COL>
+        <DATA>453</DATA>
+      </COL>
+      <COL>
+        <DATA>5372|182|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>182</DATA>
+      </COL>
+      <COL>
+        <DATA>5372</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="948">
+      <COL>
+        <DATA>479</DATA>
+      </COL>
+      <COL>
+        <DATA>342|568|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>568</DATA>
+      </COL>
+      <COL>
+        <DATA>342</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="961">
+      <COL>
+        <DATA>492</DATA>
+      </COL>
+      <COL>
+        <DATA>3227|753|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>753</DATA>
+      </COL>
+      <COL>
+        <DATA>3227</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="966">
+      <COL>
+        <DATA>497</DATA>
+      </COL>
+      <COL>
+        <DATA>1403|822|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>822</DATA>
+      </COL>
+      <COL>
+        <DATA>1403</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="972">
+      <COL>
+        <DATA>503</DATA>
+      </COL>
+      <COL>
+        <DATA>5364|946|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>946</DATA>
+      </COL>
+      <COL>
+        <DATA>5364</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="986">
+      <COL>
+        <DATA>517</DATA>
+      </COL>
+      <COL>
+        <DATA>5443|1002|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1002</DATA>
+      </COL>
+      <COL>
+        <DATA>5443</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="989">
+      <COL>
+        <DATA>520</DATA>
+      </COL>
+      <COL>
+        <DATA>4008|1028|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1028</DATA>
+      </COL>
+      <COL>
+        <DATA>4008</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="993">
+      <COL>
+        <DATA>524</DATA>
+      </COL>
+      <COL>
+        <DATA>1292|1041|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1041</DATA>
+      </COL>
+      <COL>
+        <DATA>1292</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="998">
+      <COL>
+        <DATA>529</DATA>
+      </COL>
+      <COL>
+        <DATA>2236|1070|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1070</DATA>
+      </COL>
+      <COL>
+        <DATA>2236</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1013">
+      <COL>
+        <DATA>544</DATA>
+      </COL>
+      <COL>
+        <DATA>3150|1187|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1187</DATA>
+      </COL>
+      <COL>
+        <DATA>3150</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1016">
+      <COL>
+        <DATA>547</DATA>
+      </COL>
+      <COL>
+        <DATA>1615|1150|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1150</DATA>
+      </COL>
+      <COL>
+        <DATA>1615</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1018">
+      <COL>
+        <DATA>549</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|1246|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1246</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1032">
+      <COL>
+        <DATA>563</DATA>
+      </COL>
+      <COL>
+        <DATA>5460|1370|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1370</DATA>
+      </COL>
+      <COL>
+        <DATA>5460</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1042">
+      <COL>
+        <DATA>573</DATA>
+      </COL>
+      <COL>
+        <DATA>5463|1384|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1384</DATA>
+      </COL>
+      <COL>
+        <DATA>5463</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1047">
+      <COL>
+        <DATA>578</DATA>
+      </COL>
+      <COL>
+        <DATA>654|1404|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1404</DATA>
+      </COL>
+      <COL>
+        <DATA>654</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1050">
+      <COL>
+        <DATA>581</DATA>
+      </COL>
+      <COL>
+        <DATA>3794|1406|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1406</DATA>
+      </COL>
+      <COL>
+        <DATA>3794</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="1055">
+      <COL>
+        <DATA>586</DATA>
+      </COL>
+      <COL>
+        <DATA>3354|1466|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1466</DATA>
+      </COL>
+      <COL>
+        <DATA>3354</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1057">
+      <COL>
+        <DATA>588</DATA>
+      </COL>
+      <COL>
+        <DATA>1868|1506|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1506</DATA>
+      </COL>
+      <COL>
+        <DATA>1868</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1068">
+      <COL>
+        <DATA>599</DATA>
+      </COL>
+      <COL>
+        <DATA>5383|1509|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1509</DATA>
+      </COL>
+      <COL>
+        <DATA>5383</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1072">
+      <COL>
+        <DATA>603</DATA>
+      </COL>
+      <COL>
+        <DATA>3008|1575|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1575</DATA>
+      </COL>
+      <COL>
+        <DATA>3008</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1086">
+      <COL>
+        <DATA>617</DATA>
+      </COL>
+      <COL>
+        <DATA>3227|1683|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1683</DATA>
+      </COL>
+      <COL>
+        <DATA>3227</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1090">
+      <COL>
+        <DATA>621</DATA>
+      </COL>
+      <COL>
+        <DATA>5484|1700|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1700</DATA>
+      </COL>
+      <COL>
+        <DATA>5484</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1095">
+      <COL>
+        <DATA>626</DATA>
+      </COL>
+      <COL>
+        <DATA>972|1728|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1728</DATA>
+      </COL>
+      <COL>
+        <DATA>972</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1100">
+      <COL>
+        <DATA>631</DATA>
+      </COL>
+      <COL>
+        <DATA>5443|1754|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1754</DATA>
+      </COL>
+      <COL>
+        <DATA>5443</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1105">
+      <COL>
+        <DATA>636</DATA>
+      </COL>
+      <COL>
+        <DATA>348|1766|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1766</DATA>
+      </COL>
+      <COL>
+        <DATA>348</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="1108">
+      <COL>
+        <DATA>639</DATA>
+      </COL>
+      <COL>
+        <DATA>3227|1774|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1774</DATA>
+      </COL>
+      <COL>
+        <DATA>3227</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1111">
+      <COL>
+        <DATA>642</DATA>
+      </COL>
+      <COL>
+        <DATA>2165|1785|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1785</DATA>
+      </COL>
+      <COL>
+        <DATA>2165</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1116">
+      <COL>
+        <DATA>647</DATA>
+      </COL>
+      <COL>
+        <DATA>2388|1835|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1835</DATA>
+      </COL>
+      <COL>
+        <DATA>2388</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1118">
+      <COL>
+        <DATA>649</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|1912|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1912</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1123">
+      <COL>
+        <DATA>654</DATA>
+      </COL>
+      <COL>
+        <DATA>1292|1953|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1953</DATA>
+      </COL>
+      <COL>
+        <DATA>1292</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1126">
+      <COL>
+        <DATA>657</DATA>
+      </COL>
+      <COL>
+        <DATA>348|1967|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1967</DATA>
+      </COL>
+      <COL>
+        <DATA>348</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1131">
+      <COL>
+        <DATA>662</DATA>
+      </COL>
+      <COL>
+        <DATA>1817|2022|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>2022</DATA>
+      </COL>
+      <COL>
+        <DATA>1817</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1137">
+      <COL>
+        <DATA>668</DATA>
+      </COL>
+      <COL>
+        <DATA>348|2033|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>2033</DATA>
+      </COL>
+      <COL>
+        <DATA>348</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="1225">
+      <COL>
+        <DATA>756</DATA>
+      </COL>
+      <COL>
+        <DATA>5476|3653|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3653</DATA>
+      </COL>
+      <COL>
+        <DATA>5476</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="1242">
+      <COL>
+        <DATA>773</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|5551|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>5551</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1584">
+      <COL>
+        <DATA>1115</DATA>
+      </COL>
+      <COL>
+        <DATA>348|5177|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>5177</DATA>
+      </COL>
+      <COL>
+        <DATA>348</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="1680">
+      <COL>
+        <DATA>1211</DATA>
+      </COL>
+      <COL>
+        <DATA>5762|540|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>540</DATA>
+      </COL>
+      <COL>
+        <DATA>5762</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1948">
+      <COL>
+        <DATA>1479</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|3971|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3971</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="1977">
+      <COL>
+        <DATA>1508</DATA>
+      </COL>
+      <COL>
+        <DATA>154|361|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>361</DATA>
+      </COL>
+      <COL>
+        <DATA>154</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="2" RECORDID="1980">
+      <COL>
+        <DATA>1511</DATA>
+      </COL>
+      <COL>
+        <DATA>2365|832|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>832</DATA>
+      </COL>
+      <COL>
+        <DATA>2365</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1984">
+      <COL>
+        <DATA>1515</DATA>
+      </COL>
+      <COL>
+        <DATA>2822|3259|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3259</DATA>
+      </COL>
+      <COL>
+        <DATA>2822</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1986">
+      <COL>
+        <DATA>1517</DATA>
+      </COL>
+      <COL>
+        <DATA>5380|3116|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>3116</DATA>
+      </COL>
+      <COL>
+        <DATA>5380</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1989">
+      <COL>
+        <DATA>1520</DATA>
+      </COL>
+      <COL>
+        <DATA>4103|2184|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>2184</DATA>
+      </COL>
+      <COL>
+        <DATA>4103</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="1990">
+      <COL>
+        <DATA>1521</DATA>
+      </COL>
+      <COL>
+        <DATA>1292|1761|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1761</DATA>
+      </COL>
+      <COL>
+        <DATA>1292</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="2005">
+      <COL>
+        <DATA>1536</DATA>
+      </COL>
+      <COL>
+        <DATA>3227|1704|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>1704</DATA>
+      </COL>
+      <COL>
+        <DATA>3227</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="3" RECORDID="2010">
+      <COL>
+        <DATA>1541</DATA>
+      </COL>
+      <COL>
+        <DATA>1626|6388|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>6388</DATA>
+      </COL>
+      <COL>
+        <DATA>1626</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="1" RECORDID="2723">
+      <COL>
+        <DATA>2254</DATA>
+      </COL>
+      <COL>
+        <DATA>1817|7208|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>7208</DATA>
+      </COL>
+      <COL>
+        <DATA>1817</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="2729">
+      <COL>
+        <DATA>2260</DATA>
+      </COL>
+      <COL>
+        <DATA>3783|7137|Todesort</DATA>
+      </COL>
+      <COL>
+        <DATA>7137</DATA>
+      </COL>
+      <COL>
+        <DATA>3783</DATA>
+      </COL>
+      <COL>
+        <DATA>Todesort</DATA>
       </COL>
       <COL>
         <DATA/>

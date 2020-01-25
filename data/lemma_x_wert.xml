@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
   <ERRORCODE>0</ERRORCODE>
-  <PRODUCT BUILD="12-18-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.4"/>
-  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2018_12_13 neu.fmp12" RECORDS="5002" TIMEFORMAT="k:mm:ss "/>
+  <PRODUCT BUILD="04-12-2018" NAME="FileMaker" VERSION="ProAdvanced 17.0.1"/>
+  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="MLS 2019_10_12.fmp12" RECORDS="5000" TIMEFORMAT="k:mm:ss "/>
   <METADATA>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="PK_Lemma_x_Wert" TYPE="NUMBER"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="SingleCode" TYPE="TEXT"/>
@@ -13,7 +13,7 @@
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Lemma_Formel" TYPE="TEXT"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Wert_Formel" TYPE="TEXT"/>
   </METADATA>
-  <RESULTSET FOUND="5002">
+  <RESULTSET FOUND="5000">
     <ROW MODID="4" RECORDID="1">
       <COL>
         <DATA>1</DATA>
@@ -11923,96 +11923,18 @@
         <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="463">
-      <COL>
-        <DATA>463</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|116</DATA>
-      </COL>
-      <COL>
-        <DATA>116</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Anderhalden, Josef</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="464">
-      <COL>
-        <DATA>464</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|141</DATA>
-      </COL>
-      <COL>
-        <DATA>141</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Anthony</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="465">
-      <COL>
-        <DATA>465</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|497</DATA>
-      </COL>
-      <COL>
-        <DATA>497</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Blattmann, Heinrich</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="466">
+    <ROW MODID="4" RECORDID="466">
       <COL>
         <DATA>466</DATA>
       </COL>
       <COL>
-        <DATA>5368|570</DATA>
+        <DATA>5426|570</DATA>
       </COL>
       <COL>
         <DATA>570</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12024,21 +11946,21 @@
         <DATA>Bossard, Victor</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="467">
+    <ROW MODID="4" RECORDID="467">
       <COL>
         <DATA>467</DATA>
       </COL>
       <COL>
-        <DATA>5368|574</DATA>
+        <DATA>5426|574</DATA>
       </COL>
       <COL>
         <DATA>574</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12050,21 +11972,21 @@
         <DATA>Bossart, Emanuel</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="468">
+    <ROW MODID="4" RECORDID="468">
       <COL>
         <DATA>468</DATA>
       </COL>
       <COL>
-        <DATA>5368|575</DATA>
+        <DATA>5426|575</DATA>
       </COL>
       <COL>
         <DATA>575</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12076,21 +11998,21 @@
         <DATA>Bossart, Josef</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="469">
+    <ROW MODID="4" RECORDID="469">
       <COL>
         <DATA>469</DATA>
       </COL>
       <COL>
-        <DATA>5368|576</DATA>
+        <DATA>5426|576</DATA>
       </COL>
       <COL>
         <DATA>576</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12102,21 +12024,21 @@
         <DATA>Bossart, Karl Josef Maria</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="470">
+    <ROW MODID="4" RECORDID="470">
       <COL>
         <DATA>470</DATA>
       </COL>
       <COL>
-        <DATA>5368|578</DATA>
+        <DATA>5426|578</DATA>
       </COL>
       <COL>
         <DATA>578</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12128,7 +12050,7 @@
         <DATA>Bossart, Viktor Ferdinand</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
     <ROW MODID="6" RECORDID="471">
@@ -12157,18 +12079,18 @@
         <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="472">
+    <ROW MODID="4" RECORDID="472">
       <COL>
         <DATA>472</DATA>
       </COL>
       <COL>
-        <DATA>5368|636</DATA>
+        <DATA>5426|636</DATA>
       </COL>
       <COL>
         <DATA>636</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12180,21 +12102,21 @@
         <DATA>Briefer, Jakob</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="473">
+    <ROW MODID="5" RECORDID="473">
       <COL>
         <DATA>473</DATA>
       </COL>
       <COL>
-        <DATA>5368|659</DATA>
+        <DATA>5426|659</DATA>
       </COL>
       <COL>
         <DATA>659</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12206,21 +12128,21 @@
         <DATA>Brosi, Johann Jakob</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="474">
+    <ROW MODID="5" RECORDID="474">
       <COL>
         <DATA>474</DATA>
       </COL>
       <COL>
-        <DATA>5368|660</DATA>
+        <DATA>5426|660</DATA>
       </COL>
       <COL>
         <DATA>660</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12232,21 +12154,21 @@
         <DATA>Brosi, Peter Friedrich</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="475">
+    <ROW MODID="5" RECORDID="475">
       <COL>
         <DATA>475</DATA>
       </COL>
       <COL>
-        <DATA>5368|718</DATA>
+        <DATA>5426|718</DATA>
       </COL>
       <COL>
         <DATA>718</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12258,21 +12180,21 @@
         <DATA>Buchner, Alexius</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="476">
+    <ROW MODID="4" RECORDID="476">
       <COL>
         <DATA>476</DATA>
       </COL>
       <COL>
-        <DATA>5368|828</DATA>
+        <DATA>5426|828</DATA>
       </COL>
       <COL>
         <DATA>828</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12284,21 +12206,21 @@
         <DATA>Carlen</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="477">
+    <ROW MODID="4" RECORDID="477">
       <COL>
         <DATA>477</DATA>
       </COL>
       <COL>
-        <DATA>5368|829</DATA>
+        <DATA>5426|829</DATA>
       </COL>
       <COL>
         <DATA>829</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12310,21 +12232,21 @@
         <DATA>Carlen, Felix</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="478">
+    <ROW MODID="4" RECORDID="478">
       <COL>
         <DATA>478</DATA>
       </COL>
       <COL>
-        <DATA>5368|948</DATA>
+        <DATA>5426|948</DATA>
       </COL>
       <COL>
         <DATA>948</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12336,21 +12258,21 @@
         <DATA>Conradi</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="479">
+    <ROW MODID="4" RECORDID="479">
       <COL>
         <DATA>479</DATA>
       </COL>
       <COL>
-        <DATA>5368|1191</DATA>
+        <DATA>5426|1191</DATA>
       </COL>
       <COL>
         <DATA>1191</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12362,21 +12284,21 @@
         <DATA>Dugy</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="480">
+    <ROW MODID="4" RECORDID="480">
       <COL>
         <DATA>480</DATA>
       </COL>
       <COL>
-        <DATA>5368|1212</DATA>
+        <DATA>5426|1212</DATA>
       </COL>
       <COL>
         <DATA>1212</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12388,21 +12310,21 @@
         <DATA>Düringer, Leonhard</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="481">
+    <ROW MODID="4" RECORDID="481">
       <COL>
         <DATA>481</DATA>
       </COL>
       <COL>
-        <DATA>5368|1361</DATA>
+        <DATA>5426|1361</DATA>
       </COL>
       <COL>
         <DATA>1361</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12414,7 +12336,7 @@
         <DATA>Falw, Georg</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
     <ROW MODID="4" RECORDID="482">
@@ -12625,18 +12547,18 @@
         <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="492">
+    <ROW MODID="4" RECORDID="492">
       <COL>
         <DATA>492</DATA>
       </COL>
       <COL>
-        <DATA>5368|4317</DATA>
+        <DATA>5426|4317</DATA>
       </COL>
       <COL>
         <DATA>4317</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12648,21 +12570,21 @@
         <DATA>Goll, Friedrich</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="493">
+    <ROW MODID="4" RECORDID="493">
       <COL>
         <DATA>493</DATA>
       </COL>
       <COL>
-        <DATA>5368|4326</DATA>
+        <DATA>5426|4326</DATA>
       </COL>
       <COL>
         <DATA>4326</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12674,7 +12596,7 @@
         <DATA>Graf, J.</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
     <ROW MODID="4" RECORDID="494">
@@ -12703,18 +12625,18 @@
         <DATA>Kapitular</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="495">
+    <ROW MODID="4" RECORDID="495">
       <COL>
         <DATA>495</DATA>
       </COL>
       <COL>
-        <DATA>5368|4451</DATA>
+        <DATA>5426|4451</DATA>
       </COL>
       <COL>
         <DATA>4451</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12726,21 +12648,21 @@
         <DATA>Heinrich I.</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="496">
+    <ROW MODID="4" RECORDID="496">
       <COL>
         <DATA>496</DATA>
       </COL>
       <COL>
-        <DATA>5368|4611</DATA>
+        <DATA>5426|4611</DATA>
       </COL>
       <COL>
         <DATA>4611</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12752,21 +12674,21 @@
         <DATA>Immler, A. Gottlieb</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="497">
+    <ROW MODID="4" RECORDID="497">
       <COL>
         <DATA>497</DATA>
       </COL>
       <COL>
-        <DATA>5368|4624</DATA>
+        <DATA>5426|4624</DATA>
       </COL>
       <COL>
         <DATA>4624</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12778,21 +12700,21 @@
         <DATA>Meißen, Johannes von</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="498">
+    <ROW MODID="4" RECORDID="498">
       <COL>
         <DATA>498</DATA>
       </COL>
       <COL>
-        <DATA>5368|4682</DATA>
+        <DATA>5426|4682</DATA>
       </COL>
       <COL>
         <DATA>4682</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12804,21 +12726,21 @@
         <DATA>Kern, Mathias</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="499">
+    <ROW MODID="4" RECORDID="499">
       <COL>
         <DATA>499</DATA>
       </COL>
       <COL>
-        <DATA>5368|4748</DATA>
+        <DATA>5426|4748</DATA>
       </COL>
       <COL>
         <DATA>4748</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12830,21 +12752,21 @@
         <DATA>Kuhn, Johann Nepomuk</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="500">
+    <ROW MODID="4" RECORDID="500">
       <COL>
         <DATA>500</DATA>
       </COL>
       <COL>
-        <DATA>5368|4873</DATA>
+        <DATA>5426|4873</DATA>
       </COL>
       <COL>
         <DATA>4873</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12856,21 +12778,21 @@
         <DATA>Marschal, Hans Christoph</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="501">
+    <ROW MODID="4" RECORDID="501">
       <COL>
         <DATA>501</DATA>
       </COL>
       <COL>
-        <DATA>5368|4906</DATA>
+        <DATA>5426|4906</DATA>
       </COL>
       <COL>
         <DATA>4906</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12882,21 +12804,21 @@
         <DATA>Meyer, Balthasar</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="502">
+    <ROW MODID="4" RECORDID="502">
       <COL>
         <DATA>502</DATA>
       </COL>
       <COL>
-        <DATA>5368|4920</DATA>
+        <DATA>5426|4920</DATA>
       </COL>
       <COL>
         <DATA>4920</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12908,21 +12830,21 @@
         <DATA>Michel III.</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="503">
+    <ROW MODID="4" RECORDID="503">
       <COL>
         <DATA>503</DATA>
       </COL>
       <COL>
-        <DATA>5368|5103</DATA>
+        <DATA>5426|5103</DATA>
       </COL>
       <COL>
         <DATA>5103</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12934,21 +12856,21 @@
         <DATA>Raspo</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="504">
+    <ROW MODID="4" RECORDID="504">
       <COL>
         <DATA>504</DATA>
       </COL>
       <COL>
-        <DATA>5368|5186</DATA>
+        <DATA>5426|5186</DATA>
       </COL>
       <COL>
         <DATA>5186</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12960,21 +12882,21 @@
         <DATA>Ruprecht I.</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="505">
+    <ROW MODID="4" RECORDID="505">
       <COL>
         <DATA>505</DATA>
       </COL>
       <COL>
-        <DATA>5368|5198</DATA>
+        <DATA>5426|5198</DATA>
       </COL>
       <COL>
         <DATA>5198</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -12986,21 +12908,21 @@
         <DATA>Sager Jörg</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="506">
+    <ROW MODID="4" RECORDID="506">
       <COL>
         <DATA>506</DATA>
       </COL>
       <COL>
-        <DATA>5368|5229</DATA>
+        <DATA>5426|5229</DATA>
       </COL>
       <COL>
         <DATA>5229</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -13012,7 +12934,7 @@
         <DATA>Schentzer, Hans</DATA>
       </COL>
       <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
     <ROW MODID="4" RECORDID="507">
@@ -13041,18 +12963,18 @@
         <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
-    <ROW MODID="3" RECORDID="508">
+    <ROW MODID="4" RECORDID="508">
       <COL>
         <DATA>508</DATA>
       </COL>
       <COL>
-        <DATA>5368|5597</DATA>
+        <DATA>5426|5597</DATA>
       </COL>
       <COL>
         <DATA>5597</DATA>
       </COL>
       <COL>
-        <DATA>5368</DATA>
+        <DATA>5426</DATA>
       </COL>
       <COL>
         <DATA/>
@@ -13064,1723 +12986,7 @@
         <DATA>Weidner, David Jakob</DATA>
       </COL>
       <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="509">
-      <COL>
-        <DATA>509</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5712</DATA>
-      </COL>
-      <COL>
-        <DATA>5712</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Alchisio, Giuseppe</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="510">
-      <COL>
-        <DATA>510</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5713</DATA>
-      </COL>
-      <COL>
-        <DATA>5713</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Alfieri, Vittorio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="511">
-      <COL>
-        <DATA>511</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5729</DATA>
-      </COL>
-      <COL>
-        <DATA>5729</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Arquint, Alfredo</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="512">
-      <COL>
-        <DATA>512</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5734</DATA>
-      </COL>
-      <COL>
-        <DATA>5734</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Balbiani - Vegezzi - Bossi</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="513">
-      <COL>
-        <DATA>513</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5749</DATA>
-      </COL>
-      <COL>
-        <DATA>5749</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Barone, Francesco I.</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="514">
-      <COL>
-        <DATA>514</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5763</DATA>
-      </COL>
-      <COL>
-        <DATA>5763</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Milano, Benedetto da</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="515">
-      <COL>
-        <DATA>515</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5765</DATA>
-      </COL>
-      <COL>
-        <DATA>5765</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bergamasco, Gian Giacomo</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="516">
-      <COL>
-        <DATA>516</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5775</DATA>
-      </COL>
-      <COL>
-        <DATA>5775</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bernasconi, Giuseppe</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="517">
-      <COL>
-        <DATA>517</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5776</DATA>
-      </COL>
-      <COL>
-        <DATA>5776</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bernasconi, Lorenzo</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="518">
-      <COL>
-        <DATA>518</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5778</DATA>
-      </COL>
-      <COL>
-        <DATA>5778</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bernasconi, Luigi II.</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="519">
-      <COL>
-        <DATA>519</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5780</DATA>
-      </COL>
-      <COL>
-        <DATA>5780</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bernasconi, Pavolino</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="520">
-      <COL>
-        <DATA>520</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5781</DATA>
-      </COL>
-      <COL>
-        <DATA>5781</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bernasconi, Pietro</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="521">
-      <COL>
-        <DATA>521</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5794</DATA>
-      </COL>
-      <COL>
-        <DATA>5794</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bianchi e Midali</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="522">
-      <COL>
-        <DATA>522</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5802</DATA>
-      </COL>
-      <COL>
-        <DATA>5802</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bianchi, Giuseppe Antonio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="523">
-      <COL>
-        <DATA>523</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5808</DATA>
-      </COL>
-      <COL>
-        <DATA>5808</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Biroldi, Eugenio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="524">
-      <COL>
-        <DATA>524</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5817</DATA>
-      </COL>
-      <COL>
-        <DATA>5817</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bonatti, Giovan Pietro</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="525">
-      <COL>
-        <DATA>525</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5839</DATA>
-      </COL>
-      <COL>
-        <DATA>5839</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bossi, Angelo</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="526">
-      <COL>
-        <DATA>526</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5840</DATA>
-      </COL>
-      <COL>
-        <DATA>5840</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bossi, Carlo</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="527">
-      <COL>
-        <DATA>527</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5841</DATA>
-      </COL>
-      <COL>
-        <DATA>5841</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bossi, Felice</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="528">
-      <COL>
-        <DATA>528</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5842</DATA>
-      </COL>
-      <COL>
-        <DATA>5842</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bossi, Gabriele</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="529">
-      <COL>
-        <DATA>529</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5843</DATA>
-      </COL>
-      <COL>
-        <DATA>5843</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bossi, Giovanni Antonio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="530">
-      <COL>
-        <DATA>530</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5844</DATA>
-      </COL>
-      <COL>
-        <DATA>5844</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bossi, Giovanni Battista</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="531">
-      <COL>
-        <DATA>531</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5845</DATA>
-      </COL>
-      <COL>
-        <DATA>5845</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bossi-Urbani, Adeodato</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="532">
-      <COL>
-        <DATA>532</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5850</DATA>
-      </COL>
-      <COL>
-        <DATA>5850</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Brambilla, Arturo</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="533">
-      <COL>
-        <DATA>533</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5852</DATA>
-      </COL>
-      <COL>
-        <DATA>5852</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Brambilla, Paolo</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="534">
-      <COL>
-        <DATA>534</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5856</DATA>
-      </COL>
-      <COL>
-        <DATA>5856</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Brevi, Gian Antonio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="535">
-      <COL>
-        <DATA>535</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5859</DATA>
-      </COL>
-      <COL>
-        <DATA>5859</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Brunello, Antonio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="536">
-      <COL>
-        <DATA>536</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5863</DATA>
-      </COL>
-      <COL>
-        <DATA>5863</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Buraschi, Pietro Giovanni</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="537">
-      <COL>
-        <DATA>537</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5869</DATA>
-      </COL>
-      <COL>
-        <DATA>5869</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Caccia, Domenico</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="538">
-      <COL>
-        <DATA>538</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5870</DATA>
-      </COL>
-      <COL>
-        <DATA>5870</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Caccia, Pietro Antonio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="539">
-      <COL>
-        <DATA>539</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5883</DATA>
-      </COL>
-      <COL>
-        <DATA>5883</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Carbone, Stefano</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="540">
-      <COL>
-        <DATA>540</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5890</DATA>
-      </COL>
-      <COL>
-        <DATA>5890</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Casale, Lucio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="541">
-      <COL>
-        <DATA>541</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5900</DATA>
-      </COL>
-      <COL>
-        <DATA>5900</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Cavaglieri, Enrico</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="542">
-      <COL>
-        <DATA>542</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5907</DATA>
-      </COL>
-      <COL>
-        <DATA>5907</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Chiesa, Gaspare</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="543">
-      <COL>
-        <DATA>543</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5908</DATA>
-      </COL>
-      <COL>
-        <DATA>5908</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Chiesa, Paolo</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="544">
-      <COL>
-        <DATA>544</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5909</DATA>
-      </COL>
-      <COL>
-        <DATA>5909</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Chiesa, Pietro</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="545">
-      <COL>
-        <DATA>545</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5914</DATA>
-      </COL>
-      <COL>
-        <DATA>5914</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Colombi, Giuseppe</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="546">
-      <COL>
-        <DATA>546</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5942</DATA>
-      </COL>
-      <COL>
-        <DATA>5942</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Cartis, Giovanni Virginio de</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="547">
-      <COL>
-        <DATA>547</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5949</DATA>
-      </COL>
-      <COL>
-        <DATA>5949</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Porta, Giovanni Della</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="548">
-      <COL>
-        <DATA>548</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5971</DATA>
-      </COL>
-      <COL>
-        <DATA>5971</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Donis, Giuseppe</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="549">
-      <COL>
-        <DATA>549</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|5991</DATA>
-      </COL>
-      <COL>
-        <DATA>5991</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Ferrari, Giovanni Antonio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="550">
-      <COL>
-        <DATA>550</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6004</DATA>
-      </COL>
-      <COL>
-        <DATA>6004</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Fontana, Giuseppe</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="551">
-      <COL>
-        <DATA>551</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6012</DATA>
-      </COL>
-      <COL>
-        <DATA>6012</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Franzetti, Giovanni</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="552">
-      <COL>
-        <DATA>552</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6026</DATA>
-      </COL>
-      <COL>
-        <DATA>6026</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Gandini, Elia</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="553">
-      <COL>
-        <DATA>553</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6051</DATA>
-      </COL>
-      <COL>
-        <DATA>6051</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Gibelli, Francesco</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="554">
-      <COL>
-        <DATA>554</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6097</DATA>
-      </COL>
-      <COL>
-        <DATA>6097</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Acqua, Carlo l'</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="555">
-      <COL>
-        <DATA>555</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6102</DATA>
-      </COL>
-      <COL>
-        <DATA>6102</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Leoncavallo, Ruggero</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="556">
-      <COL>
-        <DATA>556</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6103</DATA>
-      </COL>
-      <COL>
-        <DATA>6103</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Lezzano, Carlo</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="557">
-      <COL>
-        <DATA>557</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6107</DATA>
-      </COL>
-      <COL>
-        <DATA>6107</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Lotterio, Antonio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="558">
-      <COL>
-        <DATA>558</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6121</DATA>
-      </COL>
-      <COL>
-        <DATA>6121</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Marazzi, Giuseppe</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="559">
-      <COL>
-        <DATA>559</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6124</DATA>
-      </COL>
-      <COL>
-        <DATA>6124</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Marelli, Luigi</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="560">
-      <COL>
-        <DATA>560</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6126</DATA>
-      </COL>
-      <COL>
-        <DATA>6126</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Maroni, Giorgio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="561">
-      <COL>
-        <DATA>561</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6128</DATA>
-      </COL>
-      <COL>
-        <DATA>6128</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Mascioni</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="562">
-      <COL>
-        <DATA>562</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6154</DATA>
-      </COL>
-      <COL>
-        <DATA>6154</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Paracca, Valentino</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="563">
-      <COL>
-        <DATA>563</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6171</DATA>
-      </COL>
-      <COL>
-        <DATA>6171</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Pinza, Carlo Giuseppe</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="564">
-      <COL>
-        <DATA>564</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6184</DATA>
-      </COL>
-      <COL>
-        <DATA>6184</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Reina, Antonio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="565">
-      <COL>
-        <DATA>565</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6185</DATA>
-      </COL>
-      <COL>
-        <DATA>6185</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Reina, Giovanni Battista</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="566">
-      <COL>
-        <DATA>566</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6186</DATA>
-      </COL>
-      <COL>
-        <DATA>6186</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Reina, Giuseppe</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="567">
-      <COL>
-        <DATA>567</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6229</DATA>
-      </COL>
-      <COL>
-        <DATA>6229</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Vedani, Giuseppe</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="568">
-      <COL>
-        <DATA>568</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6237</DATA>
-      </COL>
-      <COL>
-        <DATA>6237</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Viscontini, Francesco</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="569">
-      <COL>
-        <DATA>569</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6239</DATA>
-      </COL>
-      <COL>
-        <DATA>6239</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Walpen, Antonio</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="570">
-      <COL>
-        <DATA>570</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6255</DATA>
-      </COL>
-      <COL>
-        <DATA>6255</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Zezio, Felice</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="571">
-      <COL>
-        <DATA>571</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6261</DATA>
-      </COL>
-      <COL>
-        <DATA>6261</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Zuchi</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="572">
-      <COL>
-        <DATA>572</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6692</DATA>
-      </COL>
-      <COL>
-        <DATA>6692</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Marti II.</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="573">
-      <COL>
-        <DATA>573</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6747</DATA>
-      </COL>
-      <COL>
-        <DATA>6747</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Pierre II.</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-    </ROW>
-    <ROW MODID="3" RECORDID="574">
-      <COL>
-        <DATA>574</DATA>
-      </COL>
-      <COL>
-        <DATA>5368|6887</DATA>
-      </COL>
-      <COL>
-        <DATA>6887</DATA>
-      </COL>
-      <COL>
-        <DATA>5368</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Uolmann, Johannes</DATA>
-      </COL>
-      <COL>
-        <DATA/>
+        <DATA>Orgelbauer</DATA>
       </COL>
     </ROW>
     <ROW MODID="3" RECORDID="583">
@@ -26997,7 +25203,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Rey, Louis</DATA>
+        <DATA>Rey, Louis I</DATA>
       </COL>
       <COL>
         <DATA>Konzertmeister/in</DATA>
@@ -27023,7 +25229,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Rey, Louis</DATA>
+        <DATA>Rey, Louis I</DATA>
       </COL>
       <COL>
         <DATA>Interpretation</DATA>
@@ -27049,7 +25255,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Rey, Louis</DATA>
+        <DATA>Rey, Louis I</DATA>
       </COL>
       <COL>
         <DATA>Arrangeur</DATA>
@@ -29441,7 +27647,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Streiff, Peter</DATA>
+        <DATA>Sreiff, Peter</DATA>
       </COL>
       <COL>
         <DATA>Interpretation</DATA>
@@ -29467,7 +27673,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Streiff, Peter</DATA>
+        <DATA>Sreiff, Peter</DATA>
       </COL>
       <COL>
         <DATA>Komposition</DATA>
@@ -31625,7 +29831,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Glùtz-Blotzheim, Franz Peter Alois</DATA>
+        <DATA>Glutz-Blotzheim, Franz Peter Alois</DATA>
       </COL>
       <COL>
         <DATA>Interpretation</DATA>
@@ -31651,7 +29857,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Glùtz-Blotzheim, Franz Peter Alois</DATA>
+        <DATA>Glutz-Blotzheim, Franz Peter Alois</DATA>
       </COL>
       <COL>
         <DATA>Komposition</DATA>
@@ -41541,7 +39747,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Huser, Bernhard</DATA>
+        <DATA>Hüsser, Bernhard</DATA>
       </COL>
       <COL>
         <DATA>Komposition</DATA>
@@ -41567,7 +39773,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Huser, Bernhard</DATA>
+        <DATA>Hüsser, Bernhard</DATA>
       </COL>
       <COL>
         <DATA>Konventuale</DATA>
@@ -41593,7 +39799,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Huser, Bernhard</DATA>
+        <DATA>Hüsser, Bernhard</DATA>
       </COL>
       <COL>
         <DATA>Interpretation</DATA>
@@ -41619,7 +39825,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Huser, Bernhard</DATA>
+        <DATA>Hüsser, Bernhard</DATA>
       </COL>
       <COL>
         <DATA>Instrumentenbauer</DATA>
@@ -41645,7 +39851,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Huser, Bernhard</DATA>
+        <DATA>Hüsser, Bernhard</DATA>
       </COL>
       <COL>
         <DATA>Orgelbauer</DATA>
@@ -44688,7 +42894,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Mooser, R.-Aloys</DATA>
+        <DATA>Mooser, Robert-Aloys</DATA>
       </COL>
       <COL>
         <DATA>Musikreferent/in</DATA>
@@ -44714,7 +42920,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Mooser, R.-Aloys</DATA>
+        <DATA>Mooser, Robert-Aloys</DATA>
       </COL>
       <COL>
         <DATA>Redaktion</DATA>
@@ -44740,7 +42946,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Mooser, R.-Aloys</DATA>
+        <DATA>Mooser, Robert-Aloys</DATA>
       </COL>
       <COL>
         <DATA>Interpretation</DATA>
@@ -44766,7 +42972,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Mooser, R.-Aloys</DATA>
+        <DATA>Mooser, Robert-Aloys</DATA>
       </COL>
       <COL>
         <DATA>Konzertleitung</DATA>
@@ -44792,7 +42998,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Mooser, R.-Aloys</DATA>
+        <DATA>Mooser, Robert-Aloys</DATA>
       </COL>
       <COL>
         <DATA>Autor/in</DATA>
@@ -44818,7 +43024,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Mooser, R.-Aloys</DATA>
+        <DATA>Mooser, Robert-Aloys</DATA>
       </COL>
       <COL>
         <DATA>Direktion</DATA>
@@ -44844,7 +43050,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Mooser, R.-Aloys</DATA>
+        <DATA>Mooser, Robert-Aloys</DATA>
       </COL>
       <COL>
         <DATA>Direktor/in</DATA>
@@ -60848,32 +59054,6 @@
         <DATA>Komposition</DATA>
       </COL>
     </ROW>
-    <ROW MODID="0" RECORDID="2518">
-      <COL>
-        <DATA>2492</DATA>
-      </COL>
-      <COL>
-        <DATA>5369|380</DATA>
-      </COL>
-      <COL>
-        <DATA>380</DATA>
-      </COL>
-      <COL>
-        <DATA>5369</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Bergmann von Olpe, Johann</DATA>
-      </COL>
-      <COL>
-        <DATA>Musikdruck</DATA>
-      </COL>
-    </ROW>
     <ROW MODID="0" RECORDID="2519">
       <COL>
         <DATA>2493</DATA>
@@ -61156,7 +59336,8 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Bigler, Heinz</DATA>
+        <DATA>Bigler, Heinz
+</DATA>
       </COL>
       <COL>
         <DATA>Interpretation</DATA>
@@ -61182,7 +59363,8 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Bigler, Heinz</DATA>
+        <DATA>Bigler, Heinz
+</DATA>
       </COL>
       <COL>
         <DATA>Jazzmusik</DATA>
@@ -61208,7 +59390,8 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Bigler, Heinz</DATA>
+        <DATA>Bigler, Heinz
+</DATA>
       </COL>
       <COL>
         <DATA>Bandleader/in</DATA>
@@ -63289,7 +61472,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Chaponnière, J. Fr.</DATA>
+        <DATA>Chaponnière, Jean-François</DATA>
       </COL>
       <COL>
         <DATA>Komposition</DATA>
@@ -63315,7 +61498,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Chaponnière, J. Fr.</DATA>
+        <DATA>Chaponnière, Jean-François</DATA>
       </COL>
       <COL>
         <DATA>Politik</DATA>
@@ -79777,7 +77960,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Schulz [Schulz-Beuthen], Heinrich</DATA>
+        <DATA>Schulz-Beuthen, Heinrich</DATA>
       </COL>
       <COL>
         <DATA>Komposition</DATA>
@@ -79803,7 +77986,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Schulz [Schulz-Beuthen], Heinrich</DATA>
+        <DATA>Schulz-Beuthen, Heinrich</DATA>
       </COL>
       <COL>
         <DATA>Lehrtätigkeit</DATA>
@@ -79829,7 +78012,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Schulz [Schulz-Beuthen], Heinrich</DATA>
+        <DATA>Schulz-Beuthen, Heinrich</DATA>
       </COL>
       <COL>
         <DATA>Interpretation</DATA>
@@ -79855,7 +78038,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Schulz [Schulz-Beuthen], Heinrich</DATA>
+        <DATA>Schulz-Beuthen, Heinrich</DATA>
       </COL>
       <COL>
         <DATA>Konzerttätigkeit</DATA>
@@ -79881,7 +78064,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Schulz [Schulz-Beuthen], Heinrich</DATA>
+        <DATA>Schulz-Beuthen, Heinrich</DATA>
       </COL>
       <COL>
         <DATA>Musikreferent/in</DATA>
@@ -81212,32 +79395,6 @@
       </COL>
       <COL>
         <DATA>Interpretation</DATA>
-      </COL>
-    </ROW>
-    <ROW MODID="0" RECORDID="3326">
-      <COL>
-        <DATA>3300</DATA>
-      </COL>
-      <COL>
-        <DATA>5538|510</DATA>
-      </COL>
-      <COL>
-        <DATA>510</DATA>
-      </COL>
-      <COL>
-        <DATA>5538</DATA>
-      </COL>
-      <COL>
-        <DATA/>
-      </COL>
-      <COL>
-        <DATA>Fehler: Doppelter Wert</DATA>
-      </COL>
-      <COL>
-        <DATA>Blum, Robert</DATA>
-      </COL>
-      <COL>
-        <DATA>Orchesterleitung</DATA>
       </COL>
     </ROW>
     <ROW MODID="0" RECORDID="3327">
@@ -97879,7 +96036,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Liste, Anton</DATA>
+        <DATA>Liste, Anton Heinrich</DATA>
       </COL>
       <COL>
         <DATA>Direktion</DATA>
@@ -97905,7 +96062,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Liste, Anton</DATA>
+        <DATA>Liste, Anton Heinrich</DATA>
       </COL>
       <COL>
         <DATA>Interpretation</DATA>
@@ -97931,7 +96088,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Liste, Anton</DATA>
+        <DATA>Liste, Anton Heinrich</DATA>
       </COL>
       <COL>
         <DATA>Komposition</DATA>
@@ -97957,7 +96114,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Liste, Anton</DATA>
+        <DATA>Liste, Anton Heinrich</DATA>
       </COL>
       <COL>
         <DATA>Chorleitung</DATA>
@@ -97983,7 +96140,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Liste, Anton</DATA>
+        <DATA>Liste, Anton Heinrich</DATA>
       </COL>
       <COL>
         <DATA>Konzerttätigkeit</DATA>
@@ -98009,7 +96166,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Liste, Anton</DATA>
+        <DATA>Liste, Anton Heinrich</DATA>
       </COL>
       <COL>
         <DATA>Musikgesellschaft</DATA>
@@ -98035,7 +96192,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Liste, Anton</DATA>
+        <DATA>Liste, Anton Heinrich</DATA>
       </COL>
       <COL>
         <DATA>Konzertbegleitung</DATA>
@@ -118145,7 +116302,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Fries (Frisins), Johannes</DATA>
+        <DATA>Fries (Frisius), Johannes</DATA>
       </COL>
       <COL>
         <DATA>Interpretation</DATA>
@@ -118171,7 +116328,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Fries (Frisins), Johannes</DATA>
+        <DATA>Fries (Frisius), Johannes</DATA>
       </COL>
       <COL>
         <DATA>Autor/in</DATA>
@@ -118197,7 +116354,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Fries (Frisins), Johannes</DATA>
+        <DATA>Fries (Frisius), Johannes</DATA>
       </COL>
       <COL>
         <DATA>Pfarramt</DATA>
@@ -118223,7 +116380,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Fries (Frisins), Johannes</DATA>
+        <DATA>Fries (Frisius), Johannes</DATA>
       </COL>
       <COL>
         <DATA>Magister</DATA>
@@ -118249,7 +116406,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Fries (Frisins), Johannes</DATA>
+        <DATA>Fries (Frisius), Johannes</DATA>
       </COL>
       <COL>
         <DATA>Lehrtätigkeit</DATA>
@@ -118275,7 +116432,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Fries (Frisins), Johannes</DATA>
+        <DATA>Fries (Frisius), Johannes</DATA>
       </COL>
       <COL>
         <DATA>Editor/in</DATA>
@@ -118301,7 +116458,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Fries (Frisins), Johannes</DATA>
+        <DATA>Fries (Frisius), Johannes</DATA>
       </COL>
       <COL>
         <DATA>Übersetzer/in</DATA>
@@ -118327,7 +116484,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Fries (Frisins), Johannes</DATA>
+        <DATA>Fries (Frisius), Johannes</DATA>
       </COL>
       <COL>
         <DATA>Musiktheorie</DATA>
@@ -118353,7 +116510,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Fries (Frisins), Johannes</DATA>
+        <DATA>Fries (Frisius), Johannes</DATA>
       </COL>
       <COL>
         <DATA>Schulmeister
@@ -118975,7 +117132,7 @@
         <DATA/>
       </COL>
       <COL>
-        <DATA>Fehler: Doppelter Wert</DATA>
+        <DATA/>
       </COL>
       <COL>
         <DATA>Blum, Robert</DATA>
@@ -130113,6 +128270,1800 @@
       </COL>
       <COL>
         <DATA>Kantor</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5275">
+      <COL>
+        <DATA>5248</DATA>
+      </COL>
+      <COL>
+        <DATA>5492|4248</DATA>
+      </COL>
+      <COL>
+        <DATA>4248</DATA>
+      </COL>
+      <COL>
+        <DATA>5492</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Zwimpfer, Alfred</DATA>
+      </COL>
+      <COL>
+        <DATA>Volksmusik</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5277">
+      <COL>
+        <DATA>5250</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6097</DATA>
+      </COL>
+      <COL>
+        <DATA>6097</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Acqua, Carlo l'</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5278">
+      <COL>
+        <DATA>5251</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5712</DATA>
+      </COL>
+      <COL>
+        <DATA>5712</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Alchisio, Giuseppe</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5279">
+      <COL>
+        <DATA>5252</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5713</DATA>
+      </COL>
+      <COL>
+        <DATA>5713</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Alfieri, Vittorio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5280">
+      <COL>
+        <DATA>5253</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5729</DATA>
+      </COL>
+      <COL>
+        <DATA>5729</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Arquint, Alfredo</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5281">
+      <COL>
+        <DATA>5254</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5734</DATA>
+      </COL>
+      <COL>
+        <DATA>5734</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Balbiani - Vegezzi - Bossi</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5282">
+      <COL>
+        <DATA>5255</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5749</DATA>
+      </COL>
+      <COL>
+        <DATA>5749</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Barone, Francesco I.</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5283">
+      <COL>
+        <DATA>5256</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5765</DATA>
+      </COL>
+      <COL>
+        <DATA>5765</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bergamasco, Gian Giacomo</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5284">
+      <COL>
+        <DATA>5257</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|7005</DATA>
+      </COL>
+      <COL>
+        <DATA>7005</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bernasconi, Fiorenzo</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5285">
+      <COL>
+        <DATA>5258</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5775</DATA>
+      </COL>
+      <COL>
+        <DATA>5775</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bernasconi, Giuseppe</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5286">
+      <COL>
+        <DATA>5259</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5776</DATA>
+      </COL>
+      <COL>
+        <DATA>5776</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bernasconi, Lorenzo</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5287">
+      <COL>
+        <DATA>5260</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5778</DATA>
+      </COL>
+      <COL>
+        <DATA>5778</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bernasconi, Luigi II.</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5288">
+      <COL>
+        <DATA>5261</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5780</DATA>
+      </COL>
+      <COL>
+        <DATA>5780</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bernasconi, Pavolino</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5289">
+      <COL>
+        <DATA>5262</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5781</DATA>
+      </COL>
+      <COL>
+        <DATA>5781</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bernasconi, Pietro</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5290">
+      <COL>
+        <DATA>5263</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5794</DATA>
+      </COL>
+      <COL>
+        <DATA>5794</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bianchi e Midali</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5291">
+      <COL>
+        <DATA>5264</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5802</DATA>
+      </COL>
+      <COL>
+        <DATA>5802</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bianchi, Giuseppe Antonio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5292">
+      <COL>
+        <DATA>5265</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5808</DATA>
+      </COL>
+      <COL>
+        <DATA>5808</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Biroldi, Eugenio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5293">
+      <COL>
+        <DATA>5266</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5817</DATA>
+      </COL>
+      <COL>
+        <DATA>5817</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bonatti, Giovan Pietro</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5294">
+      <COL>
+        <DATA>5267</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5845</DATA>
+      </COL>
+      <COL>
+        <DATA>5845</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bossi-Urbani, Adeodato</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5295">
+      <COL>
+        <DATA>5268</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5839</DATA>
+      </COL>
+      <COL>
+        <DATA>5839</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bossi, Angelo</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5296">
+      <COL>
+        <DATA>5269</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5840</DATA>
+      </COL>
+      <COL>
+        <DATA>5840</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bossi, Carlo</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5297">
+      <COL>
+        <DATA>5270</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5841</DATA>
+      </COL>
+      <COL>
+        <DATA>5841</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bossi, Felice</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5298">
+      <COL>
+        <DATA>5271</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5842</DATA>
+      </COL>
+      <COL>
+        <DATA>5842</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bossi, Gabriele</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5299">
+      <COL>
+        <DATA>5272</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5843</DATA>
+      </COL>
+      <COL>
+        <DATA>5843</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bossi, Giovanni Antonio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5300">
+      <COL>
+        <DATA>5273</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5844</DATA>
+      </COL>
+      <COL>
+        <DATA>5844</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Bossi, Giovanni Battista</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5301">
+      <COL>
+        <DATA>5274</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5850</DATA>
+      </COL>
+      <COL>
+        <DATA>5850</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Brambilla, Arturo</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5302">
+      <COL>
+        <DATA>5275</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5852</DATA>
+      </COL>
+      <COL>
+        <DATA>5852</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Brambilla, Paolo</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5303">
+      <COL>
+        <DATA>5276</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5856</DATA>
+      </COL>
+      <COL>
+        <DATA>5856</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Brevi, Gian Antonio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5304">
+      <COL>
+        <DATA>5277</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5859</DATA>
+      </COL>
+      <COL>
+        <DATA>5859</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Brunello, Antonio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5305">
+      <COL>
+        <DATA>5278</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5863</DATA>
+      </COL>
+      <COL>
+        <DATA>5863</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Buraschi, Pietro Giovanni</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5306">
+      <COL>
+        <DATA>5279</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5869</DATA>
+      </COL>
+      <COL>
+        <DATA>5869</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Caccia, Domenico</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5307">
+      <COL>
+        <DATA>5280</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5870</DATA>
+      </COL>
+      <COL>
+        <DATA>5870</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Caccia, Pietro Antonio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5308">
+      <COL>
+        <DATA>5281</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5883</DATA>
+      </COL>
+      <COL>
+        <DATA>5883</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Carbone, Stefano</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5309">
+      <COL>
+        <DATA>5282</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5942</DATA>
+      </COL>
+      <COL>
+        <DATA>5942</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Cartis, Giovanni Virginio de</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5310">
+      <COL>
+        <DATA>5283</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5890</DATA>
+      </COL>
+      <COL>
+        <DATA>5890</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Casale, Lucio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5311">
+      <COL>
+        <DATA>5284</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5900</DATA>
+      </COL>
+      <COL>
+        <DATA>5900</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Cavaglieri, Enrico</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5312">
+      <COL>
+        <DATA>5285</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5907</DATA>
+      </COL>
+      <COL>
+        <DATA>5907</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Chiesa, Gaspare</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5313">
+      <COL>
+        <DATA>5286</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5908</DATA>
+      </COL>
+      <COL>
+        <DATA>5908</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Chiesa, Paolo</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5314">
+      <COL>
+        <DATA>5287</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5909</DATA>
+      </COL>
+      <COL>
+        <DATA>5909</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Chiesa, Pietro</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5315">
+      <COL>
+        <DATA>5288</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5914</DATA>
+      </COL>
+      <COL>
+        <DATA>5914</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Colombi, Giuseppe</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5316">
+      <COL>
+        <DATA>5289</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5971</DATA>
+      </COL>
+      <COL>
+        <DATA>5971</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Donis, Giuseppe</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5317">
+      <COL>
+        <DATA>5290</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5991</DATA>
+      </COL>
+      <COL>
+        <DATA>5991</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Ferrari, Giovanni Antonio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5318">
+      <COL>
+        <DATA>5291</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|7057</DATA>
+      </COL>
+      <COL>
+        <DATA>7057</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Fontana, Giorgio "Pic"</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5319">
+      <COL>
+        <DATA>5292</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6004</DATA>
+      </COL>
+      <COL>
+        <DATA>6004</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Fontana, Giuseppe</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5320">
+      <COL>
+        <DATA>5293</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|7058</DATA>
+      </COL>
+      <COL>
+        <DATA>7058</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Formenti, Andrea</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5321">
+      <COL>
+        <DATA>5294</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6012</DATA>
+      </COL>
+      <COL>
+        <DATA>6012</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Franzetti, Giovanni</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5322">
+      <COL>
+        <DATA>5295</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6026</DATA>
+      </COL>
+      <COL>
+        <DATA>6026</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Gandini, Elia</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5323">
+      <COL>
+        <DATA>5296</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6051</DATA>
+      </COL>
+      <COL>
+        <DATA>6051</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Gibelli, Francesco</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5324">
+      <COL>
+        <DATA>5297</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6102</DATA>
+      </COL>
+      <COL>
+        <DATA>6102</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Leoncavallo, Ruggero</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5325">
+      <COL>
+        <DATA>5298</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6103</DATA>
+      </COL>
+      <COL>
+        <DATA>6103</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Lezzano, Carlo</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5326">
+      <COL>
+        <DATA>5299</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6107</DATA>
+      </COL>
+      <COL>
+        <DATA>6107</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Lotterio, Antonio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5327">
+      <COL>
+        <DATA>5300</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6121</DATA>
+      </COL>
+      <COL>
+        <DATA>6121</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Marazzi, Giuseppe</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5328">
+      <COL>
+        <DATA>5301</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6124</DATA>
+      </COL>
+      <COL>
+        <DATA>6124</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Marelli, Luigi</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5329">
+      <COL>
+        <DATA>5302</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6126</DATA>
+      </COL>
+      <COL>
+        <DATA>6126</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Maroni, Giorgio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5330">
+      <COL>
+        <DATA>5303</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6128</DATA>
+      </COL>
+      <COL>
+        <DATA>6128</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Mascioni</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5331">
+      <COL>
+        <DATA>5304</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|7174</DATA>
+      </COL>
+      <COL>
+        <DATA>7174</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Metzler, Johann Jakob</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5332">
+      <COL>
+        <DATA>5305</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5763</DATA>
+      </COL>
+      <COL>
+        <DATA>5763</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Milano, Benedetto da</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5333">
+      <COL>
+        <DATA>5306</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6154</DATA>
+      </COL>
+      <COL>
+        <DATA>6154</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Paracca, Valentino</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5334">
+      <COL>
+        <DATA>5307</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6171</DATA>
+      </COL>
+      <COL>
+        <DATA>6171</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Pinza, Carlo Giuseppe</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5335">
+      <COL>
+        <DATA>5308</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|5949</DATA>
+      </COL>
+      <COL>
+        <DATA>5949</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Porta, Giovanni Della</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5336">
+      <COL>
+        <DATA>5309</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6184</DATA>
+      </COL>
+      <COL>
+        <DATA>6184</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Reina, Antonio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5337">
+      <COL>
+        <DATA>5310</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6185</DATA>
+      </COL>
+      <COL>
+        <DATA>6185</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Reina, Giovanni Battista</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5338">
+      <COL>
+        <DATA>5311</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6186</DATA>
+      </COL>
+      <COL>
+        <DATA>6186</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Reina, Giuseppe</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5339">
+      <COL>
+        <DATA>5312</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6229</DATA>
+      </COL>
+      <COL>
+        <DATA>6229</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Vedani, Giuseppe</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5340">
+      <COL>
+        <DATA>5313</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6237</DATA>
+      </COL>
+      <COL>
+        <DATA>6237</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Viscontini, Francesco</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5341">
+      <COL>
+        <DATA>5314</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6239</DATA>
+      </COL>
+      <COL>
+        <DATA>6239</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Walpen, Antonio</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5342">
+      <COL>
+        <DATA>5315</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6255</DATA>
+      </COL>
+      <COL>
+        <DATA>6255</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Zezio, Felice</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5343">
+      <COL>
+        <DATA>5316</DATA>
+      </COL>
+      <COL>
+        <DATA>5426|6261</DATA>
+      </COL>
+      <COL>
+        <DATA>6261</DATA>
+      </COL>
+      <COL>
+        <DATA>5426</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Zuchi</DATA>
+      </COL>
+      <COL>
+        <DATA>Orgelbauer</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="5352">
+      <COL>
+        <DATA>5317</DATA>
+      </COL>
+      <COL>
+        <DATA>1|636</DATA>
+      </COL>
+      <COL>
+        <DATA>636</DATA>
+      </COL>
+      <COL>
+        <DATA>1</DATA>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA/>
+      </COL>
+      <COL>
+        <DATA>Briefer, Jakob</DATA>
+      </COL>
+      <COL>
+        <DATA>Komposition</DATA>
       </COL>
     </ROW>
   </RESULTSET>
