@@ -207,11 +207,20 @@ def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = Fal
                         record["hasLemmaText"] = data.firstChild.nodeValue
                         rec_label = data.firstChild.nodeValue
 
+                    # if valpos[i] == "Beschreibung":
+                    #     record["hasLemmaDescription"] = data.firstChild.nodeValue
+                    #     rec_label = data.firstChild.nodeValue
+
+                    if valpos[i] == "Artikeltyp":
+                        record["hasLemmaType"] = ll.get_list_node_iri("articletype",
+                                                                      article_type_lut[data.firstChild.nodeValue])
+
                     if valpos[i] == "Geschlecht":
                         record["hasSex"] = ll.get_list_node_iri("sex", sex_lut[data.firstChild.nodeValue])
 
-                    if valpos[i] == "GND":
-                        record["hasGND"] = data.firstChild.nodeValue
+                    if valpos[i] == "Kommentar":
+                        record["hasLemmaComment"] = data.firstChild.nodeValue
+                        rec_label = data.firstChild.nodeValue
 
                     if valpos[i] == "Anfangasdatum":
                         record["hasStartDate"] = data.firstChild.nodeValue
@@ -219,32 +228,26 @@ def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = Fal
                     if valpos[i] == "Information_Anfangsdatum":
                         record["hasStartDateInfo"] = data.firstChild.nodeValue
 
-                    if valpos[i] == "Artikeltyp":
-                        record["hasLemmaType"] = ll.get_list_node_iri("articletype",
-                                                                      article_type_lut[data.firstChild.nodeValue])
-
                     if valpos[i] == "Enddatum":
                         record["hasEndDate"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Information_Enddatum":
                         record["hasEndDateInfo"] = data.firstChild.nodeValue
 
+                    if valpos[i] == "GND":
+                        record["hasGnd"] = data.firstChild.nodeValue
+
                     if valpos[i] == "Jahrhundertangabe":
                         record["hasCentury"] = data.firstChild.nodeValue
 
-                    if valpos[i] == "Familienname":
-                        record["hasFamilyName"] = data.firstChild.nodeValue
+                    if valpos[i] == "VIAF":
+                        record["hasViaf"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Vorname":
                         record["hasGivenName"] = data.firstChild.nodeValue
 
-                    if valpos[i] == "Pseudonym":
-                        record["hasPseudonym"] = data.firstChild.nodeValue
-
-                    if valpos[i] == "Relevantes Lemma":
-                        record["hasRelevanceValue"] = ll.get_list_node_iri("relevance",
-                                                                           convert_relevance_key(
-                                                                               data.firstChild.nodeValue))
+                    if valpos[i] == "Familienname":
+                        record["hasFamilyName"] = data.firstChild.nodeValue
 
                     if valpos[i] == "Varianten":
                         record["hasVariants"] = data.firstChild.nodeValue
@@ -254,8 +257,13 @@ def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = Fal
                                                                           convert_deceased_key(
                                                                               data.firstChild.nodeValue))
 
-                    if valpos[i] == "VIAF":
-                        record["hasViaf"] = data.firstChild.nodeValue
+                    if valpos[i] == "Relevantes Lemma":
+                        record["hasRelevanceValue"] = ll.get_list_node_iri("relevance",
+                                                                           convert_relevance_key(
+                                                                               data.firstChild.nodeValue))
+
+                    if valpos[i] == "Pseudonym":
+                        record["hasPseudonym"] = data.firstChild.nodeValue
 
                     # try to find sublemmata for current lemma
                     try:
