@@ -9,6 +9,7 @@ import jdcal
 import os
 import sys
 import inspect
+import time
 
 article_type_lut = {
     'Person': 'person',
@@ -142,9 +143,12 @@ def get_rows(xmlfile):
     return rows
 
 
-def create_library_resources(xmlfile, bulk: BulkImport, debug: bool = False):
+def create_library_resources(xmlfile, bulk: BulkImport,
+                             debug: bool = False):
     """Creates mls:Library resources"""
+
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
+    start_time = time.time()
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -180,12 +184,21 @@ def create_library_resources(xmlfile, bulk: BulkImport, debug: bool = False):
             'Library',
             'LIB_' + str(rec_id), record["hasSigle"], record)
 
-    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
+    print("==> ... {0} - {1} - finished in {2} seconds.".format(
+        inspect.currentframe().f_code.co_name,
+        rows.length,
+        time.time() - start_time)
+    )
 
 
-def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = False):
+def create_lemma_resources(xmlfile,
+                           l2l_lut,
+                           bulk: BulkImport,
+                           debug: bool = False):
     """Creates mls:Lemma resources"""
+
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
+    start_time = time.time()
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -286,12 +299,20 @@ def create_lemma_resources(xmlfile, l2l_lut, bulk: BulkImport, debug: bool = Fal
             'Lemma',
             'LM_' + str(rec_id), record["hasLemmaText"], record)
 
-    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
+    print("==> ... {0} - {1} - finished in {2} seconds.".format(
+        inspect.currentframe().f_code.co_name,
+        rows.length,
+        time.time() - start_time)
+    )
 
 
-def create_occupation_resources(xmlfile, bulk: BulkImport, debug: bool = False):
+def create_occupation_resources(xmlfile,
+                                bulk: BulkImport,
+                                debug: bool = False):
     """Creates mls:Occupation resources"""
+
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
+    start_time = time.time()
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -325,13 +346,21 @@ def create_occupation_resources(xmlfile, bulk: BulkImport, debug: bool = False):
                 'Occupation',
                 'OCC_' + str(rec_id), rec_id, record)
 
-    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
+    print("==> ... {0} - {1} - finished in {2} seconds.".format(
+        inspect.currentframe().f_code.co_name,
+        rows.length,
+        time.time() - start_time)
+    )
 
 
-def create_lemma_occupation_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisLookup,
-                                      occupation_iris_lookup: IrisLookup, debug: bool = False):
+def create_lemma_occupation_resources(xmlfile, bulk: BulkImport,
+                                      lemma_iris_lookup: IrisLookup,
+                                      occupation_iris_lookup: IrisLookup,
+                                      debug: bool = False):
     """Creates mls:LemmaOccupation resources"""
+
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
+    start_time = time.time()
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -369,12 +398,20 @@ def create_lemma_occupation_resources(xmlfile, bulk: BulkImport, lemma_iris_look
                 'LemmaOccupation',
                 'LO_' + str(rec_id), rec_id, record)
 
-    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
+    print("==> ... {0} - {1} - finished in {2} seconds.".format(
+        inspect.currentframe().f_code.co_name,
+        rows.length,
+        time.time() - start_time)
+    )
 
 
-def create_location_resources(xmlfile, bulk: BulkImport, debug: bool = False):
+def create_location_resources(xmlfile,
+                              bulk: BulkImport,
+                              debug: bool = False):
     """Creates mls:Location resources"""
+
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
+    start_time = time.time()
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -414,13 +451,22 @@ def create_location_resources(xmlfile, bulk: BulkImport, debug: bool = False):
                 'Location',
                 'LOC_' + str(rec_id), rec_id, record)
 
-    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
+    print("==> ... {0} - {1} - finished in {2} seconds.".format(
+        inspect.currentframe().f_code.co_name,
+        rows.length,
+        time.time() - start_time)
+    )
 
 
-def create_lemma_location_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup: IrisLookup,
-                                    location_iris_lookup: IrisLookup, debug: bool = False):
+def create_lemma_location_resources(xmlfile,
+                                    bulk: BulkImport,
+                                    lemma_iris_lookup: IrisLookup,
+                                    location_iris_lookup: IrisLookup,
+                                    debug: bool = False):
     """Creates mls:LemmaLocation resources"""
+
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
+    start_time = time.time()
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -461,12 +507,18 @@ def create_lemma_location_resources(xmlfile, bulk: BulkImport, lemma_iris_lookup
                 'LemmaLocation',
                 'LL_' + str(rec_id), rec_id, record)
 
-    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
+    print("==> ... {0} - {1} - finished in {2} seconds.".format(
+        inspect.currentframe().f_code.co_name,
+        rows.length,
+        time.time() - start_time)
+    )
 
 
 def create_lexicon_resources(xmlfile, bulk: BulkImport, debug: bool = False):
     """Creates mls:Lexicon resources"""
+
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
+    start_time = time.time()
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -529,17 +581,23 @@ def create_lexicon_resources(xmlfile, bulk: BulkImport, debug: bool = False):
             'Lexicon',
             'LX_' + str(rec_id), rec_id, record)
 
-    print("==> ... {0} - {1} - finished".format(inspect.currentframe().f_code.co_name, rows.length))
+    print("==> ... {0} - {1} - finished in {2} seconds.".format(
+        inspect.currentframe().f_code.co_name,
+        rows.length,
+        time.time() - start_time)
+    )
 
 
 def create_article_resources(
-        xmlfile, bulk: BulkImport,
+        xmlfile,
+        bulk: BulkImport,
         lemma_iris_lookup: IrisLookup,
         lexicon_iris_lookup: IrisLookup,
         debug: bool = False):
     """Creates mls:Article resources"""
 
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
+    start_time = time.time()
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -619,13 +677,22 @@ def create_article_resources(
             record
         )
 
-    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
+    print("==> ... {0} - {1} - finished in {2} seconds.".format(
+        inspect.currentframe().f_code.co_name,
+        rows.length,
+        time.time() - start_time)
+    )
 
 
-def create_exemplar_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: IrisLookup,
-                              library_iris_lookup: IrisLookup, debug: bool = False):
+def create_exemplar_resources(xmlfile,
+                              bulk: BulkImport,
+                              lexicon_iris_lookup: IrisLookup,
+                              library_iris_lookup: IrisLookup,
+                              debug: bool = False):
     """Creates mls:Exemplar resources"""
+
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
+    start_time = time.time()
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -669,12 +736,21 @@ def create_exemplar_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: Ir
                 'Exemplar',
                 'EX_' + str(rec_id), rec_id, record)
 
-    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
+    print("==> ... {0} - {1} - finished in {2} seconds.".format(
+        inspect.currentframe().f_code.co_name,
+        rows.length,
+        time.time() - start_time)
+    )
 
 
-def create_lexicon_lexicon_resources(xmlfile, bulk: BulkImport, lexicon_iris_lookup: IrisLookup, debug: bool = False):
+def create_lexicon_lexicon_resources(xmlfile,
+                                     bulk: BulkImport,
+                                     lexicon_iris_lookup: IrisLookup,
+                                     debug: bool = False):
     """Creates mls:LexiconLexicon resources"""
+
     print("==> {0} started ...".format(inspect.currentframe().f_code.co_name))
+    start_time = time.time()
 
     valpos = get_valpos(xmlfile)
     rows = get_rows(xmlfile)
@@ -714,7 +790,11 @@ def create_lexicon_lexicon_resources(xmlfile, bulk: BulkImport, lexicon_iris_loo
                 'LexiconLexicon',
                 'LXLX_' + str(rec_id), rec_id, record)
 
-    print("==> ... {0} - {1} - finished.".format(inspect.currentframe().f_code.co_name, rows.length))
+    print("==> ... {0} - {1} - finished in {2} seconds.".format(
+        inspect.currentframe().f_code.co_name,
+        rows.length,
+        time.time() - start_time)
+    )
 
 
 def main():
@@ -735,9 +815,6 @@ def main():
     con.login(args.user, args.password)
     schema = con.create_schema(args.projectcode, args.ontoname)
 
-    exemplar_xml = './data/exemplar.xml'
-    titelA_x_titelB_xml = './data/titelA_x_titelB.xml'
-
     if not os.path.exists("./out"):
         os.makedirs("./out")
 
@@ -746,9 +823,10 @@ def main():
     library_bulk_object = BulkImport(schema)
     create_library_resources(library_data_xml, library_bulk_object)
     print("==> Library upload start ...")
+    start_time = time.time()
     r = library_bulk_object.upload(args.user, args.password, "localhost", "3333")
     library_iris_lookup = IrisLookup(r)
-    print("==> Library upload finished.")
+    print("==> Library upload finished (%s seconds)." % (time.time() - start_time))
 
     # create mls:Lemma resources
     l2l_lut = lemma2lemma_lut()
@@ -756,18 +834,20 @@ def main():
     lemma_bulk_object = BulkImport(schema)
     create_lemma_resources(lemma_data_xml, l2l_lut, lemma_bulk_object)
     print("==> Lemma upload start ...")
+    start_time = time.time()
     r = lemma_bulk_object.upload(args.user, args.password, "localhost", "3333")
     lemma_iris_lookup = IrisLookup(r)
-    print("==> Lemma upload finished.")
+    print("==> Lemma upload finished (%s seconds)." % (time.time() - start_time))
 
     # create Occupation resources
     occupation_data_xml = './data/werte.xml'
     occupation_bulk_object = BulkImport(schema)
     create_occupation_resources(occupation_data_xml, occupation_bulk_object)
     print("==> Occupation upload start ...")
+    start_time = time.time()
     r = occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
     occupation_iris_lookup = IrisLookup(r)
-    print("==> Occupation upload finished.")
+    print("==> Occupation upload finished (%s seconds)." % (time.time() - start_time))
 
     # create LemmaOccupation resources
     lemma_occupation_data_xml = './data/lemma_x_wert.xml'
@@ -777,18 +857,20 @@ def main():
                                       lemma_iris_lookup,
                                       occupation_iris_lookup)
     print("==> LemmaOccupation upload start ...")
+    start_time = time.time()
     r = lemma_occupation_bulk_object.upload(args.user, args.password, "localhost", "3333")
     lemma_occupation_iris_lookup = IrisLookup(r)
-    print("==> LemmaOccupation upload finished.")
+    print("==> LemmaOccupation upload finished (%s seconds)." % (time.time() - start_time))
 
     # create Location resources
     location_data_xml = './data/werte.xml'
     location_bulk_object = BulkImport(schema)
     create_location_resources(location_data_xml, location_bulk_object)
     print("==> Location upload start ...")
+    start_time = time.time()
     r = location_bulk_object.upload(args.user, args.password, "localhost", "3333")
     location_iris_lookup = IrisLookup(r)
-    print("==> Location upload finished.")
+    print("==> Location upload finished (%s seconds)." % (time.time() - start_time))
 
     # create LemmaLocation resources
     lemma_location_data_xml = './data/lemma_x_ort.xml'
@@ -798,18 +880,20 @@ def main():
                                     lemma_iris_lookup,
                                     location_iris_lookup)
     print("==> LemmaLocation upload start ...")
+    start_time = time.time()
     r = lemma_location_bulk_object.upload(args.user, args.password, "localhost", "3333")
     lemma_location_iris_lookup = IrisLookup(r)
-    print("==> LemmaLocation upload finished.")
+    print("==> LemmaLocation upload finished (%s seconds)." % (time.time() - start_time))
 
     # create Lexicon resources
     lexicon_data_xml = './data/lexikon.xml'
     lexicon_bulk_object = BulkImport(schema)
     create_lexicon_resources(lexicon_data_xml, lexicon_bulk_object)
     print("==> Lexicon upload start ...")
+    start_time = time.time()
     r = lexicon_bulk_object.upload(args.user, args.password, "localhost", "3333")
     lexicon_iris_lookup = IrisLookup(r)
-    print("==> Lexicon upload finished.")
+    print("==> Lexicon upload finished (%s seconds)." % (time.time() - start_time))
 
     # create Article resources
     article_data_xml = './data/artikel.xml'
@@ -819,9 +903,10 @@ def main():
                              lemma_iris_lookup,
                              lexicon_iris_lookup)
     print("==> Article upload start ...")
+    start_time = time.time()
     r = article_bulk_object.upload(args.user, args.password, "localhost", "3333")
     article_iris_lookup = IrisLookup(r)
-    print("==> Article upload finished.")
+    print("==> Article upload finished (%s seconds)." % (time.time() - start_time))
 
     # create Exemplar resources
     exemplar_data_xml = './data/exemplar.xml'
@@ -831,9 +916,10 @@ def main():
                               lexicon_iris_lookup,
                               library_iris_lookup)
     print("==> Exemplar upload start ...")
+    start_time = time.time()
     r = exemplar_bulk_object.upload(args.user, args.password, "localhost", "3333")
     exemplar_iris_lookup = IrisLookup(r)
-    print("==> Exemplar upload finished.")
+    print("==> Exemplar upload finished (%s seconds)." % (time.time() - start_time))
 
     # create LexiconLexicon resources
     lexlex_data_xml = './data/titelA_x_titelB.xml'
@@ -842,9 +928,10 @@ def main():
                                      lexlex_bulk_object,
                                      lexicon_iris_lookup)
     print("==> LexiconLexicon upload start ...")
+    start_time = time.time()
     r = lexlex_bulk_object.upload(args.user, args.password, "localhost", "3333")
     lexlex_iris_lookup = IrisLookup(r)
-    print("==> LexiconLexicon upload finished.")
+    print("==> LexiconLexicon upload finished (%s seconds)." % (time.time() - start_time))
 
     con = None
     sys.exit()
